@@ -246,3 +246,15 @@ info: Cli: remote URL changed
 'QuadraticFoundations.p_star_weight_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'QuadraticFoundations.p_star_weight_at_L' depends on axioms: [propext, Classical.choice, Quot.sound]
 'QuadraticFoundations.p_star_isGreatest_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinorSelection.select_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinorSelection.exists_nonsingular_minor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MinorSelection.rank_le_iff_minors_vanish' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.CoeffIndex' does not depend on any axioms
+'MemorySemialgebraic.MinorIndex' does not depend on any axioms
+'MemorySemialgebraic.polyBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.phi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.coeffEval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.eval_polyBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.eval_phi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.Q_iff_phi_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.realization_iff_phi_zero' depends on axioms: [propext, Classical.choice, Quot.sound]

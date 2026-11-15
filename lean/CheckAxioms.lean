@@ -239,3 +239,17 @@ public import RealizationCore
 #print axioms QuadraticFoundations.p_star_weight_le
 #print axioms QuadraticFoundations.p_star_weight_at_L
 #print axioms QuadraticFoundations.p_star_isGreatest_weight
+
+#print axioms MinorSelection.select_independent
+#print axioms MinorSelection.exists_nonsingular_minor
+#print axioms MinorSelection.rank_le_iff_minors_vanish
+
+#print axioms MemorySemialgebraic.CoeffIndex
+#print axioms MemorySemialgebraic.MinorIndex
+#print axioms MemorySemialgebraic.polyBlock
+#print axioms MemorySemialgebraic.phi
+#print axioms MemorySemialgebraic.coeffEval
+#print axioms MemorySemialgebraic.eval_polyBlock
+#print axioms MemorySemialgebraic.eval_phi
+#print axioms MemorySemialgebraic.Q_iff_phi_zero
+#print axioms MemorySemialgebraic.realization_iff_phi_zero

@@ -26,7 +26,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 
 | Workstream | Remaining targets |
 |---|---|
-| Normalization and coefficients | Proposition 2.2; rank/minor criterion and algebraic memory loci. |
+| Normalization and coefficients | Proposition 2.2: full normalized trajectory equivalence. Rank/minor criterion and finite rational polynomial memory loci are now proved. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
 | Convex quadratics | Section 5: Chebyshev competing-polynomial lower bound and real-root schedule, all-horizon minimax and one-register optimality. |
@@ -98,3 +98,15 @@ interval maximum. The coordinate-change core and time-dependent normalization
 matrices preserve the all-ones state. Full build: 9085 jobs; expanded audit: 219
 declarations. Missing quadratic lower-bound optimality and one-register schedule,
 and missing normalized trajectory conjugacy, remain explicit.
+
+## Verified rank/minor milestone
+
+The rank/minor criterion is proved constructively by selecting independent actual
+rows and columns. A finite family of rational multivariate determinant polynomials
+is explicitly defined; its zero locus is proved equivalent to the independently
+defined memory rank locus and to actual register realizability. This completes
+the algebraic memory constraint, not effective quantifier elimination.
+
+Quadratic lower-bound and real-root schedule work now runs in a separate
+coordinator chat `chat-bc32b9d6c2`, actual Ultramath swarm `smwhnh69n`
+(Muse Spark Open, maximum reasoning).

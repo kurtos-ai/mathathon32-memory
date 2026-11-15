@@ -12,3 +12,5 @@ public import Continuation.Quadratic.MatrixResidual
 public import Continuation.Quadratic.SpectralRisk
 public import Continuation.Normalization.Core
 public import Continuation.Quadratic.ChebyshevCandidate
+public import Continuation.Semialgebraic.MinorRank
+public import Continuation.Semialgebraic.MinorPolynomials

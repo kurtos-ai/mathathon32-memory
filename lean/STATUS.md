@@ -8,7 +8,7 @@ The library proves the operational register-realization theorem in both
 directions, including one coefficient machine valid in every finite dimension.
 The upper bound constructs actual states and updates; the lower bound derives
 the cut factorization from formal-input correctness. It also proves the exact
-cut/increment rank identity, the operational rank-form memory locus,
+cut/increment rank identity, the operational rank-form memory locus and its finite rational determinant equations,
 the one-register/zero-increment equivalence, and the extended-risk threshold and
 strict-memory-gain theorems. The coefficient-coordinate bijection, its operational
 memory fibers, projection/Gram support, quadratic polynomial recurrence and
