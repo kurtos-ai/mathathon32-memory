@@ -71,3 +71,9 @@ the actual OGM two-register machine for all formal inputs and all finite vector
 dimensions. These results do not establish benchmark minimax optimality.
 Stalled runs were replaced after inspecting source and transcript timestamps;
 checking only a running flag was insufficient.
+
+A further checked component gives concrete rational-polynomial QF syntax and
+proves that its one-dimensional frontier consists of algebraic numbers. A local
+bridge proves algebraicity of finite minimax values conditional on an exact QF
+description of the strict threshold set. Effective QE and root isolation remain
+unproved, so this is not a completed algorithmic decision theorem.

@@ -115,3 +115,14 @@ info: Cli: remote URL changed
 'QuadraticFoundations.chebM_eq_X_mul_s' depends on axioms: [propext, Classical.choice, Quot.sound]
 'QuadraticFoundations.neg_X_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
 'QuadraticFoundations.comp_neg_X_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.QFFormula.eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.zero_mem_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.qf_formula_stable_nonZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.frontier_solutionSet_subset_zeroLocus_nonZero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.qf_endpoint_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.frontier_empty_of_all_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.linear_root_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.ray_endpoint_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.finite_value_algebraic_of_qf_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]

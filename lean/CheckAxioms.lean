@@ -102,3 +102,14 @@ public import RealizationCore
 #print axioms QuadraticFoundations.chebM_eq_X_mul_s
 #print axioms QuadraticFoundations.neg_X_pow
 #print axioms QuadraticFoundations.comp_neg_X_coeff
+
+#print axioms MemorySemialgebraic.QFFormula.eval
+#print axioms MemorySemialgebraic.zero_mem_algebraic
+#print axioms MemorySemialgebraic.qf_formula_stable_nonZero
+#print axioms MemorySemialgebraic.frontier_solutionSet_subset_zeroLocus_nonZero
+#print axioms MemorySemialgebraic.qf_endpoint_algebraic
+#print axioms MemorySemialgebraic.frontier_empty_of_all_zero
+#print axioms MemorySemialgebraic.linear_root_algebraic
+
+#print axioms MemorySemialgebraic.ray_endpoint_algebraic
+#print axioms MemorySemialgebraic.finite_value_algebraic_of_qf_thresholds
