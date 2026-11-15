@@ -10,7 +10,7 @@ require mathlib from git
 @[default_target]
 lean_lib Mathathon32Memory where
   srcDir := "lean"
-  roots := #[`MemoryRank, `Decision, `Benchmarks, `RealizationCore, `Continuation]
+  roots := #[`MemoryRank, `Decision, `Benchmarks, `RealizationCore, `Continuation, `Submission2026]
 
 lean_lib TauCeti where
   srcDir := "lean"

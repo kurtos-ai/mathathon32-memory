@@ -8,6 +8,3 @@ __pycache__/
 *.toc
 *.nav
 *.snm
-
-!verification/*.log
-!computations/logs/*.log

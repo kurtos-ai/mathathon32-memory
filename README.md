@@ -1,49 +1,42 @@
-# Memory-constrained minimax first-order optimization
+# Lean formalization of memory-constrained first-order methods
 
-Submission materials for Mathathon problem 32, by Francisco Hernández Iglesias
-and Jack Mayo (kurtos.ai).
+This repository contains Lean source, pinned build dependencies, third-party
+license/provenance information, and documentation of the formalization.
 
-- `paper/report.tex` and `paper/report.pdf`: the self-contained research report.
-- `slides/memory-slides.pdf`: 16 main slides and one OGM appendix for a 20-minute talk.
-- `lean/`: the Lean formalization of the report’s stated results, with a precise declaration map.
-- `computations/`: exact and numerical checks, with fixed ranges and logs.
-- `verification/`: build and axiom-audit records.
-- `inputs/`: the preserved starting paper and supplied exact-arithmetic script.
+The checked library includes exact register realizations and memory-rank criteria,
+a complete executable real-algebraic decision procedure, concrete quadratic and
+smooth-convex loss compilers, the classical objective-error benchmarks, and projected
+subgradient models. These results concern predetermined scalar-coefficient methods.
 
-The Lean library verifies actual register realizations, normalized coordinates,
-rank/minor memory constraints, exact threshold and gain criteria, both benchmark
-minimax calculations, smooth coefficient uniqueness, and a complete executable
-real-algebraic decision procedure. The algorithms take finite loss formulas and
-specified algebraic coefficients; they do not take unknown minimax values or
-assumed elimination oracles. General nonlinear QE is proved but has no claimed
-practical complexity bound. Concrete rational/algebraic benchmark inputs and projected-domain inputs are
-compiled and proved exact. `lean/STATUS.md` records the completed programme;
-`lean/DECLARATION_MAP.md` gives exact theorem scope and retained input assumptions.
+**The revised 69-page paper is not yet fully formalized.** Its new weak-convexity,
+second-auxiliary-register separation, and some method-replacement results require
+further proofs. Both quadratic-replacement assertions are now checked: an actual
+two-register machine reproduces every terminal point, and a one-register machine
+pointwise dominates objective error on every convex quadratic instance. See `lean/CURRENT_PAPER_COVERAGE.md` for the current claim-by-claim audit.
+`lean/DECLARATION_MAP.md` gives principal checked declarations and explicitly retains
+finite loss-model hypotheses where applicable. A conditional theorem is not treated
+as a proof of its unproved premises.
 
-## Reproduce
+## Build and audit
 
-With elan installed, the pinned `lean-toolchain` selects Lean 4.35.0:
+The pinned `lean-toolchain` selects Lean 4.35.0. With elan installed:
 
 ```sh
 lake exe cache get
 lake build
 lake env lean lean/CheckAxioms.lean
-python3 computations/rerun_quadratic_certificates.py
-python3 computations/rank_checks.py
-python3 computations/ogm_checks.py
-python3 computations/projected_recurrence_checks.py
 ```
 
-The Python checks use the standard library. Build the report with
-`tectonic paper/report.tex`. Build slides from their directory with
-`tectonic memory-slides.tex`; keep `assets/` beside the source. The supplied
-SVG is the original Mathathon logo, and its PDF is a vector conversion.
+Mathlib is pinned to `56a005855ea17e0b0958f73ec801ae140b0a1679`.
+Retained declarations must have no `sorry`, `admit`, custom axioms, or `native_decide`.
+The public axiom audit permits only `propext`, `Classical.choice`, and `Quot.sound`.
 
-All current paper development occurred during the event, as confirmed by the
-authors. AI assistance and the distinction between written proof, literature,
-computation, and Lean coverage are disclosed in the report. Final human author
-review is not asserted by these files.
+The 39 attributed TauCeti source files are pinned at
+`1c497c347f615b3087cb605f8cf743e591376105`; see `third_party/TauCeti/` for
+Apache-2.0 licensing and file hashes. Their pre-existing contribution is distinguished
+from the project-specific symbolic elimination and optimization formalization.
 
-The repository remains private at the authors' request. No competition
-submission has been made. Organizer access must be arranged before a submission
-that relies on this private repository.
+Paper sources, slides, Python experiments, and historical verification logs are
+outside this Lean-only repository. They were preserved during submission preparation,
+not used as Lean axioms or substituted for kernel-checked proofs. Large QE benchmark
+runs are not claimed practical; the program's correctness is proved symbolically.
