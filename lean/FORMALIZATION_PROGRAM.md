@@ -252,3 +252,7 @@ Effective projected quantifier elimination remains part of the general QE task.
 ## Squarefree preprocessing and certified coverage
 
 Exports15–16 are locally compiled and fully audited. The quotient by gcd has exactly the original real roots, all simple. Given certified rational bounds and separation, the finite filtered grid with mesh half the separation covers every root. This does not yet compute the certificates or prove complete effective isolation/QE. The duplicate projected workers have been stopped because the full projected register theorem is now accepted.
+
+## Rational root bound and simplex minimization
+
+The rational coefficient bound is explicitly computed and verified locally. The exact exported GJP Lemma 3.1 source (SHA-256 0d8de45e724861b56ede320a7ae9c1d058e0edf26734f3b14a10ae3f189ec762) builds locally with all 37 declarations audited. This closes simplex minimization and equality uniqueness, not matrix elimination or actual OGM coefficient uniqueness.

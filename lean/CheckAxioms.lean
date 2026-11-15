@@ -792,3 +792,48 @@ public import RealizationCore
 #print axioms RootIsolation.SimpleRoots.sign_between_local_and_endpoint_neighborhood
 #print axioms RootIsolation.SimpleRoots.endpoint_sign_of_unique_simple_root
 #print axioms RootIsolation.SimpleRoots.every_simple_root_mem_filteredIntervals_of_separation
+
+-- Continuation.RootIsolation.RationalBound
+#print axioms RootIsolation.rationalRootBound
+#print axioms RootIsolation.rationalRootBound_one_le
+#print axioms RootIsolation.cauchyBound_le_rationalRootBound
+#print axioms RootIsolation.root_norm_lt_rationalRootBound
+
+-- Continuation.GJP.Simplex
+#print axioms GJP.rOGM
+#print axioms GJP.S
+#print axioms GJP.partialSum
+#print axioms GJP.phiTerm
+#print axioms GJP.Phi
+#print axioms GJP.DeltaProp
+#print axioms GJP.deltaStar
+#print axioms GJP.rOGM_pos
+#print axioms GJP.rOGM_nonneg
+#print axioms GJP.theta_sq_standard
+#print axioms GJP.theta_sq_final
+#print axioms GJP.S_zero_eq
+#print axioms GJP.S_succ_eq
+#print axioms GJP.S_eq_total
+#print axioms GJP.deltaStar_S_eq
+#print axioms GJP.deltaStar_total
+#print axioms GJP.quadratic_le
+#print axioms GJP.sqrt_two_mul_eq
+#print axioms GJP.deltaStar_mem_Delta
+#print axioms GJP.phiTerm_tied
+#print axioms GJP.deltaStar_Phi_eq
+#print axioms GJP.S_nonneg
+#print axioms GJP.S_mono
+#print axioms GJP.S_le_S_succ
+#print axioms GJP.delta_le_S
+#print axioms GJP.delta_eq_zero_of_S_eq_zero
+#print axioms GJP.delta_sq_le
+#print axioms GJP.delta_le_sqrt
+#print axioms GJP.S_le_bound
+#print axioms GJP.rOGM_leq_Phi
+#print axioms GJP.le_of_sq_le_sq'
+#print axioms GJP.sqrt_rOGM
+#print axioms GJP.terminal_rOGM_identity
+#print axioms GJP.total_split
+#print axioms GJP.delta_le_of_sum_eq
+#print axioms GJP.uniqueness_of_partialSum_bound
+#print axioms GJP.uniqueness

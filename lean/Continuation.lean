@@ -49,3 +49,6 @@ public import Continuation.Projected.UpperBound
 
 public import Continuation.RootIsolation.SquarefreePreprocessing
 public import Continuation.RootIsolation.CertifiedSeparation
+
+public import Continuation.RootIsolation.RationalBound
+public import Continuation.GJP.Simplex

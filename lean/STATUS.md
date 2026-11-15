@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,122 successful build jobs and 717 audited declarations.
+Current verification: 9,124 successful build jobs and 758 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -67,3 +67,5 @@ The construction proves the entire actual projected trajectory and uses one
 predetermined scalar coefficient machine across all dimensions.
 
 Squarefree preprocessing preserves every real root and gives nonzero derivative at each root. Given certified rational root and separation bounds, every simple root lies in the actual filtered grid output with mesh equal to half the separation. Computation of these certificates and complete effective isolation/QE are still separate obligations.
+
+An explicit rational Cauchy bound is computed from the coefficients and proved to bound all real roots. The GJP simplex minimization lemma is proved, including attainment and unique equality coordinates for every horizon. Connecting this lemma through the matrix elimination to actual OGM coefficient uniqueness remains open.
