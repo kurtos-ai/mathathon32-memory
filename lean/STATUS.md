@@ -1,7 +1,9 @@
 # Formalization status
 
 The retained library builds with pinned Lean/Mathlib 4.35.0. Current verification:
-9,183 successful build jobs and 1,431 audited declarations. Audited declarations
+9,227 successful build jobs and 1,808 audited declarations
+(1,471 project declarations and 337 public declarations from the attributed
+TauCeti dependency). Audited declarations
 use only `propext`, `Classical.choice`, and `Quot.sound`; retained sources contain
 no proof holes, custom axioms, or `native_decide`.
 
@@ -16,7 +18,8 @@ and memory-gain criteria, including infinite values without attainment assumptio
 Rational quantifier-free threshold endpoints are proved algebraic. General
 quantifier elimination, which must produce those formulas, remains unfinished.
 
-The quadratic benchmark is complete: actual matrix oracle trajectories, residual
+The quadratic benchmark is complete: exact equality with the scalar two-variable
+loss model, actual matrix oracle trajectories, residual
 polynomials, spectral risk, Chebyshev alternation, explicit root schedules, and
 the exact minimax value at every operational memory budget. Additional memory
 never improves that value.
@@ -25,7 +28,10 @@ The projected setting is verified: closed-convex projection and every query,
 finite convex subgradient interpolation and exact finite loss models, including
 repeated queries and bounded/unbounded subgradient returns. The minimum register
 count is the ordinary maximum cut rank on every nontrivial closed convex set,
-including empty-interior sets, and one on a nonempty singleton.
+including empty-interior sets, and one on a nonempty singleton. Operational
+projected minimax values equal the register-constrained infima, with exact
+threshold rays, saturated budgets and rational gain witnesses. For bounded
+subgradients the values lie in [0,MR] at every budget.
 
 For smooth convex functions, necessary and sufficient interpolation, exact finite
 Gram loss models, and all-dimensional oracle realization are proved. The actual
@@ -57,7 +63,9 @@ interpolation, or duality assumption. Actual optimal coefficient maps are exactl
 OGM. For every horizon and budget, increasing auxiliary memory m to m+1 strictly
 improves minimax performance exactly when m=0 and N≥2. The equivalent threshold
 set criterion is also proved. These are statements about independently defined
-all-dimensional operational risk, not just certificate optimization.
+all-dimensional operational risk, not just certificate optimization. Zero-padding
+and actual interpolation identify the same loss set in every fixed dimension
+n≥N+2 and prove the fixed-dimension uniqueness theorem as stated in the paper.
 
 Rational root isolation is now executable and certified. Coefficient-list
 arithmetic, division, gcd, Bezout coefficients, derivative and evaluation refine
@@ -79,10 +87,14 @@ quantifiers. Root-free regions have certified rational representatives; exact
 algebraic signs handle roots. Five guarded runs check satisfiable, unsatisfiable,
 universal and constant cases.
 
-General multivariate nonlinear QE remains unfinished. The final coverage audit
-also identified algebraic-coefficient syntax reduction, composition of exact
-endpoint selection with minimax computation, fixed-dimension uniqueness, and
-small quadratic/projected operational wrappers; agents are completing these.
+General multivariate nonlinear QE remains unfinished. Algebraic-coefficient
+syntax reduction and composition of exact endpoint selection with minimax
+computation are also in progress. The targeted Sturm–Tarski/sign-determination
+foundation from TauCeti is retained unchanged under Apache-2.0 at revision
+1c497c347f615b3087cb605f8cf743e591376105. All 38 vendored files build against the
+project pin; source hashes, authors and license are under third_party/TauCeti.
+These are pre-existing library results and do not by themselves provide the
+remaining executable parameterized elimination.
 
 The report is still partially formalized. Only checked modules enter the tracked
 library. External Open Math work is preserved; local Codex agents continue after

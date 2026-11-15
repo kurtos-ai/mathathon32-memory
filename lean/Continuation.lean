@@ -168,3 +168,15 @@ public import Continuation.GJP.PositiveKernel
 public import Continuation.RootIsolation.SignSamples
 
 public import Continuation.Semialgebraic.UnivariateDecision
+
+public import TauCeti
+
+public import Continuation.Smooth.FixedDimension
+
+public import Continuation.GJP.FixedDimensionUniqueness
+
+public import Continuation.Quadratic.ExactLossModel
+
+public import Continuation.Projected.Operational
+
+public import Continuation.Projected.OperationalThresholds

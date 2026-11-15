@@ -5,6 +5,45 @@ public import Benchmarks
 public import MemoryRank
 public import RealizationCore
 
+public import TauCeti.Algebra.BigOperators.Finset.Filter
+public import TauCeti.Algebra.Polynomial.Eval.Sign
+public import TauCeti.Algebra.Polynomial.LinearFactor
+public import TauCeti.Algebra.Polynomial.Rolle
+public import TauCeti.Algebra.Polynomial.Thom
+public import TauCeti.Algebra.Polynomial.Eval.OneSided
+public import TauCeti.FieldTheory.RealClosure.FiniteExtension
+public import TauCeti.FieldTheory.RealClosure.Galois
+public import TauCeti.Algebra.Order.Ring.Ordering.Extension
+public import TauCeti.Algebra.Order.Ring.Ordering.Semireal
+public import TauCeti.FieldTheory.RealClosure.Complexification
+public import TauCeti.FieldTheory.RealClosure.AlgebraicClosed
+public import TauCeti.Algebra.QuadraticDiscriminant
+public import TauCeti.Algebra.Polynomial.QuadraticDiscriminant
+public import TauCeti.Algebra.Polynomial.RealClosed.Quadratic
+public import TauCeti.FieldTheory.RealClosure.IVT
+public import TauCeti.Data.Finset.Jumps
+public import TauCeti.Algebra.Polynomial.RealClosed.Sign
+public import TauCeti.Data.List.SignVariations
+public import TauCeti.Algebra.Polynomial.Sturm.Signs
+public import TauCeti.Algebra.Polynomial.Sturm.Local
+public import TauCeti.Algebra.Polynomial.Sturm.Sequence
+public import TauCeti.Algebra.Polynomial.Sturm.SignedRemainders
+public import TauCeti.Algebra.Polynomial.Sturm.Sum
+public import TauCeti.Algebra.Polynomial.Sturm.Tarski
+public import TauCeti.Algebra.Polynomial.Sturm.OneSided
+public import TauCeti.Algebra.Polynomial.Eval.Infinity
+public import TauCeti.Algebra.Polynomial.Sturm.Infinity
+public import TauCeti.FieldTheory.RealClosure.AbstractRolle
+public import TauCeti.Algebra.Polynomial.RealClosed.Sampling
+public import TauCeti.Data.Fintype.Fiber
+public import TauCeti.Data.Matrix.OccCount
+public import TauCeti.Data.SignType.Lagrange
+public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments
+public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs
+public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial
+public import TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine
+public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots
+
 #print axioms MemoryDecision.risk_lt_iff_uniform_bound
 #print axioms MemoryDecision.mem_performance_iff
 #print axioms MemoryDecision.threshold_iff_value_lt
@@ -1859,3 +1898,757 @@ public import RealizationCore
 #print axioms MemorySemialgebraic.SymbolicQE.Formula.decideForall
 
 #print axioms MemorySemialgebraic.SymbolicQE.Formula.decideForall_correct
+
+#print axioms SmoothGramModel.padVector
+
+#print axioms SmoothGramModel.sum_padded
+
+#print axioms SmoothGramModel.padVector_inner
+
+#print axioms SmoothGramModel.exists_gram_in_larger_dimension
+
+#print axioms SmoothGramModel.realize_feasible_in_dimension
+
+#print axioms SmoothGramModel.actualLossSet_eq_fixed_dimension
+
+#print axioms SmoothGramModel.uniform_bound_iff_fixed_dimension
+
+#print axioms GJP.actual_method_unique_fixed_dimension
+
+#print axioms GJP.sharp_methods_equal_fixed_dimension
+
+#print axioms QuadraticSpectral.scalarLossSet
+
+#print axioms QuadraticSpectral.lossSet_nonneg
+
+#print axioms QuadraticSpectral.lossSet_radius_mono
+
+#print axioms QuadraticSpectral.scalar_loss_of_squared_radius
+
+#print axioms QuadraticSpectral.scalarLossSet_subset
+
+#print axioms QuadraticSpectral.lossSet_eq_scalarLossSet
+
+#print axioms QuadraticSpectral.historyLossSet_eq_scalarLossSet
+
+#print axioms QuadraticSpectral.scalarLossSet_uniform_bound
+
+#print axioms ProjectedOperational.feasible
+
+#print axioms ProjectedOperational.loss
+
+#print axioms ProjectedOperational.memory
+
+#print axioms ProjectedOperational.zeroIncrement
+
+#print axioms ProjectedOperational.zeroIncrement_mem
+
+#print axioms ProjectedOperational.mem_memory_iff_projected
+
+#print axioms ProjectedOperational.value_eq_inf_projected
+
+#print axioms ProjectedOperational.mem_performance_iff_model
+
+#print axioms ProjectedOperational.threshold_iff_value_lt
+
+#print axioms ProjectedOperational.thresholds_eq_ray
+
+#print axioms ProjectedOperational.thresholds_empty_iff
+
+#print axioms ProjectedOperational.zero_loss_mem
+
+#print axioms ProjectedOperational.feasible_nonneg
+
+#print axioms ProjectedOperational.value_nonneg
+
+#print axioms ProjectedOperational.bounded_value_bounds
+
+#print axioms ProjectedOperational.bounded_value_finite
+
+#print axioms ProjectedOperational.memory_saturated
+
+#print axioms ProjectedOperational.unrestrictedValue
+
+#print axioms ProjectedOperational.value_eq_unrestricted
+
+#print axioms ProjectedOperational.least_sufficient_budget
+
+#print axioms ProjectedOperational.strict_gain_iff
+
+#print axioms ProjectedOperational.strict_gain_rational_threshold
+
+#print axioms ProjectedOperational.bounded_thresholds_eq_ray
+
+#print axioms Finset.prod_filter_or_eq_of_not
+
+#print axioms Polynomial.sign_eval_map
+
+#print axioms Polynomial.natDegree_C_sub_X
+
+#print axioms Polynomial.exists_eq_C_mul_X_sub_C_of_natDegree_le_one
+
+#print axioms Polynomial.IsRoot.exists_eq_pow_succ_mul
+
+#print axioms Polynomial.rootMultiplicity_add_eq_left_of_dvd
+
+#print axioms Polynomial.eval_mul_pos_of_natDegree_le_one_of_no_roots
+
+#print axioms Polynomial.derivative_root_factors
+
+#print axioms TauCeti.PolynomialRolle
+
+#print axioms TauCeti.PolynomialRolle.of_forall
+
+#print axioms TauCeti.PolynomialRolle.exists_derivative_root
+
+#print axioms TauCeti.PolynomialRolle.exists_eval_sub_eq_derivative_eval_mul
+
+#print axioms TauCeti.PolynomialRolle.monotoneOn
+
+#print axioms TauCeti.PolynomialRolle.antitoneOn
+
+#print axioms TauCeti.PolynomialRolle.strictMonoOn
+
+#print axioms TauCeti.PolynomialRolle.strictAntiOn
+
+#print axioms Polynomial.derivativeSign
+
+#print axioms Polynomial.derivativeSign_def
+
+#print axioms Polynomial.derivativeSign_eq_one_iff
+
+#print axioms Polynomial.derivativeSign_eq_neg_one_iff
+
+#print axioms Polynomial.derivativeSign_eq_zero_iff
+
+#print axioms Polynomial.derivativeSign_ne_zero
+
+#print axioms Polynomial.derivativeSign_zero
+
+#print axioms Polynomial.derivativeSign_index_zero
+
+#print axioms Polynomial.derivativeSign_eq_zero
+
+#print axioms Polynomial.derivativeSign_C
+
+#print axioms Polynomial.derivativeSign_derivative
+
+#print axioms Polynomial.derivativeSign_iterate_derivative
+
+#print axioms Polynomial.thomEncoding
+
+#print axioms Polynomial.thomEncoding_apply
+
+#print axioms Polynomial.thomEncoding_def
+
+#print axioms Polynomial.thomEncoding_eq_iff
+
+#print axioms Polynomial.derivativeSign_const
+
+#print axioms Polynomial.thomEncoding_succ_lt_natDegree
+
+#print axioms Polynomial.exists_derivativeSign_ne
+
+#print axioms Polynomial.exists_thomEncoding_ne
+
+#print axioms Polynomial.derivativeSign_eq_on_Icc
+
+#print axioms Polynomial.ordConnected_preimage_derivativeSign
+
+#print axioms Polynomial.ordConnected_preimage_thomEncoding
+
+#print axioms Polynomial.eq_of_derivativeSign_eq
+
+#print axioms Polynomial.thomEncoding_injOn
+
+#print axioms Polynomial.lt_iff_derivativeSign
+
+#print axioms Polynomial.lt_iff_thomEncoding
+
+#print axioms Polynomial.derivativeSign_succ_ne_zero
+
+#print axioms Polynomial.thomEncoding_succ_ne_zero
+
+#print axioms Polynomial.signRight
+
+#print axioms Polynomial.signLeft
+
+#print axioms Polynomial.signRight_def
+
+#print axioms Polynomial.signLeft_def
+
+#print axioms Polynomial.signRight_zero
+
+#print axioms Polynomial.signLeft_zero
+
+#print axioms Polynomial.signRight_C
+
+#print axioms Polynomial.signLeft_C
+
+#print axioms Polynomial.signRight_eq_sign_eval
+
+#print axioms Polynomial.signLeft_eq_sign_eval
+
+#print axioms Polynomial.signRight_add_eq_left_of_dvd
+
+#print axioms Polynomial.signLeft_add_eq_left_of_dvd
+
+#print axioms Polynomial.signRight_map
+
+#print axioms Polynomial.signLeft_map
+
+#print axioms Polynomial.signRight_eq_sign_eval_divByMonic
+
+#print axioms Polynomial.signRight_eq_zero_iff
+
+#print axioms Polynomial.signLeft_eq_zero_iff
+
+#print axioms Polynomial.eval_ne_zero_of_sign_eq_signRight
+
+#print axioms Polynomial.eval_ne_zero_of_sign_eq_signLeft
+
+#print axioms Polynomial.signLeft_eq_signRight_of_even
+
+#print axioms Polynomial.signLeft_eq_neg_signRight_of_odd
+
+#print axioms Polynomial.signRight_mul
+
+#print axioms Polynomial.signLeft_mul
+
+#print axioms Polynomial.signRight_one
+
+#print axioms Polynomial.signLeft_one
+
+#print axioms Polynomial.signRight_neg
+
+#print axioms Polynomial.signLeft_neg
+
+#print axioms Polynomial.signRight_pow
+
+#print axioms Polynomial.signLeft_pow
+
+#print axioms Polynomial.exists_signLeft_signRight
+
+#print axioms List.exists_signs_right
+
+#print axioms List.exists_signs_left
+
+#print axioms TauCeti.RealClosure.finrank_eq_one_of_odd
+
+#print axioms TauCeti.RealClosure.finrank_ne_two_of_forall_isSquare
+
+#print axioms TauCeti.RealClosure.isPGroup_two_algEquiv
+
+#print axioms TauCeti.RealClosure.finrank_eq_one_of_isPGroup
+
+#print axioms TauCeti.RealClosure.finrank_eq_one_of_isGalois_of_forall_isSquare
+
+#print axioms RingPreordering.adjoin
+
+#print axioms RingPreordering.mem_adjoin
+
+#print axioms RingPreordering.le_adjoin
+
+#print axioms RingPreordering.self_mem_adjoin
+
+#print axioms RingPreordering.adjoin_le
+
+#print axioms RingPreordering.adjoin_le_iff
+
+#print axioms RingPreordering.exists_le_isOrdering
+
+#print axioms RingPreordering.exists_le_isOrdering_mem
+
+#print axioms RingPreordering.toRingCone
+
+#print axioms RingPreordering.mem_toRingCone
+
+#print axioms RingPreordering.linearOrder
+
+#print axioms RingPreordering.isStrictOrderedRing
+
+#print axioms RingPreordering.nonneg_iff
+
+#print axioms RingPreordering.exists_linearOrder
+
+#print axioms RingPreordering.sumSq
+
+#print axioms RingPreordering.mem_sumSq
+
+#print axioms IsSemireal.exists_linearOrder
+
+#print axioms TauCeti.RealClosure.exists_nonneg_sq
+
+#print axioms QuadraticAlgebra.isSquare
+
+#print axioms TauCeti.RealClosure.finrank_eq_one_of_forall_isSquare
+
+#print axioms TauCeti.RealClosure.isAlgClosed_of_forall_isSquare
+
+#print axioms Polynomial.natDegree_le_two_of_irreducible
+
+#print axioms nonneg_of_discrim_le_zero
+
+#print axioms pos_of_nonneg_of_discrim_lt_zero
+
+#print axioms Int.discrim_le_zero_of_nonneg_of_lt_abs
+
+#print axioms Int.discrim_le_zero_of_nonneg_of_not_dvd_of_not_dvd
+
+#print axioms Int.discrim_emod_four
+
+#print axioms discrim_eq_sq_of_two_eq_zero
+
+#print axioms Polynomial.derivative_quadratic
+
+#print axioms Polynomial.sq_derivative_quadratic_sub_mul_eq_C_discrim
+
+#print axioms Polynomial.separable_quadratic_of_isUnit_discrim
+
+#print axioms Polynomial.separable_quadratic_iff_discrim_ne_zero
+
+#print axioms Polynomial.splits_quadratic_iff_exists_root
+
+#print axioms Polynomial.splits_quadratic_iff_isSquare
+
+#print axioms Polynomial.splits_quadratic_iff_exists_artinSchreier_of_two_eq_zero
+
+#print axioms Polynomial.splits_quadratic_of_discrim_eq_zero
+
+#print axioms Polynomial.card_rootSet_quadratic_of_discrim_eq_zero
+
+#print axioms TauCeti.quadratic_pos_iff_of_discrim_neg
+
+#print axioms TauCeti.quadratic_neg_iff_of_discrim_neg
+
+#print axioms TauCeti.irreducible_quadratic_iff_discrim_neg
+
+#print axioms TauCeti.irreducible_quadratic_eval_pos_iff
+
+#print axioms TauCeti.irreducible_quadratic_eval_neg_iff
+
+#print axioms TauCeti.irreducible_quadratic_eval_pos_iff_leadingCoeff_pos
+
+#print axioms TauCeti.irreducible_quadratic_eval_neg_iff_leadingCoeff_neg
+
+#print axioms TauCeti.irreducible_quadratic_eval_mul_pos
+
+#print axioms Polynomial.eval_mul_pos_of_no_roots
+
+#print axioms Polynomial.exists_root_Icc_of_mul_nonpos
+
+#print axioms Polynomial.exists_root_Icc
+
+#print axioms Polynomial.exists_root_Ioo
+
+#print axioms Polynomial.exists_root_Ioo_of_mul_neg
+
+#print axioms Polynomial.intermediate_value_Icc
+
+#print axioms Polynomial.intermediate_value_Icc'
+
+#print axioms Finset.exists_right_gap
+
+#print axioms Finset.exists_left_gap
+
+#print axioms Finset.sum_jumps
+
+#print axioms Polynomial.sign_eval_const
+
+#print axioms Polynomial.signs_at_nonroot
+
+#print axioms Polynomial.signs_at_root
+
+#print axioms Polynomial.sign_eval_sub_sign_eval_eq_sum
+
+#print axioms List.firstSign
+
+#print axioms List.firstSign_nil
+
+#print axioms List.firstSign_zero_cons
+
+#print axioms List.firstSign_cons_of_ne_zero
+
+#print axioms List.signVariations_cons
+
+#print axioms TauCeti.Sturm.signVariationsAt
+
+#print axioms TauCeti.Sturm.signVariationsAt_def
+
+#print axioms TauCeti.Sturm.signVariationsAt_nil
+
+#print axioms TauCeti.Sturm.signVariationsAt_singleton
+
+#print axioms TauCeti.Sturm.signVariationsAt_cons
+
+#print axioms TauCeti.Sturm.signVariationsAt_map_mul
+
+#print axioms TauCeti.Sturm.signVariationsAt_eq_of_alternate
+
+#print axioms TauCeti.Sturm.signVariationsAt_const
+
+#print axioms TauCeti.Sturm.IsAlternating
+
+#print axioms TauCeti.Sturm.IsAlternating.tail
+
+#print axioms TauCeti.Sturm.IsAlternating.signVariationsAt_eq
+
+#print axioms TauCeti.Sturm.IsAlternating.second_eval_ne_zero
+
+#print axioms TauCeti.Sturm.IsAlternating.signVariationsAt_nonroot
+
+#print axioms TauCeti.Sturm.IsAlternating.root_jump
+
+#print axioms Polynomial.getD_getElem?_sturmSeq
+
+#print axioms Polynomial.eq_neg_mod_of_getElem?_sturmSeq
+
+#print axioms Polynomial.natDegree_lt_of_getElem?_sturmSeq
+
+#print axioms Polynomial.natDegree_le_of_mem_sturmSeq
+
+#print axioms TauCeti.Sturm.IsRemainder
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq
+
+#print axioms TauCeti.Sturm.IsRemainder.of_identity
+
+#print axioms TauCeti.Sturm.IsRemainder.exists_identity
+
+#print axioms TauCeti.Sturm.IsRemainder.dvd
+
+#print axioms TauCeti.Sturm.IsRemainder.alternate
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.singleton
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.pair
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.cons
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.tail
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.last_dvd
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.isAlternating
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.sturmSeq
+
+#print axioms TauCeti.Sturm.IsRemainder.cancel
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.cancel
+
+#print axioms TauCeti.Sturm.IsSignedRemainderSeq.exists_isAlternating
+
+#print axioms TauCeti.Sturm.IsAlternating.sum_sign
+
+#print axioms TauCeti.Sturm.IsTarskiSeed
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.of_identity
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.exists_identity
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.mul_derivative
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.mod
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.sign_eq_of_mul
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.eval_eq_zero_of_mul
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.derivative_eval_ne_zero_of_mul
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.sign_mul_eq_of_mul
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.sign_eq
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.eval_eq_zero
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.sturmSeq
+
+#print axioms TauCeti.Sturm.IsTarskiSeed.sum_sign_eq_zero
+
+#print axioms TauCeti.Sturm.sum_sign
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq
+
+#print axioms TauCeti.Sturm.card_roots_toFinset
+
+#print axioms TauCeti.Sturm.signVariationsRight
+
+#print axioms TauCeti.Sturm.signVariationsLeft
+
+#print axioms TauCeti.Sturm.signVariationsRight_def
+
+#print axioms TauCeti.Sturm.signVariationsLeft_def
+
+#print axioms TauCeti.Sturm.signVariationsRight_nil
+
+#print axioms TauCeti.Sturm.signVariationsLeft_nil
+
+#print axioms TauCeti.Sturm.signVariationsRight_singleton
+
+#print axioms TauCeti.Sturm.signVariationsLeft_singleton
+
+#print axioms TauCeti.Sturm.signVariationsAt_eq_right
+
+#print axioms TauCeti.Sturm.signVariationsAt_eq_left
+
+#print axioms TauCeti.Sturm.signVariationsRight_eq_signVariationsAt
+
+#print axioms TauCeti.Sturm.signVariationsLeft_eq_signVariationsAt
+
+#print axioms TauCeti.Sturm.exists_signVariationsRight
+
+#print axioms TauCeti.Sturm.exists_signVariationsLeft
+
+#print axioms TauCeti.Sturm.sum_sign_Ioo
+
+#print axioms TauCeti.Sturm.signVariationsLeft_sub_signVariationsRight
+
+#print axioms TauCeti.Sturm.sum_sign_Ioc
+
+#print axioms TauCeti.Sturm.sum_sign_Ico
+
+#print axioms TauCeti.Sturm.sum_sign_Icc
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Ioo
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Ioc
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Ico
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Icc
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Ioo
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Ioc
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Ico
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Icc
+
+#print axioms Polynomial.exists_sign_atTop
+
+#print axioms Polynomial.exists_sign_atBot
+
+#print axioms List.exists_signs_atTop
+
+#print axioms List.exists_signs_atBot
+
+#print axioms TauCeti.Sturm.signVariationsAtTop
+
+#print axioms TauCeti.Sturm.signVariationsAtTop_def
+
+#print axioms TauCeti.Sturm.signVariationsAtTop_nil
+
+#print axioms TauCeti.Sturm.signVariationsAtTop_singleton
+
+#print axioms TauCeti.Sturm.signVariationsAt_eq_atTop
+
+#print axioms TauCeti.Sturm.signVariationsAtBot
+
+#print axioms TauCeti.Sturm.signVariationsAtBot_def
+
+#print axioms TauCeti.Sturm.signVariationsAtBot_nil
+
+#print axioms TauCeti.Sturm.signVariationsAtBot_singleton
+
+#print axioms TauCeti.Sturm.signVariationsAt_eq_atBot
+
+#print axioms TauCeti.Sturm.exists_signVariationsAtTop
+
+#print axioms TauCeti.Sturm.exists_signVariationsAtBot
+
+#print axioms TauCeti.Sturm.exists_atTop
+
+#print axioms TauCeti.Sturm.exists_atBot
+
+#print axioms TauCeti.Sturm.sum_sign_Ioi
+
+#print axioms TauCeti.Sturm.sum_sign_Iio
+
+#print axioms TauCeti.Sturm.sum_sign_univ
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Ioi
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_Iio
+
+#print axioms TauCeti.Sturm.sum_sign_sturmSeq_univ
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Ioi
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_Iio
+
+#print axioms TauCeti.Sturm.card_roots_toFinset_univ
+
+#print axioms Polynomial.exists_derivative_root_of_isRoot
+
+#print axioms TauCeti.RealClosure.polynomialRolle_of_isRealClosed
+
+#print axioms Polynomial.exists_derivative_root
+
+#print axioms Polynomial.exists_eval_sub_eq_derivative_eval_mul
+
+#print axioms Polynomial.monotoneOn_of_derivative_nonneg
+
+#print axioms Polynomial.antitoneOn_of_derivative_nonpos
+
+#print axioms Polynomial.strictMonoOn_of_derivative_pos
+
+#print axioms Polynomial.strictAntiOn_of_derivative_neg
+
+#print axioms Polynomial.signSamples
+
+#print axioms Polynomial.mem_signSamples
+
+#print axioms Polynomial.signSamples_of_natDegree_eq_zero
+
+#print axioms Polynomial.signSamples_zero
+
+#print axioms Polynomial.signSamples_nonempty
+
+#print axioms Polynomial.exists_mem_signSamples
+
+#print axioms Function.occCount
+
+#print axioms Function.occCount_def
+
+#print axioms Function.occCount_eq_card_filter
+
+#print axioms Function.occCount_eq_sum
+
+#print axioms Function.occCount_le_of_comp
+
+#print axioms Function.occCount_lt_of_comp
+
+#print axioms Function.occCount_pos
+
+#print axioms Function.occCount_eq_card_preimage
+
+#print axioms Function.occCount_of_notMem_range
+
+#print axioms Function.occCount_of_injective
+
+#print axioms Function.occCount_apply_of_injective
+
+#print axioms Function.prod_occCount_pow
+
+#print axioms Function.sum_occCount_eq_card
+
+#print axioms Function.occCount_castSucc
+
+#print axioms Function.occCount_succ
+
+#print axioms Function.exists_perm_of_occCount_eq
+
+#print axioms Function.mulVec_occCount
+
+#print axioms Function.eq_occCount
+
+#print axioms SignType.lagrangeCoeff
+
+#print axioms SignType.lagrangeCoeff_zero
+
+#print axioms SignType.lagrangeCoeff_neg_one
+
+#print axioms SignType.lagrangeCoeff_one
+
+#print axioms SignType.sum_lagrangeCoeff_mul_pow
+
+#print axioms TauCeti.SignDetermination.fullMatrix
+
+#print axioms TauCeti.SignDetermination.fullMatrix_def
+
+#print axioms TauCeti.SignDetermination.fullInverse
+
+#print axioms TauCeti.SignDetermination.fullMatrix_apply
+
+#print axioms TauCeti.SignDetermination.fullInverse_apply
+
+#print axioms TauCeti.SignDetermination.fullInverse_mul_fullMatrix
+
+#print axioms TauCeti.SignDetermination.fullMatrix_mul_fullInverse
+
+#print axioms TauCeti.SignDetermination.fullMatrix_mulVec_occCount
+
+#print axioms TauCeti.SignDetermination.fullInverse_mulVec
+
+#print axioms Finset.signCount
+
+#print axioms Finset.signCount_eq_occCount
+
+#print axioms Finset.signCount_eq_card_filter
+
+#print axioms Finset.signCount_empty
+
+#print axioms Finset.sum_signCount
+
+#print axioms Finset.signCount_pos
+
+#print axioms Finset.signSum
+
+#print axioms Finset.signSum_eq_sum_subtype
+
+#print axioms Finset.signSum_eq_sum
+
+#print axioms Finset.signSum_empty
+
+#print axioms Finset.signSum_zero
+
+#print axioms Finset.signSum_one
+
+#print axioms Finset.signSum_eq_card_sub_card
+
+#print axioms Polynomial.tarskiQuery
+
+#print axioms Polynomial.tarskiQuery_eq_signSum
+
+#print axioms Polynomial.tarskiQuery_eq_sum
+
+#print axioms Polynomial.tarskiQuery_eq_card_sub_card
+
+#print axioms Polynomial.tarskiQuery_zero_left
+
+#print axioms Polynomial.tarskiQuery_zero_right
+
+#print axioms Polynomial.tarskiQuery_one_right
+
+#print axioms Polynomial.signCount_roots_eq_natCard
+
+#print axioms Polynomial.tarskiQuery_eq_sub
+
+#print axioms Polynomial.signCount_roots_pos
+
+#print axioms Finset.signSum_prod_pow
+
+#print axioms Finset.mulVec_signCount
+
+#print axioms Finset.eq_signCount
+
+#print axioms Finset.signCount_solution_pos_iff
+
+#print axioms Finset.fullInverse_mulVec_signSum
+
+#print axioms Finset.signSum_eq_sum_signCount
+
+#print axioms TauCeti.SignDetermination.sampleProduct
+
+#print axioms TauCeti.SignDetermination.sampleProduct_def
+
+#print axioms TauCeti.SignDetermination.dvd_sampleProduct
+
+#print axioms TauCeti.SignDetermination.sampleProduct_ne_zero
+
+#print axioms TauCeti.SignDetermination.sampleProduct_zero
+
+#print axioms TauCeti.SignDetermination.sampleProduct_of_isEmpty
+
+#print axioms TauCeti.SignDetermination.exists_mem_signSamples_sign_eq
+
+#print axioms TauCeti.SignDetermination.signCount_signSamples_pos_iff
+
+#print axioms TauCeti.SignDetermination.fullInverse_mulVec_signSum_pos_iff
+
+#print axioms Polynomial.tarskiQuery_eq_sum_signCount
+
+#print axioms Polynomial.fullInverse_mulVec_tarskiQuery

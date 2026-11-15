@@ -1,0 +1,325 @@
+{
+  "project": "TauCeti",
+  "source_repository": "https://github.com/TauCetiProject/TauCeti",
+  "revision": "1c497c347f615b3087cb605f8cf743e591376105",
+  "license": "Apache-2.0",
+  "license_file": "third_party/TauCeti/LICENSE",
+  "upstream_lean": "4.35.0-rc3",
+  "upstream_mathlib": "6b7abb3c7686292736be2955bd3eb9ebf63b456a",
+  "validated_lean": "4.35.0",
+  "validated_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "validated_files": {
+    "TauCeti.Algebra.BigOperators.Finset.Filter": {
+      "sha256": "d19f43c1c97362863915309334e138d5c8ff642d02fbda57fcc01828a5e4f589",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/BigOperators/Finset/Filter.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Eval.Sign": {
+      "sha256": "d47509341d6273e3b729269bf8ced19900c545224b824c5a617bb147431c3ac9",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Eval/Sign.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.LinearFactor": {
+      "sha256": "d97ba98c0815e1e12a7b42a3d97e04dd3ede70d0bcdfbe8243256187c6181813",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/LinearFactor.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Rolle": {
+      "sha256": "f5429276e8c8f1915e776e98bb7f7286ac6a76075bc215062ac7d5acdafc0c2c",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Rolle.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Thom": {
+      "sha256": "1b6e35baa1e3b9ecb84ec820eb5969b12ca5e586b02e86d485085039da17a05a",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Thom.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Eval.OneSided": {
+      "sha256": "f0ac03735e51eae71cc7dc6bf076d6bbbad9a822970d5696e654aa22da313d0a",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Eval/OneSided.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.FiniteExtension": {
+      "sha256": "91328e13bc8c827d40a882995df1745f1dada2e5c481b46322814b44241727fc",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/FiniteExtension.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.Galois": {
+      "sha256": "9155290db2275f26ea037c906aa6aa79689e98c5f3cc80e4dd9bbfcf7a983252",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/Galois.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Order.Ring.Ordering.Extension": {
+      "sha256": "33af5f4c60561813d58da5c3a1022c521fc087132c65f59645e80466c05e2fbb",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Order/Ring/Ordering/Extension.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Order.Ring.Ordering.Semireal": {
+      "sha256": "246e2429b642d13398f7221fee4746e80c769d658c1f413f4da94737a3b175b6",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Order/Ring/Ordering/Semireal.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.Complexification": {
+      "sha256": "287a9c4b85f4ad1ada2f9df6bbc01aee2cd251041452810695e74b3d4b9023a5",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/Complexification.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.AlgebraicClosed": {
+      "sha256": "5fd58de7991cb9146ddd8f6ba06c12cd4917b0b0235efb291b45af9e0056d86e",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/AlgebraicClosed.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.QuadraticDiscriminant": {
+      "sha256": "ad428db270b680aeb1888347539ad6b4cebd75378149466657ed4337d50ec8a7",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/QuadraticDiscriminant.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.QuadraticDiscriminant": {
+      "sha256": "8df515b76023afffe4613d9d507021ba01877bbbeafc96cb0e4812672a8c0cc5",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/QuadraticDiscriminant.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.RealClosed.Quadratic": {
+      "sha256": "3ac02f04eb69d36ca4d8918e66f8cc3231d184641f5f80daa37937b2ab985406",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/RealClosed/Quadratic.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.IVT": {
+      "sha256": "3af6467e4ec7f0992c061d1c8b4e2c48a678998abc40742e649dfbb04d233ffe",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/IVT.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Data.Finset.Jumps": {
+      "sha256": "b29db2e143aab6b8dd39098857607fe325e7067421384f9408b607e5a15b7563",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Data/Finset/Jumps.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.RealClosed.Sign": {
+      "sha256": "38e0f8069561cddbb6a6a40a53a8da4ab1f656965713ff82d41ab71e7645fc70",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/RealClosed/Sign.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Data.List.SignVariations": {
+      "sha256": "78e6af7bb45a508b7e802023102594f4af2696de1e9afede7876a0d551209a28",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Data/List/SignVariations.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Signs": {
+      "sha256": "90496d9d816c05375aa8b7e1c7d78a6af536d657e0ed6b996e65f21c399f653e",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Signs.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Local": {
+      "sha256": "b1a107a1c23cb4374664517b25007e004e11b465a1e611a919c232bc9d8229f6",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Local.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Sequence": {
+      "sha256": "96c25c7e0f6c84487fb618dc7757d5d763b0c047f3753631f3819102cb60439d",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Sequence.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.SignedRemainders": {
+      "sha256": "18a926197a6375ee9c7c549e467b87c01cbd080bf528a80742885da67746c45b",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/SignedRemainders.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Sum": {
+      "sha256": "98c6192af473109f89fa119ef7d42e63d43f3896d99067e5eb1bcabc3fb3622e",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Sum.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Tarski": {
+      "sha256": "4ed5e16c7989680c8a6d0973df5198fe230e67c70ac3e8d083306bb9c0cfc69f",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Tarski.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.OneSided": {
+      "sha256": "356a1b71d897623aa6fd05efd67b047b144c4ce8d8b9519c740d6bb091cc80c9",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/OneSided.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Eval.Infinity": {
+      "sha256": "58556d3330c64f2d40ee95db4afbe693a262077e228035a4c090b79de617af4a",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Eval/Infinity.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.Sturm.Infinity": {
+      "sha256": "fb8f5e889227c2c08a7f2e83bec819098b43fe8fcef694bb471d24e4aacd5484",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/Sturm/Infinity.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.FieldTheory.RealClosure.AbstractRolle": {
+      "sha256": "dacf5d17883a4ead951b98d98518397189fe6bc2c64b75327454132f91ad6667",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/RealClosure/AbstractRolle.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Algebra.Polynomial.RealClosed.Sampling": {
+      "sha256": "a1b40d52f6445b8a9918edb06e362e99243da654be008afa87fbdcea4a042b62",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Algebra/Polynomial/RealClosed/Sampling.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Data.Fintype.Fiber": {
+      "sha256": "382fb8a641e8fefbcec424100383e80666850676dcc463fa08661f73b21f30d4",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Data/Fintype/Fiber.lean",
+      "authors": "The Tau Ceti contributors",
+      "copyright": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Data.Matrix.OccCount": {
+      "sha256": "8322374a8382e89f677e4cf7e9dfb8a44879c336e446b4480e0d3ece69f9e0d0",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Data/Matrix/OccCount.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Data.SignType.Lagrange": {
+      "sha256": "8c690e2d22194a8d3cd924e921c0180499c8ffeedddd2d2124ad6fc5412a65e4",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Data/SignType/Lagrange.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments": {
+      "sha256": "543a9c445007712a848a85df629d17279e65d89e867ec062cf39c085abd4e187",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Geometry/RealAlgebraic/SignDetermination/Moments.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs": {
+      "sha256": "248b4916e68979ce1dd533b44a80c9e8d3cd80e236dd003cb1b535dc0b6fe5a8",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Geometry/RealAlgebraic/SignDetermination/Defs.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial": {
+      "sha256": "754b73ba6b2fb6103f654016a056f2377df94b9b9ae0f0b7d0a15bcefdb556ab",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Geometry/RealAlgebraic/SignDetermination/Polynomial.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine": {
+      "sha256": "00255a530c5bf26f5e920d949774f7b40d1429ac623c7fe39f705bee9d98d607",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Geometry/RealAlgebraic/SignDetermination/WholeLine.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    },
+    "TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots": {
+      "sha256": "b6438f41f922deaf6bd12f49b931d7abf2c86cd5e0ae6afad99d1523f32d1988",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/Geometry/RealAlgebraic/SignDetermination/Roots.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
+    }
+  },
+  "scope": "Generic ordered real closed field Sturm\u2013Tarski and finite BKR moment inversion/whole-line sign realizability. No quantifier elimination imported. Source unchanged. Compilation only so far; not yet accepted as repository source.",
+  "audit_notes": [
+    "The QuantifierElimination file at this revision assumes projection closure and cannot supply it.",
+    "Current main b0afcaa7ea7c9debf20bad5dcaf790bcff851afb has unconditional real projection via CAD.Existence, but its QE allows new arbitrary real parameters and is existential, not executable rational-coefficient elimination. Its toolchain is4.36.0-rc2.",
+    "Our intended use is theorem reuse for positive pseudo-remainder chains and BKR inversion; executable symbolic operations and finite parameter sign branching remain new work."
+  ],
+  "source_root": "lean/TauCeti",
+  "local_modifications": []
+}

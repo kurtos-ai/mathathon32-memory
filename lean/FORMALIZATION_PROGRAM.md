@@ -306,3 +306,13 @@ Arbitrary-degree univariate existential/universal Boolean decision is executable
 and proved correct. The final coverage audit continues for general nonlinear QE,
 algebraic coefficient rationalization, endpoint/minimax output composition,
 fixed-dimension realization, and quadratic/projected operational wrappers.
+
+## Fixed dimensions, finite models, and verified external foundations
+
+Accepted batch: five project modules (40 declarations), 38 unchanged TauCeti
+modules (337 audited public declarations), 9,227 build jobs and 1,808 audits.
+Fixed-dimension smooth uniqueness, exact quadratic loss-set equality, and
+projected operational minimax/ray composition now cover the identified
+noncomputational benchmark gaps. TauCeti attribution, pin, license and hashes
+are retained under third_party/TauCeti; this is pre-existing work.
+General effective QE and exact minimax-output composition continue.

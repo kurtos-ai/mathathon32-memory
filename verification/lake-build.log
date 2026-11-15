@@ -25,16 +25,16 @@ info: batteries: remote URL changed
 info: Cli: remote URL changed
   old: git@github.com:leanprover/lean4-cli
   new: https://github.com/leanprover/lean4-cli
-⚠ [1897/2191] Replayed MemoryRank.Defs
+⚠ [1897/2152] Replayed MemoryRank.Defs
 warning: lean/MemoryRank/Defs.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
-⚠ [3138/3381] Replayed MemoryRank.CutRank
+⚠ [3138/3324] Replayed MemoryRank.CutRank
 warning: lean/MemoryRank/CutRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
 info: lean/MemoryRank/CutRank.lean:52:0: 'MemoryRank.CutRank.memRank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [3139/3381] Replayed MemoryRank.IncrementalRank
+⚠ [3139/3324] Replayed MemoryRank.IncrementalRank
 warning: lean/MemoryRank/IncrementalRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -42,7 +42,7 @@ info: lean/MemoryRank/IncrementalRank.lean:63:0: 'MemoryRank.Incremental.S_k_ran
 info: lean/MemoryRank/IncrementalRank.lean:64:0: 'MemoryRank.Incremental.Q_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/MemoryRank/IncrementalRank.lean:65:0: 'MemoryRank.Incremental.zero_mem_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/MemoryRank/IncrementalRank.lean:66:0: 'MemoryRank.Incremental.S_k_rank_le_min' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9049/9183] Replayed Decision.Thresholds
+⚠ [9048/9204] Replayed Decision.Thresholds
 warning: lean/Decision/Thresholds.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -64,7 +64,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hS_bdd
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9050/9183] Replayed Benchmarks.Quadratic
+⚠ [9049/9204] Replayed Benchmarks.Quadratic
 warning: lean/Benchmarks/Quadratic.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -75,7 +75,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [eval_prod]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9051/9183] Replayed Benchmarks.Smooth
+⚠ [9050/9204] Replayed Benchmarks.Smooth
 warning: lean/Benchmarks/Smooth.lean:11:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -105,7 +105,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hN
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9053/9183] Replayed Continuation.Support.ProjectedCore
+⚠ [9052/9204] Replayed Continuation.Support.ProjectedCore
 warning: lean/Continuation/Support/ProjectedCore.lean:23:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.proj_iff_variational'`:
   [FiniteDimensional ℝ E]
   [CompleteSpace E]
@@ -145,14 +145,14 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [FiniteDimensional ℝ E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9055/9183] Replayed Continuation.Projected.Recurrence
+⚠ [9054/9204] Replayed Continuation.Projected.Recurrence
 warning: lean/Continuation/Projected/Recurrence.lean:11:0: automatically included section variable(s) unused in theorem `Continuation.Projected.projStateAux_succ`:
   [FiniteDimensional ℝ E]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
   omit [FiniteDimensional ℝ E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9057/9183] Replayed Continuation.Quadratic.Foundations
+⚠ [9056/9204] Replayed Continuation.Quadratic.Foundations
 warning: lean/Continuation/Quadratic/Foundations.lean:60:28: This simp argument is unused:
   natDegree_C
 
@@ -180,7 +180,7 @@ warning: lean/Continuation/Quadratic/Foundations.lean:192:21: `if_neg` has been 
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [9058/9183] Replayed Continuation.Semialgebraic.Endpoints
+⚠ [9057/9204] Replayed Continuation.Semialgebraic.Endpoints
 warning: lean/Continuation/Semialgebraic/Endpoints.lean:265:54: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
 
 Hint: Replace the deprecated name:
@@ -233,7 +233,7 @@ warning: lean/Continuation/Semialgebraic/Endpoints.lean:432:37: `Set.mem_setOf_e
 
 Hint: Replace the deprecated name:
   S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
-⚠ [9059/9183] Replayed Continuation.SmoothDualCore
+⚠ [9058/9204] Replayed Continuation.SmoothDualCore
 warning: lean/Continuation/SmoothDualCore.lean:33:0: automatically included section variable(s) unused in theorem `SmoothDual.Hi_eq`:
   [NeZero n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -246,7 +246,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [NeZero n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9061/9183] Replayed Continuation.RootIsolation.Cover
+⚠ [9060/9204] Replayed Continuation.RootIsolation.Cover
 warning: lean/Continuation/RootIsolation/Cover.lean:11:25: This simp argument is unused:
   ← List.map_eq_flatMap
 
@@ -281,7 +281,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hp
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9062/9183] Replayed Continuation.Smooth.Necessary
+⚠ [9061/9204] Replayed Continuation.Smooth.Necessary
 warning: lean/Continuation/Smooth/Necessary.lean:23:0: automatically included section variable(s) unused in theorem `SmoothNecessary.convex_line`:
   [CompleteSpace V]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -301,7 +301,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [v, norm_smul, mul_pow, Real.norm_eq_abs]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9065/9183] Replayed Continuation.Smooth.ConjugateRegularity
+⚠ [9064/9204] Replayed Continuation.Smooth.ConjugateRegularity
 warning: lean/Continuation/Smooth/ConjugateRegularity.lean:17:0: automatically included section variable(s) unused in theorem `ConjugateRegularity.strong_support`:
   [CompleteSpace V]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -320,7 +320,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [CompleteSpace V] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9066/9183] Replayed Continuation.Smooth.Sufficient
+⚠ [9065/9204] Replayed Continuation.Smooth.Sufficient
 warning: lean/Continuation/Smooth/Sufficient.lean:16:0: automatically included section variable(s) unused in theorem `SmoothDual.Hi_continuous`:
   [NeZero n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -335,7 +335,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9067/9183] Replayed Continuation.RootIsolation.SimpleRoots
+⚠ [9066/9204] Replayed Continuation.RootIsolation.SimpleRoots
 warning: lean/Continuation/RootIsolation/SimpleRoots.lean:63:49: Variable name `hd` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -360,7 +360,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hε
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9069/9183] Replayed Continuation.RootIsolation.CertifiedSeparation
+⚠ [9068/9204] Replayed Continuation.RootIsolation.CertifiedSeparation
 warning: lean/Continuation/RootIsolation/CertifiedSeparation.lean:9:19: Variable name `hx` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -403,7 +403,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _h_a_le_x
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9071/9183] Replayed Continuation.GJP.Simplex
+⚠ [9070/9204] Replayed Continuation.GJP.Simplex
 warning: lean/Continuation/GJP/Simplex.lean:85:14: This simp argument is unused:
   h1
 
@@ -478,7 +478,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _ha
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9074/9183] Replayed Continuation.Smooth.ConstrainedConjugateRegularity
+⚠ [9073/9204] Replayed Continuation.Smooth.ConstrainedConjugateRegularity
 warning: lean/Continuation/Smooth/ConstrainedConjugateRegularity.lean:12:0: automatically included section variable(s) unused in theorem `ConstrainedConjugate.strong_support`:
   [CompleteSpace V]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -497,7 +497,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [CompleteSpace V] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9075/9183] Replayed Continuation.GJP.Elimination
+⚠ [9074/9204] Replayed Continuation.GJP.Elimination
 warning: lean/Continuation/GJP/Elimination.lean:31:2: Try this: 
   letI̵
 
@@ -582,7 +582,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9076/9183] Replayed Continuation.GJP.Completion
+⚠ [9075/9204] Replayed Continuation.GJP.Completion
 warning: lean/Continuation/GJP/Completion.lean:14:0: automatically included section variable(s) unused in theorem `GJP.triangularCompletion_lower`:
   [Fintype n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -664,7 +664,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9077/9183] Replayed Continuation.GJP.TriangularOrder
+⚠ [9076/9204] Replayed Continuation.GJP.TriangularOrder
 warning: lean/Continuation/GJP/TriangularOrder.lean:74:2: Try this: 
   letI̵
 
@@ -673,7 +673,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9081/9183] Replayed Continuation.GJP.ScalarProjection
+⚠ [9080/9204] Replayed Continuation.GJP.ScalarProjection
 warning: lean/Continuation/GJP/ScalarProjection.lean:32:59: Variable name `hb` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -692,7 +692,7 @@ Note: This linter can be disabled with `set_option linter.unusedTactic false`
 warning: lean/Continuation/GJP/ScalarProjection.lean:108:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [9084/9183] Replayed Continuation.GJP.OptimalFactors
+⚠ [9083/9204] Replayed Continuation.GJP.OptimalFactors
 warning: lean/Continuation/GJP/OptimalFactors.lean:79:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
 
 Hint: Replace the deprecated name:
@@ -701,7 +701,7 @@ warning: lean/Continuation/GJP/OptimalFactors.lean:80:10: `if_neg` has been depr
 
 Hint: Replace the deprecated name:
   i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [9085/9183] Replayed Continuation.GJP.SimplexStability
+⚠ [9084/9204] Replayed Continuation.GJP.SimplexStability
 warning: lean/Continuation/GJP/SimplexStability.lean:15:8: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
 
 Hint: Replace the deprecated name:
@@ -710,7 +710,7 @@ warning: lean/Continuation/GJP/SimplexStability.lean:72:8: `tendsto_finset_sum` 
 
 Hint: Replace the deprecated name:
   tendsto_finset_̵s̵S̲um
-⚠ [9088/9183] Replayed Continuation.GJP.ClosedFeasibility
+⚠ [9087/9204] Replayed Continuation.GJP.ClosedFeasibility
 warning: lean/Continuation/GJP/ClosedFeasibility.lean:11:0: automatically included section variable(s) unused in theorem `GJP.isClosed_posSemidef`:
   [DecidableEq n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -730,7 +730,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [LinearOrder n] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9089/9183] Replayed Continuation.GJP.FactorStability
+⚠ [9088/9204] Replayed Continuation.GJP.FactorStability
 warning: lean/Continuation/GJP/FactorStability.lean:31:2: Try this: 
   letI̵
 
@@ -739,7 +739,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9092/9183] Replayed Continuation.GJP.FactorizationAdmissible
+⚠ [9091/9204] Replayed Continuation.GJP.FactorizationAdmissible
 warning: lean/Continuation/GJP/FactorizationAdmissible.lean:11:2: Try this: 
   letI̵
 
@@ -748,7 +748,7 @@ The difference between `let` and `letI` is that `letI` inlines the value.
 But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9094/9183] Replayed Continuation.GJP.FactorizationNonsingular
+⚠ [9093/9204] Replayed Continuation.GJP.FactorizationNonsingular
 warning: lean/Continuation/GJP/FactorizationNonsingular.lean:26:2: Try this: 
   letI̵
 
@@ -787,9 +787,135 @@ Hint: Omit it from the simp argument list.
   [apply] simp [ne_of_gt hij]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-ℹ [9100/9183] Replayed MemoryRank.ZeroLocus
+⚠ [9100/9204] Replayed Continuation.GJP.FactorizationNormalization
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:14:24: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:94:35: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizeZeroRows, hi, hji, hj0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:99:35: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [normalizeZeroRows, hi, hi0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:130:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:137:4: This simp argument is unused:
+  Matrix.transpose_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mulVec_mulVec, ← Matrix.transpose_mul, Matrix.mul_inv_of_invertible, Matrix.one_mul,
+    Matrix.mul_one, Matrix.mul_assoc] at ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/FactorizationNormalization.lean:137:25: This simp argument is unused:
+  Matrix.one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mulVec_mulVec, ← Matrix.transpose_mul, Matrix.mul_inv_of_invertible, Matrix.transpose_one,
+    Matrix.mul_one, Matrix.mul_assoc] at ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [9104/9209] Built TauCeti.Algebra.Polynomial.Eval.Sign (3.9s)
+⚠ [9105/9209] Replayed Continuation.GJP.DualCone
+warning: lean/Continuation/GJP/DualCone.lean:33:93: This simp argument is unused:
+  Finset.sum_add_distrib
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
+    Matrix.add_apply, Matrix.transpose_apply, smul_eq_mul, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/DualCone.lean:33:117: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:34:25: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:33:117: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/Continuation/GJP/DualCone.lean:34:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/Continuation/GJP/DualCone.lean:41:41: This simp argument is unused:
+  Matrix.transpose_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
+    Matrix.add_apply, Matrix.mul_add, Finset.sum_add_distrib, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/DualCone.lean:51:41: This simp argument is unused:
+  Matrix.transpose_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
+    Matrix.add_apply, Matrix.mul_smul, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/DualCone.lean:51:64: This simp argument is unused:
+  Matrix.mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
+    Matrix.add_apply, Matrix.transpose_apply, smul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/GJP/DualCone.lean:61:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:65:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:65:42: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:65:42: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:61:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/Continuation/GJP/DualCone.lean:82:60: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/GJP/DualCone.lean:82:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/Continuation/GJP/DualCone.lean:97:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
+warning: lean/Continuation/GJP/DualCone.lean:101:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
+warning: lean/Continuation/GJP/DualCone.lean:105:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
+✔ [9106/9209] Built TauCeti.Algebra.BigOperators.Finset.Filter (3.0s)
+ℹ [9107/9212] Replayed MemoryRank.ZeroLocus
 info: lean/MemoryRank/ZeroLocus.lean:42:0: 'MemoryRank.Incremental.Q_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9102/9183] Replayed Decision.ExactThresholds
+ℹ [9108/9212] Replayed Decision.ExactThresholds
 info: lean/Decision/ExactThresholds.lean:159:0: 'MemoryDecision.risk_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:160:0: 'MemoryDecision.risk_lt_iff_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:161:0: 'MemoryDecision.threshold_iff_value_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -801,10 +927,67 @@ info: lean/Decision/ExactThresholds.lean:166:0: 'MemoryDecision.value_nonneg' de
 info: lean/Decision/ExactThresholds.lean:167:0: 'MemoryDecision.value_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:168:0: 'MemoryDecision.gain_has_rational_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:169:0: 'MemoryDecision.strict_separation_of_unique_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9104/9183] Replayed RealizationCore.BlockRank
+ℹ [9109/9212] Replayed RealizationCore.BlockRank
 info: lean/RealizationCore/BlockRank.lean:102:0: 'MemoryBlock.blockOne_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/BlockRank.lean:103:0: 'MemoryBlock.upperBlock_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9105/9183] Replayed RealizationCore.RankIdentity
+⚠ [9114/9212] Replayed Continuation.Smooth.Attain.Coeff
+warning: lean/Continuation/Smooth/Attain/Coeff.lean:89:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9115/9212] Replayed Continuation.Smooth.Energy
+warning: lean/Continuation/Smooth/Energy.lean:142:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/Continuation/Smooth/Energy.lean:142:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9116/9212] Replayed Continuation.Smooth.DroriHardData
+warning: lean/Continuation/Smooth/DroriHardData.lean:58:22: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/DroriHardData.lean:64:5: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/DroriHardData.lean:105:39: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/DroriHardData.lean:139:45: Variable name `hR` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hR
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/DroriHardData.lean:289:52: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/DroriHardData.lean:289:65: Variable name `hR` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hR
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9117/9212] Replayed Continuation.Smooth.DroriTail
+warning: lean/Continuation/Smooth/DroriTail.lean:126:28: This simp argument is unused:
+  hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [candidate, he, hl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9120/9214] Replayed RealizationCore.RankIdentity
 warning: lean/RealizationCore/RankIdentity.lean:56:154: This simp argument is unused:
   hi
 
@@ -813,7 +996,106 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: lean/RealizationCore/RankIdentity.lean:102:0: 'RealizationCore.rank_H_eq_one_add_rank_S' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9106/9183] Replayed RealizationCore.RegisterMachine
+⚠ [9125/9214] Replayed Continuation.Smooth.Attain.Coercivity
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:98:22: This simp argument is unused:
+  Polynomial.natDegree_C
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hCdX]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:104:26: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:169:65: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:205:52: Variable name `hS` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hS
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:275:5: Variable name `hdet` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdet
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:362:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: lean/Continuation/Smooth/Attain/Coercivity.lean:374:8: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9127/9214] Replayed Continuation.Smooth.DroriCoordinates
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:16:45: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [PiLp.smul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:18:45: This simp argument is unused:
+  PiLp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [PiLp.smul_apply, Ne.symm hbj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:26:22: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:105:36: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:107:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:114:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:142:38: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: lean/Continuation/Smooth/DroriCoordinates.lean:142:66: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+⚠ [9128/9214] Replayed Continuation.Smooth.DroriRadius
+warning: lean/Continuation/Smooth/DroriRadius.lean:97:12: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: lean/Continuation/Smooth/DroriRadius.lean:97:8: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/Smooth/DroriRadius.lean:97:12: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9132/9214] Built TauCeti.Algebra.Polynomial.Rolle (4.2s)
+✔ [9133/9214] Built TauCeti.Data.Finset.Jumps (3.6s)
+⚠ [9134/9214] Replayed RealizationCore.RegisterMachine
 warning: lean/RealizationCore/RegisterMachine.lean:228:6: This simp argument is unused:
   Nat.not_lt.mpr (Nat.le_add_right k t)
 
@@ -851,7 +1133,35 @@ info: lean/RealizationCore/RegisterMachine.lean:371:0: 'RegisterMachine.necessit
 info: lean/RealizationCore/RegisterMachine.lean:395:0: 'RegisterMachine.Hk_eq_phi_mul_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RegisterMachine.lean:396:0: 'RegisterMachine.increment_rank_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RegisterMachine.lean:397:0: 'RegisterMachine.maxCutRank_le_registers' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9107/9183] Replayed RealizationCore.CompatibleChain
+⚠ [9135/9214] Replayed Continuation.Quadratic.Lower.Alternation
+warning: lean/Continuation/Quadratic/Lower/Alternation.lean:62:56: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Quadratic/Lower/Alternation.lean:110:60: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9137/9214] Replayed Continuation.Smooth.Attain.Attainment
+warning: lean/Continuation/Smooth/Attain/Attainment.lean:62:77: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/Attain/Attainment.lean:78:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [9139/9214] Built TauCeti.Algebra.Order.Ring.Ordering.Extension (4.5s)
+⚠ [9140/9220] Replayed RealizationCore.CompatibleChain
 warning: lean/RealizationCore/CompatibleChain.lean:41:12: Variable name `x0` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -903,7 +1213,7 @@ Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: lean/RealizationCore/CompatibleChain.lean:140:0: 'RegisterMachine.chainF_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CompatibleChain.lean:141:0: 'RegisterMachine.chain_state' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CompatibleChain.lean:142:0: 'RegisterMachine.chain_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9108/9183] Replayed RealizationCore.CanonicalCore
+⚠ [9141/9220] Replayed RealizationCore.CanonicalCore
 warning: lean/RealizationCore/CanonicalCore.lean:49:55: This simp argument is unused:
   dite_false
 
@@ -980,7 +1290,7 @@ info: lean/RealizationCore/CanonicalCore.lean:126:0: 'RegisterMachine.cv_succ' d
 info: lean/RealizationCore/CanonicalCore.lean:127:0: 'RegisterMachine.cdrop_range' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalCore.lean:128:0: 'RegisterMachine.ch_range' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalCore.lean:129:0: 'RegisterMachine.cv_obs' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9109/9183] Replayed RealizationCore.CoordinateEmbedding
+⚠ [9142/9220] Replayed RealizationCore.CoordinateEmbedding
 warning: lean/RealizationCore/CoordinateEmbedding.lean:41:24: This simp argument is unused:
   i.isLt
 
@@ -988,7 +1298,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [coordJ, coordL]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9110/9183] Replayed RealizationCore.CanonicalChain
+⚠ [9143/9220] Replayed RealizationCore.CanonicalChain
 warning: lean/RealizationCore/CanonicalChain.lean:57:21: This simp argument is unused:
   Matrix.one_apply
 
@@ -1001,87 +1311,16 @@ info: lean/RealizationCore/CanonicalChain.lean:118:0: 'RegisterMachine.canonical
 info: lean/RealizationCore/CanonicalChain.lean:119:0: 'RegisterMachine.canonical_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalChain.lean:120:0: 'RegisterMachine.realization_of_cH_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalChain.lean:121:0: 'RegisterMachine.cH_rank_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9117/9183] Replayed Continuation.Quadratic.Lower.Alternation
-warning: lean/Continuation/Quadratic/Lower/Alternation.lean:62:56: Variable name `hj` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hj
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Quadratic/Lower/Alternation.lean:110:60: Variable name `hj` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hj
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9119/9183] Replayed Continuation.Smooth.Attain.Coeff
-warning: lean/Continuation/Smooth/Attain/Coeff.lean:89:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-⚠ [9123/9183] Replayed Continuation.Smooth.Attain.Coercivity
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:98:22: This simp argument is unused:
-  Polynomial.natDegree_C
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [hCdX]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:104:26: Variable name `hL` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hL
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:169:65: Variable name `hC` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hC
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:205:52: Variable name `hS` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hS
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:275:5: Variable name `hdet` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hdet
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:362:6: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: lean/Continuation/Smooth/Attain/Coercivity.lean:374:8: Try this: 
-  letI̵
-
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
-
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-⚠ [9124/9183] Replayed Continuation.Smooth.Attain.Attainment
-warning: lean/Continuation/Smooth/Attain/Attainment.lean:62:77: Variable name `hC` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hC
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/Attain/Attainment.lean:78:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
-If you'd rather continue using `push_neg` in your project, you can implement it as follows:
-```
-open Lean.Parser.Tactic in
-macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
-  `(tactic| push $cfg:optConfig Not $[$loc]?)
-```
-⚠ [9126/9183] Replayed Continuation.Projected.LowerBound
+ℹ [9144/9220] Replayed RealizationCore.CutPadding
+info: lean/RealizationCore/CutPadding.lean:84:0: 'RegisterMachine.cPad_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/CutPadding.lean:85:0: 'RegisterMachine.cH_eq_cPad_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/CutPadding.lean:86:0: 'RegisterMachine.cPad_range_Hk' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/CutPadding.lean:87:0: 'RegisterMachine.cH_rank_eq_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9145/9220] Replayed RealizationCore.RealizationTheorem
+info: lean/RealizationCore/RealizationTheorem.lean:54:0: 'RegisterMachine.realization_of_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RealizationTheorem.lean:55:0: 'RegisterMachine.realization_iff_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RealizationTheorem.lean:56:0: 'RegisterMachine.realization_iff_rank_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9147/9220] Replayed Continuation.Projected.LowerBound
 warning: lean/Continuation/Projected/LowerBound.lean:20:0: automatically included section variable(s) unused in theorem `Continuation.Projected.projection_correction_orthogonal`:
   [FiniteDimensional ℝ E]
   [CompleteSpace E]
@@ -1102,203 +1341,9 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hn
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9127/9183] Replayed Continuation.Smooth.Energy
-warning: lean/Continuation/Smooth/Energy.lean:142:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: lean/Continuation/Smooth/Energy.lean:142:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9128/9183] Replayed Continuation.Smooth.DroriHardData
-warning: lean/Continuation/Smooth/DroriHardData.lean:58:22: Variable name `h` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/DroriHardData.lean:64:5: Variable name `h` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/DroriHardData.lean:105:39: Variable name `hN` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hN
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/DroriHardData.lean:139:45: Variable name `hR` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hR
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/DroriHardData.lean:289:52: Variable name `hL` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hL
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/DroriHardData.lean:289:65: Variable name `hR` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hR
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9129/9183] Replayed Continuation.Smooth.DroriCoordinates
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:16:45: This simp argument is unused:
-  PiLp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp_all [PiLp.smul_apply]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:18:45: This simp argument is unused:
-  PiLp.single_apply
-
-Hint: Omit it from the simp argument list.
-  [apply] simp_all [PiLp.smul_apply, Ne.symm hbj]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:26:22: `dif_pos` has been deprecated: Use `dite_eq_left` instead
-
-Hint: Replace the deprecated name:
-  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:105:36: `if_false` has been deprecated: Use `ite_false` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:107:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:114:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:142:38: `if_true` has been deprecated: Use `ite_true` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
-warning: lean/Continuation/Smooth/DroriCoordinates.lean:142:66: `if_false` has been deprecated: Use `ite_false` instead
-
-Hint: Replace the deprecated name:
-  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
-⚠ [9130/9183] Replayed Continuation.Smooth.DroriRadius
-warning: lean/Continuation/Smooth/DroriRadius.lean:97:12: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: lean/Continuation/Smooth/DroriRadius.lean:97:8: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/Smooth/DroriRadius.lean:97:12: Unused tactic linter: `ring` does nothing.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-⚠ [9131/9183] Replayed Continuation.Smooth.DroriTail
-warning: lean/Continuation/Smooth/DroriTail.lean:126:28: This simp argument is unused:
-  hj
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [candidate, he, hl]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-ℹ [9132/9183] Replayed RealizationCore.CutPadding
-info: lean/RealizationCore/CutPadding.lean:84:0: 'RegisterMachine.cPad_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: lean/RealizationCore/CutPadding.lean:85:0: 'RegisterMachine.cH_eq_cPad_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: lean/RealizationCore/CutPadding.lean:86:0: 'RegisterMachine.cPad_range_Hk' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: lean/RealizationCore/CutPadding.lean:87:0: 'RegisterMachine.cH_rank_eq_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9133/9183] Replayed RealizationCore.RealizationTheorem
-info: lean/RealizationCore/RealizationTheorem.lean:54:0: 'RegisterMachine.realization_of_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: lean/RealizationCore/RealizationTheorem.lean:55:0: 'RegisterMachine.realization_iff_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: lean/RealizationCore/RealizationTheorem.lean:56:0: 'RegisterMachine.realization_iff_rank_all' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9138/9183] Replayed Continuation.Smooth.OGM
-warning: lean/Continuation/Smooth/OGM.lean:32:7: Variable name `h` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/OGM.lean:47:26: Variable name `h` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _h
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Smooth/OGM.lean:60:13: This simp argument is unused:
-  ogmACoeff
-
-Hint: Omit it from the simp argument list.
-  [apply] simp only [ogmECoeff, ogmCoeffs, hk, dite_true, hj, ite_true]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/Smooth/OGM.lean:119:103: This simp argument is unused:
-  hlast
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/Smooth/OGM.lean:145:103: This simp argument is unused:
-  hlast
-
-Hint: Omit it from the simp argument list.
-  [apply] simp
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9143/9183] Replayed Continuation.Quadratic.Lower.Schedule
-warning: lean/Continuation/Quadratic/Lower/Schedule.lean:352:66: Variable name `hn` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hn
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Quadratic/Lower/Schedule.lean:388:70: Variable name `hij` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hij
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Quadratic/Lower/Schedule.lean:403:59: Variable name `hL0` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hL0
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Quadratic/Lower/Schedule.lean:407:66: Variable name `hij` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hij
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9145/9183] Replayed Continuation.Quadratic.Lower.Minimax
-warning: lean/Continuation/Quadratic/Lower/Minimax.lean:22:32: Variable name `hij` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hij
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-warning: lean/Continuation/Quadratic/Lower/Minimax.lean:30:32: Variable name `hij` is not explicitly referenced.
-
-Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
-  [apply] _hij
-
-Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9148/9183] Replayed Continuation.Smooth.GramModel
-warning: lean/Continuation/Smooth/GramModel.lean:17:0: automatically included section variable(s) unused in theorem `SmoothGramModel.combination_inner`:
-  [DecidableEq ι]
-consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
-  omit [DecidableEq ι] in theorem ...
-
-Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9149/9183] Replayed Continuation.Smooth.GramReconstruction
-warning: lean/Continuation/Smooth/GramReconstruction.lean:27:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/Smooth/GramReconstruction.lean:27:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-⚠ [9153/9183] Replayed Continuation.Projected.UpperBound
+✔ [9148/9220] Built TauCeti.Algebra.Polynomial.LinearFactor (4.7s)
+✔ [9150/9220] Built TauCeti.FieldTheory.RealClosure.FiniteExtension (4.9s)
+⚠ [9153/9223] Replayed Continuation.Projected.UpperBound
 warning: lean/Continuation/Projected/UpperBound.lean:48:0: automatically included section variable(s) unused in theorem `Continuation.Projected.vectorState_inner`:
   [FiniteDimensional ℝ E]
   [CompleteSpace E]
@@ -1348,21 +1393,65 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [CompleteSpace E] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [9154/9183] Replayed Continuation.Smooth.WeightedCoefficient
+✔ [9154/9223] Built TauCeti.Data.List.SignVariations (2.2s)
+✔ [9156/9227] Built TauCeti.Algebra.Order.Ring.Ordering.Semireal (1.0s)
+✔ [9158/9227] Built TauCeti.Algebra.Polynomial.Sturm.Sequence (2.6s)
+⚠ [9160/9227] Replayed Continuation.Smooth.OGM
+warning: lean/Continuation/Smooth/OGM.lean:32:7: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/OGM.lean:47:26: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Smooth/OGM.lean:60:13: This simp argument is unused:
+  ogmACoeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ogmECoeff, ogmCoeffs, hk, dite_true, hj, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/Smooth/OGM.lean:119:103: This simp argument is unused:
+  hlast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Continuation/Smooth/OGM.lean:145:103: This simp argument is unused:
+  hlast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9166/9227] Replayed Continuation.Smooth.GramModel
+warning: lean/Continuation/Smooth/GramModel.lean:17:0: automatically included section variable(s) unused in theorem `SmoothGramModel.combination_inner`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9167/9227] Replayed Continuation.Smooth.WeightedCoefficient
 warning: lean/Continuation/Smooth/WeightedCoefficient.lean:73:36: Variable name `hk` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hk
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9157/9183] Replayed Continuation.Smooth.DroriOracle
+⚠ [9169/9227] Replayed Continuation.Smooth.DroriOracle
 warning: lean/Continuation/Smooth/DroriOracle.lean:147:13: `simp` already closes the goal
 
 Hint: Use `simp` instead of `simpa`:
   [apply] simp [hardX_minimizer_norm N R hN hR]
 
 Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
-⚠ [9164/9183] Replayed Continuation.GJP.HistoryNormalization
+⚠ [9170/9227] Replayed Continuation.GJP.HistoryNormalization
 warning: lean/Continuation/GJP/HistoryNormalization.lean:16:0: automatically included section variable(s) unused in theorem `GJP.sourceMatrix_entry_lt`:
   [Fintype n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -1389,57 +1478,57 @@ Hint: Omit it from the simp argument list.
   [apply] simp [sourceMatrix, W.property i j hval, ne_of_lt hij']
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [9167/9183] Built Continuation.GJP.PositiveKernel (7.8s)
-⚠ [9168/9183] Built Continuation.GJP.FactorizationNormalization (7.0s)
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:14:24: This simp argument is unused:
-  Pi.single_apply
+✔ [9171/9227] Built TauCeti.Data.Fintype.Fiber (2.1s)
+⚠ [9172/9227] Replayed Continuation.Quadratic.Lower.Schedule
+warning: lean/Continuation/Quadratic/Lower/Schedule.lean:352:66: Variable name `hn` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [hj]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hn
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:94:35: This simp argument is unused:
-  Pi.single_apply
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Quadratic/Lower/Schedule.lean:388:70: Variable name `hij` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [normalizeZeroRows, hi, hji, hj0]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hij
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:99:35: This simp argument is unused:
-  Pi.single_apply
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Quadratic/Lower/Schedule.lean:403:59: Variable name `hL0` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [normalizeZeroRows, hi, hi0]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL0
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:130:2: Try this: 
-  letI̵
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Quadratic/Lower/Schedule.lean:407:66: Variable name `hij` is not explicitly referenced.
 
-The goal is a proposition, so `let` is preferred over `letI`.
-The difference between `let` and `letI` is that `letI` inlines the value.
-But this is not relevant for proofs because of proof irrelevance.
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hij
 
-Note: This linter can be disabled with `set_option linter.style.haveILetI false`
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:137:4: This simp argument is unused:
-  Matrix.transpose_one
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9175/9227] Built TauCeti.Algebra.Polynomial.Thom (3.2s)
+✔ [9176/9227] Built TauCeti.Algebra.QuadraticDiscriminant (7.4s)
+✔ [9177/9227] Built TauCeti.Data.SignType.Lagrange (2.6s)
+⚠ [9178/9227] Replayed Continuation.Smooth.GramReconstruction
+warning: lean/Continuation/Smooth/GramReconstruction.lean:27:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mulVec_mulVec, ← Matrix.transpose_mul, Matrix.mul_inv_of_invertible, Matrix.one_mul,
-    Matrix.mul_one, Matrix.mul_assoc] at ht
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/Continuation/Smooth/GramReconstruction.lean:27:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/FactorizationNormalization.lean:137:25: This simp argument is unused:
-  Matrix.one_mul
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9179/9227] Built TauCeti.Algebra.Polynomial.Eval.Infinity (3.5s)
+⚠ [9180/9227] Replayed Continuation.Quadratic.Lower.Minimax
+warning: lean/Continuation/Quadratic/Lower/Minimax.lean:22:32: Variable name `hij` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp only [Matrix.mulVec_mulVec, ← Matrix.transpose_mul, Matrix.mul_inv_of_invertible, Matrix.transpose_one,
-    Matrix.mul_one, Matrix.mul_assoc] at ht
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hij
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-✔ [9169/9183] Built Continuation.RootIsolation.SignSamples (8.3s)
-✔ [9170/9183] Built Continuation.GJP.ConicSeparation (8.9s)
-✔ [9171/9183] Built Continuation.Semialgebraic.UnivariateDecision (3.9s)
-⚠ [9172/9183] Built Continuation.GJP.DualInterpolation (13s)
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Quadratic/Lower/Minimax.lean:30:32: Variable name `hij` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hij
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9186/9227] Replayed Continuation.GJP.DualInterpolation
 warning: lean/Continuation/GJP/DualInterpolation.lean:23:32: This simp argument is unused:
   Matrix.one_apply
 
@@ -1518,91 +1607,82 @@ Hint: Omit it from the simp argument list.
   [apply] simp [not_lt_of_gt hij, Pi.single_apply, ne_of_gt hij, hw]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9173/9183] Built Continuation.GJP.DualCone (14s)
-warning: lean/Continuation/GJP/DualCone.lean:33:93: This simp argument is unused:
-  Finset.sum_add_distrib
+✔ [9187/9227] Built TauCeti.FieldTheory.RealClosure.Galois (2.8s)
+✔ [9192/9227] Built TauCeti.Data.Matrix.OccCount (1.8s)
+✔ [9193/9227] Built TauCeti.Geometry.RealAlgebraic.SignDetermination.Defs (2.5s)
+✔ [9200/9227] Built TauCeti.FieldTheory.RealClosure.Complexification (2.9s)
+✔ [9201/9227] Built TauCeti.Algebra.Polynomial.Eval.OneSided (3.1s)
+✔ [9202/9227] Built TauCeti.Geometry.RealAlgebraic.SignDetermination.Moments (1.9s)
+✔ [9203/9227] Built TauCeti.FieldTheory.RealClosure.AlgebraicClosed (2.4s)
+✔ [9204/9227] Built TauCeti.Algebra.Polynomial.QuadraticDiscriminant (5.2s)
+✔ [9205/9227] Built TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial (1.0s)
+✔ [9206/9227] Built TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots (1.7s)
+✔ [9207/9227] Built TauCeti.Algebra.Polynomial.RealClosed.Quadratic (2.9s)
+✔ [9208/9227] Built TauCeti.FieldTheory.RealClosure.IVT (2.1s)
+⚠ [9209/9227] Built Continuation.Smooth.FixedDimension (10s)
+warning: lean/Continuation/Smooth/FixedDimension.lean:10:25: Variable name `h` is not explicitly referenced.
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
-    Matrix.add_apply, Matrix.transpose_apply, smul_eq_mul, Matrix.mul_apply]
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/DualCone.lean:33:117: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9210/9227] Built Continuation.Quadratic.ExactLossModel (11s)
+⚠ [9211/9227] Built Continuation.Projected.Operational (13s)
+warning: lean/Continuation/Projected/Operational.lean:83:0: automatically included section variable(s) unused in theorem `ProjectedOperational.threshold_iff_value_lt`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:34:25: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Projected/Operational.lean:88:0: automatically included section variable(s) unused in theorem `ProjectedOperational.thresholds_eq_ray`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:33:117: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Projected/Operational.lean:93:0: automatically included section variable(s) unused in theorem `ProjectedOperational.thresholds_empty_iff`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: lean/Continuation/GJP/DualCone.lean:34:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Projected/Operational.lean:98:0: automatically included section variable(s) unused in theorem `ProjectedOperational.zero_loss_mem`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: lean/Continuation/GJP/DualCone.lean:41:41: This simp argument is unused:
-  Matrix.transpose_apply
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9212/9227] Built TauCeti.Algebra.Polynomial.RealClosed.Sign (2.3s)
+✔ [9213/9227] Built TauCeti.FieldTheory.RealClosure.AbstractRolle (2.6s)
+✔ [9214/9227] Built TauCeti.Algebra.Polynomial.Sturm.Signs (2.3s)
+✔ [9215/9227] Built TauCeti.Algebra.Polynomial.RealClosed.Sampling (3.3s)
+✔ [9216/9227] Built Continuation.GJP.FixedDimensionUniqueness (5.3s)
+✔ [9217/9227] Built TauCeti.Algebra.Polynomial.Sturm.Local (2.2s)
+⚠ [9218/9227] Built Continuation.Projected.OperationalThresholds (5.1s)
+warning: lean/Continuation/Projected/OperationalThresholds.lean:25:0: automatically included section variable(s) unused in theorem `ProjectedOperational.value_eq_unrestricted`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
-    Matrix.add_apply, Matrix.mul_add, Finset.sum_add_distrib, smul_eq_mul]
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Projected/OperationalThresholds.lean:53:0: automatically included section variable(s) unused in theorem `ProjectedOperational.strict_gain_iff`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/DualCone.lean:51:41: This simp argument is unused:
-  Matrix.transpose_apply
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Projected/OperationalThresholds.lean:60:0: automatically included section variable(s) unused in theorem `ProjectedOperational.strict_gain_rational_threshold`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
 
-Hint: Omit it from the simp argument list.
-  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
-    Matrix.add_apply, Matrix.mul_smul, smul_eq_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/DualCone.lean:51:64: This simp argument is unused:
-  Matrix.mul_smul
-
-Hint: Omit it from the simp argument list.
-  [apply] simp [linearMatrix, GJP.borderedMatrix, GJP.matrixSymm, Matrix.fromBlocks, Matrix.diagonal, Matrix.smul_apply,
-    Matrix.add_apply, Matrix.transpose_apply, smul_eq_mul]
-
-Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-warning: lean/Continuation/GJP/DualCone.lean:61:46: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:65:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:65:42: Unused tactic linter: `ring` does nothing.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:65:42: this tactic is never executed
-
-Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:61:46: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: lean/Continuation/GJP/DualCone.lean:82:60: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-warning: lean/Continuation/GJP/DualCone.lean:82:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
-
-Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-warning: lean/Continuation/GJP/DualCone.lean:97:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-
-Hint: Replace the deprecated name:
-  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
-warning: lean/Continuation/GJP/DualCone.lean:101:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-
-Hint: Replace the deprecated name:
-  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
-warning: lean/Continuation/GJP/DualCone.lean:105:17: `Set.setOf_forall` has been deprecated: Use `Set.ofPred_forall` instead
-
-Hint: Replace the deprecated name:
-  S̵e̵t̵.̵s̵e̵t̵O̵f̵_̵f̵o̵r̵a̵l̵l̵o̲f̲P̲r̲e̲d̲_̲f̲o̲r̲a̲l̲l̲
-✔ [9174/9183] Built Continuation.GJP.DualFeasibility (6.5s)
-✔ [9175/9183] Built Continuation.GJP.DualCoordinates (6.8s)
-✔ [9176/9183] Built Continuation.GJP.DualPairing (4.1s)
-✔ [9177/9183] Built Continuation.GJP.DualRealization (5.2s)
-✔ [9178/9183] Built Continuation.GJP.DualAnnihilator (5.4s)
-✔ [9179/9183] Built Continuation.GJP.ActualDuality (5.1s)
-✔ [9180/9183] Built Continuation.GJP.ActualUniqueness (7.1s)
-✔ [9181/9183] Built Continuation.GJP.OperationalGap (3.3s)
-✔ [9182/9183] Built Continuation (4.6s)
-Build completed successfully (9183 jobs).
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9219/9227] Built TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine (1.7s)
+✔ [9220/9227] Built TauCeti.Algebra.Polynomial.Sturm.SignedRemainders (1.0s)
+✔ [9221/9227] Built TauCeti.Algebra.Polynomial.Sturm.Sum (1.0s)
+✔ [9222/9227] Built TauCeti.Algebra.Polynomial.Sturm.Tarski (1.9s)
+✔ [9223/9227] Built TauCeti.Algebra.Polynomial.Sturm.OneSided (1.8s)
+✔ [9224/9227] Built TauCeti.Algebra.Polynomial.Sturm.Infinity (1.7s)
+✔ [9225/9227] Built TauCeti (1.5s)
+✔ [9226/9227] Built Continuation (6.5s)
+Build completed successfully (9227 jobs).
