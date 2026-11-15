@@ -113,3 +113,41 @@ public import RealizationCore
 
 #print axioms MemorySemialgebraic.ray_endpoint_algebraic
 #print axioms MemorySemialgebraic.finite_value_algebraic_of_qf_thresholds
+
+#print axioms InstalledOGM.ogmT_inst
+#print axioms InstalledOGM.ogmS_inst
+#print axioms InstalledOGM.Hk_bridge
+#print axioms InstalledOGM.theta_one_one
+#print axioms InstalledOGM.theta_N_one
+#print axioms InstalledOGM.theta_one_gt_one
+#print axioms InstalledOGM.T10_numer_ne_zero
+#print axioms InstalledOGM.increment_eq
+#print axioms InstalledOGM.increment_eq_zero
+#print axioms InstalledOGM.ogmACoeff_one_zero
+#print axioms InstalledOGM.ogmACoeff_one_zero_simplified
+#print axioms InstalledOGM.ogmECoeff_one_zero
+#print axioms InstalledOGM.ogmECoeff_one_zero_simplified
+#print axioms InstalledOGM.ogmACoeff_two_zero
+#print axioms InstalledOGM.T10_eq
+#print axioms InstalledOGM.T10_ne_zero
+#print axioms InstalledOGM.T_zero_of_N1
+#print axioms InstalledOGM.S1_entry_T10
+#print axioms InstalledOGM.S1_rank_one
+#print axioms InstalledOGM.T_in_Q1_of_realization
+#print axioms InstalledOGM.T_in_Q1_unconditional
+#print axioms InstalledOGM.s_WO_eq_one_of_N1
+#print axioms InstalledOGM.s_WO_not_one_of_ge2
+#print axioms InstalledOGM.memory_conclusion_N1
+#print axioms InstalledOGM.memory_conclusion_ge2
+#print axioms InstalledOGM.memory_conclusion_N1_unconditional
+#print axioms InstalledOGM.memory_conclusion_ge2_unconditional
+#print axioms InstalledOGM.theta_pos_ne_zero
+#print axioms InstalledOGM.T10_ne_zero_of_pos
+#print axioms InstalledOGM.memory_conclusion_ge2_pos
+#print axioms InstalledOGM.T10_eq_pos
+
+#print axioms QuadraticResidual.errorIter
+#print axioms QuadraticResidual.errorIter_eq_polynomial
+#print axioms QuadraticResidual.vectorTarget_step
+#print axioms QuadraticResidual.errorIter_eq_history
+#print axioms QuadraticResidual.history_eq_polynomial

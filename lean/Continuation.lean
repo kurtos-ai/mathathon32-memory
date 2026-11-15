@@ -7,3 +7,5 @@ public import Continuation.Smooth.OGM
 public import Continuation.Quadratic.Foundations
 public import Continuation.Semialgebraic.Endpoints
 public import Continuation.Semialgebraic.ThresholdEndpoints
+public import Continuation.Smooth.OGMInstalledMemory
+public import Continuation.Quadratic.MatrixResidual
