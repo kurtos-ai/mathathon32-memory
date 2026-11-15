@@ -10,3 +10,4 @@ public import Submission2026.NearQuadratic.Response
 public import Submission2026.NearQuadratic.ResponseTrajectory
 public import Submission2026.NearQuadratic.NearResponse
 public import Submission2026.NearQuadratic.PolynomialResponse
+public import Submission2026.NearQuadratic.HistoryPolynomial

@@ -4395,3 +4395,13 @@ public import TauCeti.FieldTheory.IsRealClosed.Real
 #print axioms Submission2026.Separation.ForwardWeakDuality4.weightedPsi_eq_dualValue
 #print axioms Submission2026.Separation.ForwardWeakDuality4.psi_le_dualValue
 #print axioms Submission2026.Separation.ForwardWeakDuality4.psi_le_path_totalStep
+
+-- Canonical perturbed Chebyshev bound and terminal-sign forward consequences.
+#print axioms NearQuadratic.PolynomialResponse.pPoly_eq_one_add_sum
+#print axioms NearQuadratic.PolynomialResponse.pPoly_W_of
+#print axioms NearQuadratic.PolynomialResponse.pPoly_schedD
+#print axioms NearQuadratic.PolynomialResponse.quadratic_aeval_le
+#print axioms NearQuadratic.PolynomialResponse.schedule_terminal_le
+#print axioms Submission2026.Separation.ForwardConsequences4.kappa_nonpos_of_terminal
+#print axioms Submission2026.Separation.ForwardConsequences4.dualValue_le_boundary_of_terminal
+#print axioms Submission2026.Separation.ForwardConsequences4.psi_le_boundary_of_terminal

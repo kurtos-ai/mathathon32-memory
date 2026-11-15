@@ -18,3 +18,4 @@ public import Submission2026.NearQuadratic
 public import Submission2026.Separation.PathIdentities4
 public import Submission2026.Separation.ForwardIdentity4
 public import Submission2026.Separation.ForwardWeakDuality4
+public import Submission2026.Separation.ForwardConsequences4
