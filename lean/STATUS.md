@@ -19,7 +19,7 @@ Normalized-register equivalence in every finite dimension, finite convex subgrad
 
 Necessary and sufficient finite smooth-convex interpolation is proved from actual gradient, convexity and Lipschitz definitions. The finite dual construction has a proved everywhere-defined conjugate gradient, with existence, uniqueness and the exact Lipschitz bound. Fixed-instance one-register trajectories and losses are continuous in the schedule. The actual all-dimensional EReal risk is lower semicontinuous, with proved scalar-quadratic lower bounds and explicit coefficient and squared-step bounds.
 
-General projected rank, effective quantifier
+The projected rank upper bound, effective quantifier
 elimination and complete root isolation, and smooth-convex benchmark optimality,
 and uniqueness remain unfinished
 in Lean. Work-in-progress files with proof holes
@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,116 successful build jobs and 626 audited declarations.
+Current verification: 9,118 successful build jobs and 665 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -46,3 +46,12 @@ finite/nonnegative value bounds are also proved.
 Projected finite loss-set exactness is now proved for unbounded and norm-bounded
 subgradient oracles, including repeated queries with distinct returns and the
 complete projection recurrence. The bounded zero-increment loss is at most MR.
+
+For every nontrivial closed convex domain, projected formal-input correctness
+implies an ordinary scalar realization with the same registers. Thus the
+projected cut-rank and maximum-rank lower bounds are now proved, including
+domains with empty ambient interior. The matching construction remains open.
+
+Simple roots are proved to enter the actual rational sign-filtered grid output
+for every sufficiently small positive mesh. This is a refinement theorem with
+an existential mesh threshold, not complete effective root isolation.

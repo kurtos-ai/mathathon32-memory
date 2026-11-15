@@ -689,3 +689,46 @@ public import RealizationCore
 #print axioms ProjectedLossModel.bounded_zero_loss
 #print axioms ProjectedLossModel.bounded_lossSet_eq
 #print axioms ProjectedLossModel.unbounded_lossSet_eq
+
+-- Continuation.Projected.LowerBound
+#print axioms Continuation.Projected.projection_correction_orthogonal
+#print axioms Continuation.Projected.segment_coordinate_mem
+#print axioms Continuation.Projected.projection_correction_orthogonal_of_interior_segment
+#print axioms Continuation.Projected.ordinary
+#print axioms Continuation.Projected.target_succ_increment
+#print axioms Continuation.Projected.direct_segment
+#print axioms Continuation.Projected.rawState
+#print axioms Continuation.Projected.correction
+#print axioms Continuation.Projected.state_scalarization
+#print axioms Continuation.Projected.query_scalarization
+#print axioms Continuation.Projected.state_affine
+#print axioms Continuation.Projected.dot_affine
+#print axioms Continuation.Projected.exists_small_scale
+#print axioms Continuation.Projected.correction_inner_zero_of_segment
+#print axioms Continuation.Projected.ProjectedRealizes
+#print axioms Continuation.Projected.readout_on_segment
+#print axioms Continuation.Projected.ordinary_realizes_of_segment
+#print axioms Continuation.Projected.ordinary_realizes_of_nontrivial
+#print axioms Continuation.Projected.projected_cut_rank_lower_bound
+#print axioms Continuation.Projected.projected_memory_lower_bound
+
+-- Continuation.RootIsolation.SimpleRoots
+#print axioms RootIsolation.SimpleRoots.polyMapToReal
+#print axioms RootIsolation.SimpleRoots.eval_map_algebraMap_eq_aeval
+#print axioms RootIsolation.SimpleRoots.aeval_coe_eq_coe_eval
+#print axioms RootIsolation.SimpleRoots.poly_aeval_continuous
+#print axioms RootIsolation.SimpleRoots.exists_deriv_sign_nhd
+#print axioms RootIsolation.SimpleRoots.mvt_right_sign
+#print axioms RootIsolation.SimpleRoots.mvt_left_sign
+#print axioms RootIsolation.SimpleRoots.simple_root_sign_change
+#print axioms RootIsolation.SimpleRoots.pointRoots
+#print axioms RootIsolation.SimpleRoots.signChangingIntervals
+#print axioms RootIsolation.SimpleRoots.IsoInterval
+#print axioms RootIsolation.SimpleRoots.IsoInterval.toSet
+#print axioms RootIsolation.SimpleRoots.filteredIntervals
+#print axioms RootIsolation.SimpleRoots.pointRoots_mem_iff
+#print axioms RootIsolation.SimpleRoots.signChangingIntervals_mem_iff
+#print axioms RootIsolation.SimpleRoots.partitionPoints_consecutive_form'
+#print axioms RootIsolation.SimpleRoots.partitionPoints_get_eq'
+#print axioms RootIsolation.SimpleRoots.partition_interval_length'
+#print axioms RootIsolation.SimpleRoots.simple_root_mem_filteredIntervals

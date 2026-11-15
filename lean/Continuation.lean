@@ -42,3 +42,5 @@ public import Continuation.Smooth.Operational
 public import Continuation.Smooth.Attain.Attainment
 public import Continuation.Smooth.OperationalAttainment
 public import Continuation.Projected.LossModel
+public import Continuation.Projected.LowerBound
+public import Continuation.RootIsolation.SimpleRoots

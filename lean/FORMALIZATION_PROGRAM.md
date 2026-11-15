@@ -28,7 +28,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 |---|---|
 | Normalization and coefficients | Complete: Proposition 2.2 in all finite dimensions, rank/minor criterion and finite rational polynomial memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
-| Projected methods | Section 4: projection graph, convex interpolation and exact loss model complete; projected-register rank theorem and effective decision theorem remain. |
+| Projected methods | Section 4: projection graph, convex interpolation and exact loss model complete; projected-register lower bound complete; upper bound and effective decision theorem remain. |
 | Convex quadratics | Complete in the quadratic matrix model: competing-polynomial lower bound, root schedule, every operational memory budget's EReal minimax value, threshold ray, and no memory gain. |
 | Smooth convex methods | Section 6: interpolation and exact Gram reduction complete; optimum and uniqueness and strict gap remain; one-register attainment complete. |
 
@@ -224,3 +224,13 @@ and proves all intermediate projected iterates agree with the feasible data.
 Actual executions produce the same finite inequalities, including an auxiliary
 terminal subgradient. The zero-increment loss bound MR is proved for the bounded
 variant. Projected register rank and effective elimination remain separate.
+
+## Projected lower bound and simple-root refinement
+
+Root independently proved the general projected register lower bound by
+segment perturbations and scalarization, including all causal query points.
+The upper-bound worker retains ownership of the quotient-state construction.
+Export14 supplied the simple-root sign and actual filtered-grid refinement
+lemmas; fixed-grid examples were omitted and names now distinguish sign-changing
+cells from intervals with certified unique roots. Effective separation-based
+coverage remains the next isolation target.
