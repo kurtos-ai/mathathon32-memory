@@ -1,4 +1,5 @@
 module
+public import Continuation
 public import Decision
 public import Benchmarks
 public import MemoryRank
@@ -48,3 +49,26 @@ public import RealizationCore
 #print axioms RegisterMachine.vectorRealizes_iff_scalar
 #print axioms RegisterMachine.vectorRealization_iff_maxCutRank
 #print axioms RegisterMachine.isLeast_vectorRegisterCount
+
+#print axioms Continuation.ProjectedSupport.piK
+#print axioms Continuation.ProjectedSupport.proj_iff_variational
+#print axioms Continuation.ProjectedSupport.proj_unique
+#print axioms Continuation.ProjectedSupport.proj_graph_correct
+#print axioms Continuation.ProjectedSupport.piK_of_mem
+#print axioms Continuation.ProjectedSupport.piK_singleton
+#print axioms Continuation.ProjectedSupport.projStateAux
+#print axioms Continuation.ProjectedSupport.projQuery
+#print axioms Continuation.ProjectedSupport.directStateAux
+#print axioms Continuation.ProjectedSupport.weightedSum_initState
+#print axioms Continuation.ProjectedSupport.correction_algebra
+
+#print axioms Continuation.SmoothSupport.gram_identity
+#print axioms Continuation.SmoothSupport.gram_norm
+#print axioms Continuation.SmoothSupport.psd_factorization
+#print axioms Continuation.SmoothSupport.forward_psd
+
+#print axioms RealizationCore.d_of_W_of
+#print axioms RealizationCore.T_of_W_of
+#print axioms RealizationCore.W_of_dT_of
+#print axioms RealizationCore.coordinateEquiv
+#print axioms RealizationCore.realization_iff_coordinates

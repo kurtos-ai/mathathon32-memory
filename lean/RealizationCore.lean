@@ -6,3 +6,4 @@ public import RealizationCore.RegisterMachine
 public import RealizationCore.RealizationTheorem
 public import RealizationCore.MemoryCharacterization
 public import RealizationCore.VectorRealization
+public import RealizationCore.Coordinates

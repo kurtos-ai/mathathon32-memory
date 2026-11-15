@@ -5,6 +5,8 @@ Lean 4.35.0 and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` are pi
 
 | Report claim | Lean declaration | Coverage and hypotheses |
 |---|---|---|
+| Section 2, coefficient coordinates | `RealizationCore.coordinateEquiv`, `d_of_W_of`, `T_of_W_of`, `W_of_dT_of` | Actual bijection between strict history matrices and (first subdiagonal, strict increment matrix). Both inverse laws, all horizons, using the paper's finite sums and the accepted `T_of`. |
+| Proposition 2.3, coordinate memory fibers | `RealizationCore.realization_iff_coordinates` | For every admissible T and every d, W(d,T) has an m+1-register realization iff T belongs to Q_m. |
 | Proposition 2.3, rank identity | `RealizationCore.rank_H_eq_one_add_rank_S` | Exact identity for every finite N and cut k≤N, with the actual consecutive-row increment blocks. Includes empty endpoint cuts. |
 | Proposition 2.3, Q₀={0} | `MemoryRank.Incremental.Q_zero_iff` | Exact equivalence on strictly lower triangular T. The triangular hypothesis is explicit. |
 | Theorem 2.1, lower bound | `RegisterMachine.Hk_eq_phi_mul_psi`, `necessity_rank_le_unconditional`, `maxCutRank_le_registers` | Actual scalar register recursion initialized at e₁x₀; reproduces every query and terminal output for arbitrary formal inputs. The cut factorization is derived, not assumed. |
@@ -19,6 +21,9 @@ Lean 4.35.0 and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` are pi
 | Corollary 3.2 | `MemoryDecision.gain_iff`, `gain_has_rational_witness` | Exact strict-gain criterion, including infinite values, and existence of a rational threshold witness. |
 | Risk properties | `MemoryDecision.risk_nonneg`, `value_nonneg`, `value_antitone` | Nonnegativity uses nonempty feasible losses and nonnegative loss; monotonicity uses nested memory sets. |
 | Theorem 6.6, final logical implication | `MemoryDecision.strict_separation_of_unique_attainment` | Generic implication from an actual lower bound, unique optimizer, attainment on a restricted set, and exclusion of that optimizer. These hypotheses are not proofs of the benchmark theorems. |
+| Section 4, projection support | `Continuation.ProjectedSupport.proj_graph_correct`, `proj_unique`, `piK_of_mem`, `piK_singleton` | Euclidean projection on nonempty closed convex sets: variational graph, uniqueness, fixed points and singleton case. General projected rank theorem remains open. |
+| Section 4, correction algebra | `Continuation.ProjectedSupport.weightedSum_initState`, `correction_algebra` | Initial and corrected readouts for the actual register-update expression. Does not yet identify a constructed trajectory with the paper's projected recurrence. |
+| Section 6, Gram support | `Continuation.SmoothSupport.gram_identity`, `gram_norm`, `psd_factorization`, `forward_psd` | Finite-dimensional Gram identities, positivity and square factorization. Does not prove smooth-convex interpolation or the minimax theorem. |
 | Quadratic helpers | `QuadraticBenchmark.productPoly_eval`, `productPoly_eval_zero` | Evaluation and normalization of ∏(1+dᵢX). No spectral risk identity or optimality claim. |
 | Smooth helpers | `SmoothBenchmark.theta_pos`, `theta_ge_one`, `theta_recurrence_standard`, `theta_recurrence_final` | Scalar θ recurrence and bounds. |
 | Generic rank-one cut construction | `SmoothBenchmark.factoredT_rank_le_one` | Rank bound for supplied outer-product coefficients; no identification with actual OGM coefficients. |

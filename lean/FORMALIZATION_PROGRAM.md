@@ -25,7 +25,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 
 | Workstream | Remaining targets |
 |---|---|
-| Normalization and coefficients | Proposition 2.2; coefficient-coordinate inverse formulas; rank/minor criterion and algebraic memory loci. |
+| Normalization and coefficients | Proposition 2.2; rank/minor criterion and algebraic memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, algebraic endpoints and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
 | Convex quadratics | Section 5: matrix-polynomial and spectral risk formulas, Chebyshev construction and lower bound, all-horizon minimax and one-register optimality. |
@@ -56,3 +56,11 @@ work; assuming an elimination oracle does not complete Theorem 3.1.
 
 See `DECLARATION_MAP.md` for what is actually verified in the current commit.
 This program file records work in progress, not additional theorem coverage.
+
+## Checked continuation milestone
+
+The coefficient-coordinate bijection and both inverse formulas were proved locally.
+Projection graph/correction identities and Gram/PSD identities were exported by
+the coordinator, inspected, built locally and included in the expanded axiom audit.
+These support results do not close the projected or smooth benchmark sections.
+The remaining workstreams continue with concrete targets in the coordinator chat.

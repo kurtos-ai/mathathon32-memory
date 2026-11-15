@@ -25,16 +25,16 @@ info: batteries: remote URL changed
 info: Cli: remote URL changed
   old: git@github.com:leanprover/lean4-cli
   new: https://github.com/leanprover/lean4-cli
-⚠ [1897/1992] Replayed MemoryRank.Defs
+⚠ [1897/2064] Replayed MemoryRank.Defs
 warning: lean/MemoryRank/Defs.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
-⚠ [3138/3401] Replayed MemoryRank.CutRank
+⚠ [3138/3308] Replayed MemoryRank.CutRank
 warning: lean/MemoryRank/CutRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
 info: lean/MemoryRank/CutRank.lean:52:0: 'MemoryRank.CutRank.memRank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [3139/3401] Replayed MemoryRank.IncrementalRank
+⚠ [3139/3308] Replayed MemoryRank.IncrementalRank
 warning: lean/MemoryRank/IncrementalRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -42,7 +42,7 @@ info: lean/MemoryRank/IncrementalRank.lean:63:0: 'MemoryRank.Incremental.S_k_ran
 info: lean/MemoryRank/IncrementalRank.lean:64:0: 'MemoryRank.Incremental.Q_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/MemoryRank/IncrementalRank.lean:65:0: 'MemoryRank.Incremental.zero_mem_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/MemoryRank/IncrementalRank.lean:66:0: 'MemoryRank.Incremental.S_k_rank_le_min' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9049/9070] Replayed Decision.Thresholds
+⚠ [9049/9074] Replayed Decision.Thresholds
 warning: lean/Decision/Thresholds.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -64,7 +64,7 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hS_bdd
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-⚠ [9050/9070] Replayed Benchmarks.Quadratic
+⚠ [9050/9074] Replayed Benchmarks.Quadratic
 warning: lean/Benchmarks/Quadratic.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -75,7 +75,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [eval_prod]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9051/9070] Replayed Benchmarks.Smooth
+⚠ [9051/9074] Replayed Benchmarks.Smooth
 warning: lean/Benchmarks/Smooth.lean:11:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
 
 import Mathlib.Basic.Real.Basic
@@ -105,9 +105,49 @@ Hint: The binding can be removed (if unused) or named `_` (if used implicitly). 
   [apply] _hN
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-ℹ [9054/9070] Replayed MemoryRank.ZeroLocus
+⚠ [9053/9074] Replayed Continuation.Support.ProjectedCore
+warning: lean/Continuation/Support/ProjectedCore.lean:23:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.proj_iff_variational'`:
+  [FiniteDimensional ℝ E]
+  [CompleteSpace E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] [CompleteSpace E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Support/ProjectedCore.lean:34:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.proj_unique`:
+  [FiniteDimensional ℝ E]
+  [CompleteSpace E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] [CompleteSpace E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Support/ProjectedCore.lean:34:33: Variable name `hKconv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hKconv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Continuation/Support/ProjectedCore.lean:64:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.piK_spec`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Support/ProjectedCore.lean:184:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.weightedSum_initState`:
+  [FiniteDimensional ℝ E]
+  [CompleteSpace E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] [CompleteSpace E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: lean/Continuation/Support/ProjectedCore.lean:190:0: automatically included section variable(s) unused in theorem `Continuation.ProjectedSupport.correction_algebra`:
+  [FiniteDimensional ℝ E]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [FiniteDimensional ℝ E] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [9057/9074] Replayed MemoryRank.ZeroLocus
 info: lean/MemoryRank/ZeroLocus.lean:42:0: 'MemoryRank.Incremental.Q_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9056/9070] Replayed Decision.ExactThresholds
+ℹ [9059/9074] Replayed Decision.ExactThresholds
 info: lean/Decision/ExactThresholds.lean:159:0: 'MemoryDecision.risk_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:160:0: 'MemoryDecision.risk_lt_iff_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:161:0: 'MemoryDecision.threshold_iff_value_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -119,10 +159,10 @@ info: lean/Decision/ExactThresholds.lean:166:0: 'MemoryDecision.value_nonneg' de
 info: lean/Decision/ExactThresholds.lean:167:0: 'MemoryDecision.value_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:168:0: 'MemoryDecision.gain_has_rational_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/Decision/ExactThresholds.lean:169:0: 'MemoryDecision.strict_separation_of_unique_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9058/9070] Replayed RealizationCore.BlockRank
+ℹ [9061/9074] Replayed RealizationCore.BlockRank
 info: lean/RealizationCore/BlockRank.lean:102:0: 'MemoryBlock.blockOne_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/BlockRank.lean:103:0: 'MemoryBlock.upperBlock_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9059/9070] Replayed RealizationCore.RankIdentity
+⚠ [9062/9074] Replayed RealizationCore.RankIdentity
 warning: lean/RealizationCore/RankIdentity.lean:56:154: This simp argument is unused:
   hi
 
@@ -131,7 +171,7 @@ Hint: Omit it from the simp argument list.
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 info: lean/RealizationCore/RankIdentity.lean:102:0: 'RealizationCore.rank_H_eq_one_add_rank_S' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9060/9070] Replayed RealizationCore.RegisterMachine
+⚠ [9063/9074] Replayed RealizationCore.RegisterMachine
 warning: lean/RealizationCore/RegisterMachine.lean:228:6: This simp argument is unused:
   Nat.not_lt.mpr (Nat.le_add_right k t)
 
@@ -169,7 +209,7 @@ info: lean/RealizationCore/RegisterMachine.lean:371:0: 'RegisterMachine.necessit
 info: lean/RealizationCore/RegisterMachine.lean:395:0: 'RegisterMachine.Hk_eq_phi_mul_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RegisterMachine.lean:396:0: 'RegisterMachine.increment_rank_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RegisterMachine.lean:397:0: 'RegisterMachine.maxCutRank_le_registers' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9061/9070] Replayed RealizationCore.CompatibleChain
+⚠ [9064/9074] Replayed RealizationCore.CompatibleChain
 warning: lean/RealizationCore/CompatibleChain.lean:41:12: Variable name `x0` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
@@ -221,7 +261,7 @@ Note: This linter can be disabled with `set_option linter.unusedVariables false`
 info: lean/RealizationCore/CompatibleChain.lean:140:0: 'RegisterMachine.chainF_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CompatibleChain.lean:141:0: 'RegisterMachine.chain_state' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CompatibleChain.lean:142:0: 'RegisterMachine.chain_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9062/9070] Replayed RealizationCore.CanonicalCore
+⚠ [9065/9074] Replayed RealizationCore.CanonicalCore
 warning: lean/RealizationCore/CanonicalCore.lean:49:55: This simp argument is unused:
   dite_false
 
@@ -298,7 +338,7 @@ info: lean/RealizationCore/CanonicalCore.lean:126:0: 'RegisterMachine.cv_succ' d
 info: lean/RealizationCore/CanonicalCore.lean:127:0: 'RegisterMachine.cdrop_range' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalCore.lean:128:0: 'RegisterMachine.ch_range' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalCore.lean:129:0: 'RegisterMachine.cv_obs' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [9063/9070] Replayed RealizationCore.CoordinateEmbedding
+⚠ [9066/9074] Replayed RealizationCore.CoordinateEmbedding
 warning: lean/RealizationCore/CoordinateEmbedding.lean:41:24: This simp argument is unused:
   i.isLt
 
@@ -306,7 +346,7 @@ Hint: Omit it from the simp argument list.
   [apply] simp [coordJ, coordL]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9064/9070] Replayed RealizationCore.CanonicalChain
+⚠ [9067/9074] Replayed RealizationCore.CanonicalChain
 warning: lean/RealizationCore/CanonicalChain.lean:57:21: This simp argument is unused:
   Matrix.one_apply
 
@@ -319,16 +359,15 @@ info: lean/RealizationCore/CanonicalChain.lean:118:0: 'RegisterMachine.canonical
 info: lean/RealizationCore/CanonicalChain.lean:119:0: 'RegisterMachine.canonical_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalChain.lean:120:0: 'RegisterMachine.realization_of_cH_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CanonicalChain.lean:121:0: 'RegisterMachine.cH_rank_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9065/9070] Replayed RealizationCore.CutPadding
+ℹ [9068/9074] Replayed RealizationCore.CutPadding
 info: lean/RealizationCore/CutPadding.lean:84:0: 'RegisterMachine.cPad_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CutPadding.lean:85:0: 'RegisterMachine.cH_eq_cPad_mulVec' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CutPadding.lean:86:0: 'RegisterMachine.cPad_range_Hk' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/CutPadding.lean:87:0: 'RegisterMachine.cH_rank_eq_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
-ℹ [9066/9070] Replayed RealizationCore.RealizationTheorem
+ℹ [9069/9074] Replayed RealizationCore.RealizationTheorem
 info: lean/RealizationCore/RealizationTheorem.lean:54:0: 'RegisterMachine.realization_of_Hk_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RealizationTheorem.lean:55:0: 'RegisterMachine.realization_iff_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: lean/RealizationCore/RealizationTheorem.lean:56:0: 'RegisterMachine.realization_iff_rank_all' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [9067/9070] Built RealizationCore.MemoryCharacterization (16s)
-✔ [9068/9070] Built RealizationCore.VectorRealization (3.0s)
-✔ [9069/9070] Built RealizationCore (3.5s)
-Build completed successfully (9070 jobs).
+✔ [9072/9074] Built RealizationCore.Coordinates (15s)
+✔ [9073/9074] Built RealizationCore (3.6s)
+Build completed successfully (9074 jobs).
