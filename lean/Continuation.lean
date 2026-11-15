@@ -21,3 +21,5 @@ public import Continuation.Normalization.Trajectory
 public import Continuation.Quadratic.Lower.Alternation
 public import Continuation.Quadratic.Lower.Minimax
 public import Continuation.Quadratic.Operational
+public import Continuation.SmoothDualCore
+public import Continuation.RootIsolation.Cover

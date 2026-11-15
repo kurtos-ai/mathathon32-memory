@@ -17,6 +17,8 @@ rational quantifier-free endpoints are also proved. See `DECLARATION_MAP.md` for
 
 Normalized-register equivalence in every finite dimension, finite convex subgradient interpolation, and the actual Chebyshev root schedule are now proved. The quadratic matrix-model minimax value, exact threshold ray, and absence of gains are proved at every operational register budget, using the independent EReal risk/value definitions.
 
+The finite dual max-quadratic construction has proved strong convexity and exact data contacts. Its conjugate regularity and the full smooth interpolation equivalence remain open.
+
 General projected rank and loss-set equivalences, smooth-convex interpolation, effective
 quantifier elimination and the smooth-convex optimization benchmark proofs remain unfinished
 in Lean. Work-in-progress files with proof holes

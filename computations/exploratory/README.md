@@ -1,0 +1,1 @@
+These files reconstruct the inline NumPy probes used during proof development. They preserve failed hypothesis checks as well as the corrected coordinate example. They are provenance, not proof certificates. The Lean normalization and projected-register proofs determine which identities are verified.

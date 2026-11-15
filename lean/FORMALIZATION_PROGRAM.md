@@ -137,3 +137,9 @@ The quadratic coordinator `chat-bc32b9d6c2` has moved to actual smooth instances
 and one-register attainment. `chat-60ae65a17a` owns OGM performance, the all-method
 lower bound, and uniqueness. `chat-74fec83d9b` retains projected/interpolation/
 root-isolation coordination.
+
+## Dual interpolation construction
+
+The finite maximum of dual quadratics has proved strong convexity, attained maxima, and exact value and subgradient contacts at the supplied data. Conjugate existence, differentiability, Lipschitz gradient, and the resulting interpolation equivalence remain active targets. Reconstructed exploratory NumPy coordinate probes are retained under `computations/exploratory/`; they are not proof certificates.
+
+The root-isolation support now includes a finite rational partition and a proved cover of every real root, conditional on a supplied positive root bound. This is a cover theorem, not a completed isolation algorithm; root separation and assembly remain active.

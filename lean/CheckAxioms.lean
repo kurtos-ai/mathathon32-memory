@@ -407,3 +407,35 @@ public import RealizationCore
 #print axioms QuadraticOperational.value_eq
 #print axioms QuadraticOperational.thresholds_eq
 #print axioms QuadraticOperational.no_memory_gain
+
+-- Dual interpolation construction (not yet conjugate regularity).
+#print axioms E
+#print axioms SmoothDual.hComp
+#print axioms SmoothDual.Hi
+#print axioms SmoothDual.H
+#print axioms SmoothDual.Hi_eq
+#print axioms SmoothDual.Hi_at_g
+#print axioms SmoothDual.Hi_at_g_eq_h
+#print axioms SmoothDual.norm_sq_convex_combo
+#print axioms SmoothDual.Hi_convex_combo
+#print axioms SmoothDual.H_ge_Hi
+#print axioms SmoothDual.H_exists_eq
+#print axioms SmoothDual.H_attained
+#print axioms SmoothDual.H_strongConvex
+#print axioms SmoothDual.H_strongConvex_t
+#print axioms SmoothDual.H_le_at_g
+#print axioms SmoothDual.H_contact
+#print axioms SmoothDual.H_contact'
+#print axioms SmoothDual.H_subgradient
+#print axioms SmoothDual.H_subgradient_weak
+
+-- Finite rational partition and positive-radius root cover.
+#print axioms RootIsolation.numSteps
+#print axioms RootIsolation.partitionPoints
+#print axioms RootIsolation.partitionPoints_length
+#print axioms RootIsolation.consecutivePairs
+#print axioms RootIsolation.partitionPoints_eq_range_map
+#print axioms RootIsolation.partitionPoints_get
+#print axioms RootIsolation.consecutivePairs_mem
+#print axioms RootIsolation.original_statement_false
+#print axioms RootIsolation.cover_from_cauchyBound
