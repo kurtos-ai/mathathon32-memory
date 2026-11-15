@@ -29,7 +29,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 | Normalization and coefficients | Complete: Proposition 2.2 in all finite dimensions, rank/minor criterion and finite rational polynomial memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
-| Convex quadratics | Section 5: competing-polynomial lower bound, minimax and threshold assembly. Root factorization and the schedule's exact achieved risk are proved. |
+| Convex quadratics | Complete in the quadratic matrix model: competing-polynomial lower bound, root schedule, every operational memory budget's EReal minimax value, threshold ray, and no memory gain. |
 | Smooth convex methods | Section 6: interpolation and Gram reduction, optimum and uniqueness, one-register attainment and strict gap. |
 
 ## Acceptance requirements
@@ -121,3 +121,19 @@ achieved risk are independently compiled and included in the axiom audit.
 The general projected rank theorem, smooth-convex interpolation, effective
 elimination, and the quadratic competing-polynomial lower bound remain open
 in this retained checkpoint.
+
+## Quadratic minimax completed
+
+The all-horizon alternation lower bound and root schedule compile locally.
+`QuadraticOperational` defines risk from actual history losses, restricts to
+strict increment coordinates, and connects the memory predicate to operational
+register realizability. Its independent EReal minimax value and threshold sets
+are computed for every budget; one register attains the value, so extra memory
+never helps on this quadratic matrix model.
+
+Remaining workers now cover projected rank and exact loss-set assembly, smooth
+interpolation, effective root isolation/elimination, and the smooth benchmark.
+The quadratic coordinator `chat-bc32b9d6c2` has moved to actual smooth instances
+and one-register attainment. `chat-60ae65a17a` owns OGM performance, the all-method
+lower bound, and uniqueness. `chat-74fec83d9b` retains projected/interpolation/
+root-isolation coordination.

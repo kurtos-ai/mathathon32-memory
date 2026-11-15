@@ -15,8 +15,9 @@ optimization results used in the examples. The Lean library verifies the
 full operational register realization theorem in every finite dimension,
 cut/increment rank identity, the rank-form memory locus, its finite rational determinant equations, and one-register
 characterization, the extended-risk threshold/gain criterion, and supporting
-algebraic lemmas. The benchmark minimax and effective quantifier-elimination
-proofs are not yet formalized. See
+algebraic lemmas. The normalized realization theorem and quadratic matrix-model minimax result
+at every register budget are proved. Smooth benchmark optimality and effective
+quantifier elimination are not yet formalized. See
 `lean/DECLARATION_MAP.md`; a successful build is not a claim that the whole report
 has been formally verified.
 

@@ -18,3 +18,6 @@ public import Continuation.Projected.ConvexInterpolation
 public import Continuation.Quadratic.Lower.Basic
 public import Continuation.Quadratic.Lower.Schedule
 public import Continuation.Normalization.Trajectory
+public import Continuation.Quadratic.Lower.Alternation
+public import Continuation.Quadratic.Lower.Minimax
+public import Continuation.Quadratic.Operational

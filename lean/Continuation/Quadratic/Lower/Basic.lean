@@ -47,7 +47,7 @@ lemma angle_lt_half_pi (N : ℕ) {a : ℕ} (ha : a ≤ N) :
   rw [div_lt_div_iff₀ hM (by norm_num : (0 : ℝ) < 2)]
   nlinarith [Real.pi_pos]
 
-/-- The alternation angles are strictly decreasing in `j` on `0 ≤ j ≤ N`, so the
+/-- The alternation angles increase in `j` on `0 ≤ j ≤ N`, so the
 points `u_j = cos (jπ/M)` strictly decrease. -/
 theorem cos_altU_strictAntiOn (N : ℕ) :
     StrictAntiOn (fun j : ℕ => Real.cos ((j : ℝ) * Real.pi / (2 * (N : ℝ) + 1)))
