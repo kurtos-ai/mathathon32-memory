@@ -5,16 +5,21 @@ November 14, 2026. The verified starting source is repository commit
 `712749132ed8ba3e7177a9a6509e2f5a02ad66d4` (Lean source checkpoint
 `47198777156ee68f1b1d16b1a443131ad8dbf9a2`).
 
-## Current execution
+## Execution record
 
 Open Math OS project: `p-91419caf7bbd45d386338df47ac68c02`.
 Coordinator chat: `chat-74fec83d9b`.
-Ultramath swarm: `smwhj2c0w`, workers `m1`–`m5`.
+Initial Ultramath swarm: `smwhj2c0w`, workers `m1`–`m5`.
+Replacement swarms are tracked in the coordinator's `status/full-paper-program.md`; workers that end without completing their targets are replaced.
 Coordinator model: Kimi K3.1 Pro, maximum reasoning.
 Worker model: Muse Spark Open, maximum reasoning (Kimi is not available in the
 Ultramath worker allowlist).
 
-The exact verified source snapshot is transferred before workers edit proofs.
+The exact verified source snapshot was transferred and all 33 extracted files
+were checked against the archive. Archive SHA256:
+`ee121a2dcec7cff0548a6ad7135f19d5ea71595d76043c4ef8737da4596da1a4`.
+The isolated continuation source is `continuation/lean-full-paper` in Open Math OS;
+the source gate is open.
 New work is isolated from the accepted library. An active worker or a successful
 build of helper lemmas does not imply that a paper theorem has been formalized.
 
