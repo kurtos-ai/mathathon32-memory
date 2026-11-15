@@ -1,0 +1,34 @@
+=== OGM numerical checks N=1..10 L=1,R=1 (floating point, tol=1e-9) ===
+N= 1 theta_N=2.000000 c_N=0.125000 d=['-1.5000'] ranks=[0, 0] OK (one-register)
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 2 theta_N=2.842236 c_N=0.061894 d=['-1.6180', '-1.7867'] T10=-1.343893e-01 ranks=[0, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 3 theta_N=3.642152 c_N=0.037692 d=['-1.6180', '-2.0194', '-1.9300'] T10=-1.741333e-01 ranks=[0, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 4 theta_N=4.420804 c_N=0.025584 d=['-1.6180', '-2.0194', '-2.2317', '-2.0178'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 5 theta_N=5.186413 c_N=0.018588 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.0778'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 6 theta_N=5.943130 c_N=0.014156 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.4585', '-2.1215'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 7 theta_N=6.693369 c_N=0.011160 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.4585', '-2.5269', '-2.1549'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 8 theta_N=7.438665 c_N=0.009036 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.4585', '-2.5269', '-2.5796', '-2.1813'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N= 9 theta_N=8.180056 c_N=0.007472 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.4585', '-2.5269', '-2.5796', '-2.6215', '-2.2027'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+N=10 theta_N=8.918284 c_N=0.006286 d=['-1.6180', '-2.0194', '-2.2317', '-2.3656', '-2.4585', '-2.5269', '-2.5796', '-2.6215', '-2.6557', '-2.2204'] T10=-1.741333e-01 ranks=[0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0] OK
+  scaling consistency L=2,R=3: theta independent of L in this implementation
+
+=== Nonzero increment-entry samples (not a one-register optimality claim) ===
+N=2 sampled OGM coefficient map has a nonzero T entry (not a one-register optimality claim)
+N=3 sampled OGM coefficient map has a nonzero T entry (not a one-register optimality claim)
+N=5 sampled OGM coefficient map has a nonzero T entry (not a one-register optimality claim)
+
+=== Quadratic vs smooth values (L=R=1) ===
+N= 1 quadratic V=0.055556  smooth c_N=0.125000  ratio 2.2500
+N= 2 quadratic V=0.020000  smooth c_N=0.061894  ratio 3.0947
+N= 5 quadratic V=0.004132  smooth c_N=0.018588  ratio 4.4983
+N=10 quadratic V=0.001134  smooth c_N=0.006286  ratio 5.5447
+
+All OGM checks PASS (numerical, tol 1e-9; not exact rational)

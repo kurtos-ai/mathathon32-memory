@@ -1,0 +1,2 @@
+PASS: no sorry, admit, custom axiom, or native_decide in retained Lean code.
+Declaration types and #print axioms are audited separately.

@@ -1,0 +1,38 @@
+Presentation cues
+
+16 main slides: 19 minutes. Allow one minute for pauses and transitions.
+One appendix gives the OGM recurrence for questions.
+
+1 (0:30): Fix the problem: a finite number of exact gradient queries, predetermined scalar coefficients, and persistent vector storage.
+2 (0:55): The gradients are not a batch of inputs available at the start. Each query point must be constructed before its gradient can be returned.
+3 (1:00): Count vectors retained across calls. The example uses two registers total, or one auxiliary. A fresh gradient and temporary arithmetic are not persistent storage. No free transcript or copy of x0 exists.
+4 (1:00): W records every query and the terminal output. Only past gradients occur. The colored entries are free coefficients, which may include zero.
+5 (1:20): In the N=6 example, cut after the third gradient. Read a column as one past input and a row as one future point. H3 records only contributions from inputs already observed.
+6 (1:30): Lower bound: future outputs factor through the state. Upper bound: keep coordinates of their past contributions in the image of Hk. Delete the first coordinate, add the new gradient contribution, and change basis for the next cut.
+7 (1:10): Consecutive row differences remove the common x0 column. This leaves one baseline register plus the maximum rank of a bottom-left increment block. Rank bounds are finite polynomial equations in T.
+8 (1:00): The adversary ranges over all admissible instances in every finite dimension. The fixed coefficient schedule must be dimension independent. More memory helps only if the minimax value strictly decreases.
+9 (1:15): This is a real assumption, stronger than calling the function class semialgebraic. We need a finite exact representation of attainable losses, uniform across dimensions. Fixed coefficients of this description must be known real algebraic numbers for effective computation.
+10 (1:25): Step 1 eliminates d and the loss variables using a uniform bound b below gamma. Step 2 constructs the vanishing minors. Step 3 decides whether the resulting sets meet. The geometric drawing is schematic. Quantifier elimination establishes termination, not a practical runtime.
+11 (1:20): The infimum property alone gives the open ray of feasible thresholds. No optimal method need attain the infimum. A threshold in the difference of the two rays witnesses a strict memory gain.
+12 (1:15): Diagonalize the quadratic Hessian. Every method produces an error polynomial with constant term one and degree at most N. A scalar quadratic at a maximizing eigenvalue attains the worst-case bound.
+13 (1:25): Odd Chebyshev equioscillation supplies the optimum. The positive roots give a sequence of gradient steps, so one register suffices. For the lower bound, a strictly better polynomial would make its difference from p-star alternate at N+1 positive nodes and also vanish at zero: too many roots. The drawn curve uses N=6 only as an illustration.
+14 (1:20): OGM keeps the current query and one auxiliary vector. Its published guarantee matches the unrestricted deterministic lower bound. Thus larger memory cannot improve the minimax value. Appendix A gives the exact theta and state recurrences.
+15 (1:25): Nonzero T for OGM alone does not prove a minimax gap. We also need attainment among one-register schedules and uniqueness of the optimal full-history map. Quadratic tests make the one-register risk sublevels compact. The cited uniqueness theorem then forces the contradiction.
+16 (1:10): For N>=2, the least sufficient auxiliary budgets are zero for quadratics and one for smooth convex functions. For N=1, one total register suffices in both classes. The general procedure decides new finite semialgebraic loss models, but this paper does not give a new class needing more than two total registers.
+
+Rebuild
+
+Keep the assets directory beside memory-slides.tex. Run:
+  tectonic memory-slides.tex
+
+Avenir Next is used if installed; otherwise the source selects TeX Gyre Heros.
+To regenerate the illustrative sampled Chebyshev plot and full source, run:
+  python3 source/make_plot.py
+The plot is a visualization, not a numerical proof.
+
+The minimax classes include a minimizer with ||x0-x*|| <= R. For one register, T=0 and y_(k+1)=y_k+d_k g_k. The quadratic plot illustrates N=6, L=1.
+
+Title artwork: the original Mathathon logo, from the official event website.
+Original asset: https://mathathonchallenge.com/img/mathathon-logo.svg
+Archived source: https://web.archive.org/web/20261018070006id_/https://mathathonchallenge.com/img/mathathon-logo.svg
+The SVG is preserved unchanged; mathathon-logo.pdf is its vector conversion for TeX.

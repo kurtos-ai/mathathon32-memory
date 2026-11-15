@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 376" width="420" height="376" role="img" aria-label="Sable logo: rising bar chart">
+  <title>Sable logo — geometric</title>
+  <!--
+    Bars   : 64 wide outer on a 160 pitch, baseline y=320, stroke 18
+             (rects are the stroke centreline: 46 wide, rx 13 → outer radius 22, counter 28 wide)
+    Heights: 88 / 176 / 264 outer  →  1 : 2 : 3
+    Lines  : each end sits on the 45° point of the bar's corner arc, so the round cap
+             lands on the bar's own stroke — nothing overshoots the corner, nothing
+             pokes into the counter.
+  -->
+  <g fill="none" stroke-width="18" stroke-linecap="round">
+    <g stroke="#4EACAC">
+      <path d="M69.19 307.19 L190.81 156.81"/>
+      <path d="M229.19 307.19 L350.81 68.81"/>
+      <rect x="187" y="153" width="46" height="158" rx="13"/>
+      <rect x="347" y="65"  width="46" height="246" rx="13"/>
+    </g>
+    <rect x="27" y="241" width="46" height="70" rx="13" stroke="#EF9035"/>
+  </g>
+</svg>

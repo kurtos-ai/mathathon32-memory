@@ -1,0 +1,274 @@
+\documentclass{article}
+\usepackage[paperwidth=16in,paperheight=9in,margin=0in]{geometry}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\IfFontExistsTF{Avenir Next}{\setsansfont{Avenir Next}}{\setsansfont{TeX Gyre Heros}}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath,amssymb,mathtools,mathrsfs}
+\usepackage{xfp}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing}
+\usepackage[colorlinks=true,urlcolor=Blue]{hyperref}
+\definecolor{Paper}{HTML}{FAFAF7}
+\definecolor{Ink}{HTML}{172B36}
+\definecolor{Muted}{HTML}{627481}
+\definecolor{Blue}{HTML}{275DD9}
+\definecolor{PaleBlue}{HTML}{E7EDFC}
+\definecolor{Teal}{HTML}{087F73}
+\definecolor{PaleTeal}{HTML}{DCF0E9}
+\definecolor{Orange}{HTML}{C65E36}
+\definecolor{PaleOrange}{HTML}{F9E4D8}
+\definecolor{Line}{HTML}{CDD5D7}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\rank}{rank}
+\newcommand{\txt}[5][Ink]{\node[anchor=north west,align=left,text=#1,text width=#4in,font=\fontsize{#5}{\fpeval{1.23*#5}}\selectfont] at (#2,#3)}
+\newcommand{\eqn}[4][Ink]{\node[anchor=center,text=#1,font=\fontsize{#4}{\fpeval{1.2*#4}}\selectfont\everymath{\displaystyle}] at (#2,#3)}
+\newenvironment{slide}[2]{%
+  \clearpage\null\begin{tikzpicture}[remember picture,overlay,x=1in,y=1in,shift={(current page.south west)},
+  >=Latex,line cap=round,line join=round]
+  \fill[Paper] (0,0) rectangle (16,9);
+  \node[anchor=north west,text=Ink,text width=14.4in,font=\fontsize{34}{40}\selectfont\bfseries] at (.8,8.25) {#2};
+}{\end{tikzpicture}}
+\begin{document}
+
+% 01 / 0:30
+\begin{slide}{}{}
+\fill[white] (0,0) rectangle (16,9);
+\node[anchor=north east,inner sep=0] at (15.0,7.8) {\includegraphics[width=2.8in]{assets/mathathon-logo.pdf}};
+\node[text=Muted,font=\fontsize{22}{27}\selectfont] at (13.6,5.35) {Mathathon};
+\txt{.9}{7.8}{10.5}{49}{\textbf{Memory in first-order\\optimization}};
+\draw[Blue,line width=3pt] (.95,5.1)--(6.2,5.1);
+\txt{.95}{4.55}{12}{27}{An exact decision procedure for a fixed query budget};
+\txt{.95}{1.75}{13}{22}{Francisco Hern\'andez Iglesias and Jack Mayo};
+\txt[Muted]{.95}{1.17}{13}{18}{kurtos.ai\hspace{.5in}November 2026};
+\end{slide}
+
+% 02 / 0:55
+\begin{slide}{}{The queries happen in order}
+\foreach \x/\lab in {1.4/y_0,4.5/y_1,7.6/y_2,11/\cdots,14.4/y_N}{
+  \node[text=Ink,font=\fontsize{30}{36}\selectfont] at (\x,4.8) {$\lab$};}
+\foreach \a/\b/\lab in {1.9/4.0/g_0,5.0/7.1/g_1,8.1/10.5/g_2,11.5/13.85/g_{N-1}}{
+  \draw[->,Blue,line width=2pt] (\a,4.8)--(\b,4.8);
+  \node[text=Blue,font=\fontsize{23}{28}\selectfont] at ({(\a+\b)/2},5.4) {$\lab$};}
+\txt[Muted]{.9}{6.7}{13.8}{23}{$D=\R^n$\qquad Exact gradients\qquad Known horizon $N$};
+\eqn{7.9}{3.4}{29}{$g_k=\nabla f(y_k)$};
+\txt{2.5}{2.4}{11.7}{25}{Each new gradient depends on a point the method must first construct.};
+\txt[Muted]{11.9}{4.15}{3}{19}{terminal output};
+\end{slide}
+
+% 03 / 1:00
+\begin{slide}{}{Memory is what survives to the next query}
+\txt[Muted]{1}{6.75}{6}{22}{Before query $k$};
+\txt[Muted]{10.3}{6.75}{5}{22}{Before query $k+1$};
+\foreach \y/\lab in {5.25/y_k,3.65/z_k}{
+  \draw[Blue,line width=2pt] (1.2,\y-.45) rectangle (5.0,\y+.45);
+  \node[text=Blue,font=\fontsize{28}{34}\selectfont] at (3.1,\y) {$\lab\in\R^n$};}
+\foreach \y/\lab in {5.25/y_{k+1},3.65/z_{k+1}}{
+  \draw[Blue,line width=2pt] (10.5,\y-.45) rectangle (14.3,\y+.45);
+  \node[text=Blue,font=\fontsize{28}{34}\selectfont] at (12.4,\y) {$\lab\in\R^n$};}
+\draw[->,Ink,line width=2pt] (5.4,4.45)--(10,4.45);
+\node[text=Ink,font=\fontsize{23}{28}\selectfont] at (7.7,5.0) {linear update};
+\node[text=Orange,font=\fontsize{25}{30}\selectfont] at (7.7,3.35) {$g_k$};
+\draw[->,Orange,line width=1.8pt] (7.7,3.75)--(7.7,4.3);
+\txt[Muted]{5.75}{2.7}{4.5}{18}{fresh gradient, used now};
+\eqn{8}{1.6}{30}{$s=2\text{ total registers}\qquad m=s-1=1\text{ auxiliary}$};
+\end{slide}
+
+% 04 / 1:00
+\begin{slide}{}{A method is a triangular coefficient array}
+\begin{scope}[shift={(1.2,1.9)},x=.63in,y=.63in]
+\foreach \i in {0,...,5}{\foreach \j in {0,...,5}{
+  \ifnum\j<\i\fill[Blue!75] (\j,5-\i) rectangle +(0.9,.9);
+  \else\fill[Line!40] (\j,5-\i) rectangle +(0.9,.9);\fi}}
+\draw[Orange,line width=2.5pt] (-.1,.9) rectangle (5.95,1.95);
+\node[anchor=east,text=Orange,font=\fontsize{20}{24}\selectfont] at (-.25,1.4) {$y_4$};
+\foreach \j in {0,...,4}{\node[text=Muted,font=\fontsize{17}{20}\selectfont] at (\j+.45,6.3) {$g_{\j}$};}
+\end{scope}
+\eqn{11.05}{5.3}{30}{$y_i=x_0+\sum_{j<i}a_{ij}g_j$};
+\txt{7.7}{4.2}{6.7}{25}{Row $i$ tells us which past gradients are needed to construct $y_i$.};
+\txt[Blue]{7.7}{2.5}{6.7}{23}{Blue entries are coefficients chosen before execution.};
+\end{slide}
+
+% 05 / 1:20
+\begin{slide}{}{A cut separates the past from the future}
+\txt[Muted]{1}{6.8}{13}{23}{After $g_0,g_1,g_2$ have arrived, the remaining outputs need:};
+\fill[PaleBlue] (4.15,2.55) rectangle (9.65,5.78);
+\foreach \x/\lab in {4.8/x_0,6.15/g_0,7.5/g_1,8.85/g_2}{
+  \node[text=Muted,font=\fontsize{26}{32}\selectfont] at (\x,6.12) {$\lab$};}
+\foreach \y/\i in {5.3/3,4.55/4,3.8/5,3.05/6}{
+  \node[text=Muted,font=\fontsize{28}{34}\selectfont] at (3.55,\y) {$y_{\i}$};
+  \node[text=Blue,font=\fontsize{32}{38}\selectfont] at (4.8,\y) {$1$};
+  \foreach \x/\j in {6.15/0,7.5/1,8.85/2}{
+    \node[text=Blue,font=\fontsize{32}{38}\selectfont] at (\x,\y) {$a_{\i\j}$};}}
+\txt[Blue]{11.1}{4.9}{3.8}{30}{$H_3(W)$};
+\txt[Muted]{11.1}{4.1}{3.8}{21}{past contributions to future outputs};
+\txt{1.5}{1.6}{13}{25}{Its rank counts the independent combinations of the past that the future needs.};
+\end{slide}
+
+% 06 / 1:30
+\begin{slide}{}{The largest cut rank is the memory requirement}
+\eqn[Blue]{8}{6.3}{42}{$s(W)=\max_{0\le k\le N}\rank H_k(W)$};
+\txt{1.05}{4.9}{6.2}{27}{\textbf{Every implementation}};
+\draw[->,Ink,line width=1.8pt] (1.4,3.3)--(6.3,3.3);
+\node[fill=Paper,text=Blue,font=\fontsize{25}{30}\selectfont] at (3.8,3.3) {$\R^s$};
+\txt[Muted]{1.05}{2.65}{6.2}{22}{Past-to-future information must pass through $s$ registers.};
+\txt{8.7}{4.9}{6.2}{27}{\textbf{A matching construction}};
+\node[text=Teal,font=\fontsize{29}{35}\selectfont] at (11.8,3.3) {$E_k=\operatorname{im}H_k$};
+\txt[Muted]{8.7}{2.65}{6.2}{22}{Store coordinates of the future contributions in a basis of $E_k$.};
+\draw[Line,line width=1pt] (7.9,2.0)--(7.9,5.05);
+\end{slide}
+
+% 07 / 1:10
+\begin{slide}{}{Memory becomes polynomial equations}
+\eqn{8}{6.4}{31}{$T_{ij}=a_{i+1,j}-a_{ij}\qquad(j<i)$};
+\begin{scope}[shift={(1.8,2.2)},x=.62in,y=.62in]
+\foreach \i in {0,...,5}{\foreach \j in {0,...,5}{
+ \ifnum\j<\i\fill[Blue!30] (\j,5-\i) rectangle +(.9,.9);
+ \else\fill[Line!35] (\j,5-\i) rectangle +(.9,.9);\fi}}
+\fill[Blue] (0,0) rectangle (2.9,2.9);
+\node[text=white,font=\fontsize{28}{34}\selectfont] at (1.45,1.45) {$S_3(T)$};
+\end{scope}
+\txt{7.4}{5.1}{7.3}{26}{At most $m+1$ registers};
+\eqn[Blue]{10.85}{3.85}{31}{$\rank S_k(T)\le m\quad\text{for every }k$};
+\txt{7.4}{2.7}{7.3}{24}{Every $(m+1)$-minor of every cut block must be zero.};
+\end{slide}
+
+% 08 / 1:00
+\begin{slide}{}{The goal is the best worst-case loss}
+\eqn{8}{5.3}{38}{$V_m=
+\underbrace{\textcolor{Blue}{\inf_{s(W)\le m+1}}}_{\textcolor{Blue}{\text{choose the method}}}\;
+\underbrace{\textcolor{Orange}{\sup_{I\in\mathscr I}\bigl[f(y_N)-f(x_\star)\bigr]}}_{\textcolor{Orange}{\text{take the worst instance}}}$};
+\txt{1.5}{2.05}{13.3}{24}{The same method must work in every finite dimension.};
+\end{slide}
+
+% 09 / 1:15
+\begin{slide}{}{The oracle problem needs a finite description}
+\txt{1.1}{6.55}{6.1}{26}{All admissible function instances};
+\txt{9.1}{6.55}{5.8}{26}{Finitely many variables $z$};
+\node[text=Blue,font=\fontsize{38}{44}\selectfont] at (7.8,5.2) {$\Longleftrightarrow$};
+\txt[Muted]{1.1}{5.2}{5.6}{23}{Functions in all finite dimensions};
+\txt[Blue]{9.1}{5.2}{5.8}{24}{$\Psi_N(W,z)$\quad polynomial constraints};
+\draw[Line,line width=1.1pt] (1.1,3.9)--(14.8,3.9);
+\eqn{8}{3.0}{27}{$\{\text{actual losses for }W\}=\{e_N(W,z):\Psi_N(W,z)\}$};
+\txt{2.0}{1.65}{12.4}{24}{Both directions are required. No actual loss is lost, and no fictitious loss is added.};
+\end{slide}
+
+% 10 / 1:25
+\begin{slide}{}{Performance and memory must intersect}
+\txt[Orange]{1}{6.65}{7}{25}{1. Project performance onto $T$};
+\txt[Blue]{9.0}{6.65}{6}{25}{2. Impose the memory equations};
+\begin{scope}[shift={(1.2,1.6)}]
+\draw[->,Line,line width=1pt] (0,0)--(7.2,0);
+\draw[->,Line,line width=1pt] (0,0)--(0,4.2);
+\fill[PaleOrange] (3.9,2.1) ellipse (2.1 and 1.3);
+\draw[Orange,line width=1.3pt] (3.9,2.1) ellipse (2.1 and 1.3);
+\draw[Blue,line width=3pt] (.4,.5)..controls (2.4,.3) and (2.5,3.9)..(6.9,3.8);
+\fill[Teal] (2.75,2.1125) circle (.095);
+\node[text=Orange,font=\fontsize{25}{30}\selectfont] at (5.5,1.8) {$P_\gamma$};
+\node[text=Blue,font=\fontsize{25}{30}\selectfont] at (6.9,3.2) {$\mathcal Q_m$};
+\node[anchor=north west,text=Muted,font=\fontsize{15}{18}\selectfont] at (0,-.17) {schematic slice of coefficient space};
+\end{scope}
+\txt{9.0}{4.8}{5.9}{30}{\textbf{3. Decide}};
+\eqn[Teal]{11.85}{3.55}{33}{$P_\gamma\cap\mathcal Q_m\ne\varnothing$};
+\txt{9.0}{2.5}{5.9}{23}{Some eligible method has worst-case loss below $\gamma$.};
+\end{slide}
+
+% 11 / 1:20
+\begin{slide}{}{A new attainable threshold means memory helps}
+\txt[Muted]{1}{6.65}{13.8}{23}{The decision returns $\mathsf F_m=(V_m,\infty)$, or the empty set when $V_m=\infty$.};
+\node[anchor=east,text=Ink,font=\fontsize{22}{27}\selectfont] at (3.0,4.8) {$m$ auxiliaries};
+\draw[->,Line,line width=1.2pt] (3.5,4.8)--(14.8,4.8);
+\draw[->,Blue,line width=4pt] (9.1,4.8)--(14.8,4.8);
+\filldraw[fill=Paper,draw=Blue,line width=2pt] (9.1,4.8) circle (.09);
+\node[text=Blue,font=\fontsize{24}{29}\selectfont] at (9.1,5.45) {$V_m$};
+\node[anchor=east,text=Ink,font=\fontsize{22}{27}\selectfont] at (3.0,3.1) {$m+1$ auxiliaries};
+\draw[->,Line,line width=1.2pt] (3.5,3.1)--(14.8,3.1);
+\draw[->,Teal,line width=4pt] (6.1,3.1)--(14.8,3.1);
+\filldraw[fill=Paper,draw=Teal,line width=2pt] (6.1,3.1) circle (.09);
+\node[text=Teal,font=\fontsize{24}{29}\selectfont] at (6.1,2.45) {$V_{m+1}$};
+\draw[densely dashed,Orange,line width=1.6pt] (7.5,2.6)--(7.5,5.3);
+\node[text=Orange,font=\fontsize{26}{32}\selectfont] at (7.5,5.8) {$\gamma$};
+\txt{3.65}{1.45}{11.2}{25}{This $\gamma$ is feasible with the extra register and infeasible without it.};
+\end{slide}
+
+% 12 / 1:15
+\begin{slide}{}{Quadratics reduce to one spectral variable}
+\eqn{8}{6.35}{30}{$f(x)=\tfrac12(x-x_\star)^\top Q(x-x_\star),\qquad 0\preceq Q\preceq LI$};
+\node[text=Muted,font=\fontsize{25}{30}\selectfont] at (3.0,4.8) {matrix $Q$};
+\draw[->,Ink,line width=1.8pt] (4.35,4.8)--(6.4,4.8);
+\node[text=Blue,font=\fontsize{27}{33}\selectfont] at (10,4.8) {eigenvalue $\lambda\in[0,L]$};
+\eqn{8}{3.2}{37}{$\mathcal R(W)=\frac{R^2}{2}\max_{0\le\lambda\le L}\lambda\,p_N(\lambda)^2$};
+\txt{2.5}{1.9}{11.4}{24}{$p_N$ is the error polynomial. Its degree is at most $N$, and $p_N(0)=1$.};
+\end{slide}
+
+% 13 / 1:25
+\begin{slide}{}{The optimal polynomial gives a one-register schedule}
+\txt[Muted]{1}{6.65}{6.8}{22}{A Chebyshev polynomial balances the worst errors};
+% CHEB_PLOT
+\eqn[Blue]{11.2}{5.35}{29}{$p_\star(\lambda)=\prod_{j=1}^{N}\left(1-\frac{\lambda}{\lambda_j}\right)$};
+\txt{8.1}{4.3}{6.7}{24}{Each positive root gives one gradient step.};
+\eqn{11.2}{3.1}{28}{$y_{j}=y_{j-1}-\lambda_j^{-1}g_{j-1}$};
+\eqn[Teal]{11.2}{1.65}{31}{$V_m=\frac{LR^2}{2(2N+1)^2}\quad\text{for all }m$};
+\end{slide}
+
+% 14 / 1:20
+\begin{slide}{}{Two registers attain the smooth convex optimum}
+\txt[Muted]{1}{6.65}{13.8}{23}{Convex $f$ with an $L$-Lipschitz gradient};
+\draw[Blue,line width=2pt] (1.3,3.35) rectangle (5.3,5.5);
+\node[text=Blue,font=\fontsize{35}{42}\selectfont] at (3.3,4.65) {$y_k$};
+\node[text=Ink,font=\fontsize{23}{28}\selectfont] at (3.3,3.9) {current query};
+\draw[Teal,line width=2pt] (6.2,3.35) rectangle (10.2,5.5);
+\node[text=Teal,font=\fontsize{35}{42}\selectfont] at (8.2,4.65) {$z_k$};
+\node[text=Ink,font=\fontsize{23}{28}\selectfont] at (8.2,3.9) {auxiliary vector};
+\txt{11.1}{5.2}{3.8}{27}{Optimized gradient method};
+\eqn{8}{2.1}{37}{$V_m=V_{\mathrm{lin}}=c_N:=\frac{LR^2}{2\theta_N^2}\qquad(m\ge1)$};
+\end{slide}
+
+% 15 / 1:25
+\begin{slide}{}{One register cannot match OGM when $N\ge2$}
+\txt{1.1}{6.4}{13.8}{25}{Suppose the one-register infimum equalled $c_N$.};
+\node[text=Blue,font=\fontsize{28}{34}\selectfont] at (3.5,4.9) {attainment};
+\draw[->,Ink,line width=1.8pt] (5.25,4.9)--(6.5,4.9);
+\node[text=Ink,font=\fontsize{27}{33}\selectfont] at (10.3,4.9) {an optimal one-register map $W_0$};
+\node[text=Blue,font=\fontsize{28}{34}\selectfont] at (3.5,3.55) {uniqueness};
+\draw[->,Ink,line width=1.8pt] (5.25,3.55)--(6.5,3.55);
+\eqn{10.3}{3.55}{31}{$W_0=W_{\mathrm{OGM}}$};
+\draw[Line,line width=1pt] (1.15,2.65)--(14.85,2.65);
+\eqn[Orange]{8}{1.75}{32}{$T(W_0)=0\qquad\text{but}\qquad T(W_{\mathrm{OGM}})_{10}\ne0$};
+\end{slide}
+
+% 16 / 1:10
+\begin{slide}{}{The two benchmarks require different memory ($N\ge2$)}
+\txt[Muted]{5.55}{6.6}{3}{22}{1 register};
+\txt[Muted]{9.1}{6.6}{3}{22}{2 registers};
+\txt[Muted]{12.45}{6.6}{3}{22}{3 or more};
+\draw[Line,line width=1pt] (1,5.9)--(14.8,5.9);
+\txt{1.05}{5.4}{4.1}{27}{Convex quadratics};
+\txt[Teal]{5.55}{5.4}{3}{27}{optimal};
+\txt[Muted]{9.1}{5.4}{3}{27}{same value};
+\txt[Muted]{12.45}{5.4}{3}{27}{same value};
+\draw[Line,line width=1pt] (1,4.35)--(14.8,4.35);
+\txt{1.05}{3.85}{4.1}{27}{Smooth convex};
+\txt[Orange]{5.55}{3.85}{3}{27}{strictly worse};
+\txt[Teal]{9.1}{3.85}{3}{27}{optimal};
+\txt[Muted]{12.45}{3.85}{3}{27}{same value};
+\draw[Line,line width=1pt] (1,2.8)--(14.8,2.8);
+\txt{1.05}{1.9}{13.7}{28}{For a new class, determine where its performance sets meet the memory loci.};
+\end{slide}
+
+% APPENDIX A
+\begin{slide}{}{The two-register OGM recurrence}
+\eqn{8}{6.25}{28}{$\theta_0=1,\qquad\theta_k=\frac{1+\sqrt{1+4\theta_{k-1}^2}}2\ (1\le k<N),
+\qquad\theta_N=\frac{1+\sqrt{1+8\theta_{N-1}^2}}2$};
+\txt[Muted]{1.3}{5.1}{13.5}{22}{Initialize $y_0=z_0=x_0$. For $k=0,\ldots,N-1$:};
+\eqn{8}{3.65}{31}{$g_k=\nabla f(y_k),\qquad z_{k+1}=z_k-\frac{2\theta_k}{L}g_k$};
+\eqn{8}{2.2}{31}{$y_{k+1}=\left(1-\frac1{\theta_{k+1}}\right)\left(y_k-\frac1L g_k\right)
++\frac1{\theta_{k+1}}z_{k+1}$};
+\end{slide}
+
+\end{document}

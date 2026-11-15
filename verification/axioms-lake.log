@@ -1,0 +1,54 @@
+info: mathlib: remote URL changed
+  old: git@github.com:leanprover-community/mathlib4.git
+  new: https://github.com/leanprover-community/mathlib4.git
+info: plausible: remote URL changed
+  old: git@github.com:leanprover-community/plausible
+  new: https://github.com/leanprover-community/plausible
+info: LeanSearchClient: remote URL changed
+  old: git@github.com:leanprover-community/LeanSearchClient
+  new: https://github.com/leanprover-community/LeanSearchClient
+info: importGraph: remote URL changed
+  old: git@github.com:leanprover-community/import-graph
+  new: https://github.com/leanprover-community/import-graph
+info: proofwidgets: remote URL changed
+  old: git@github.com:leanprover-community/ProofWidgets4
+  new: https://github.com/leanprover-community/ProofWidgets4
+info: aesop: remote URL changed
+  old: git@github.com:leanprover-community/aesop
+  new: https://github.com/leanprover-community/aesop
+info: Qq: remote URL changed
+  old: git@github.com:leanprover-community/quote4
+  new: https://github.com/leanprover-community/quote4
+info: batteries: remote URL changed
+  old: git@github.com:leanprover-community/batteries
+  new: https://github.com/leanprover-community/batteries
+info: Cli: remote URL changed
+  old: git@github.com:leanprover/lean4-cli
+  new: https://github.com/leanprover/lean4-cli
+'MemoryDecision.risk_lt_iff_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.mem_performance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.threshold_iff_value_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.thresholds_eq_ray_of_value_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.thresholds_empty_iff_value_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.gain_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.gain_has_rational_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.value_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.value_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryDecision.strict_separation_of_unique_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryBlock.blockOne_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryBlock.upperBlock_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RealizationCore.rank_H_eq_one_add_rank_S' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryRank.Incremental.Q_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemoryRank.CutRank.memRank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticBenchmark.productPoly_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticBenchmark.productPoly_eval_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuadraticBenchmark.quadMinimaxValue_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmoothBenchmark.theta_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmoothBenchmark.theta_ge_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmoothBenchmark.theta_recurrence_standard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmoothBenchmark.theta_recurrence_final' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SmoothBenchmark.factoredT_rank_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegisterMachine.Hk_eq_phi_mul_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegisterMachine.necessity_rank_le_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegisterMachine.increment_rank_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RegisterMachine.maxCutRank_le_registers' depends on axioms: [propext, Classical.choice, Quot.sound]

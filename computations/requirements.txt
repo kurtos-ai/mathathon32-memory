@@ -1,0 +1,2 @@
+# No third-party dependencies required; Python 3.10+ standard library only
+# Optional: numpy>=1.24 for numeric cross-checks (not needed for exact logs)

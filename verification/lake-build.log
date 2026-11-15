@@ -1,0 +1,173 @@
+info: mathlib: remote URL changed
+  old: git@github.com:leanprover-community/mathlib4.git
+  new: https://github.com/leanprover-community/mathlib4.git
+info: plausible: remote URL changed
+  old: git@github.com:leanprover-community/plausible
+  new: https://github.com/leanprover-community/plausible
+info: LeanSearchClient: remote URL changed
+  old: git@github.com:leanprover-community/LeanSearchClient
+  new: https://github.com/leanprover-community/LeanSearchClient
+info: importGraph: remote URL changed
+  old: git@github.com:leanprover-community/import-graph
+  new: https://github.com/leanprover-community/import-graph
+info: proofwidgets: remote URL changed
+  old: git@github.com:leanprover-community/ProofWidgets4
+  new: https://github.com/leanprover-community/ProofWidgets4
+info: aesop: remote URL changed
+  old: git@github.com:leanprover-community/aesop
+  new: https://github.com/leanprover-community/aesop
+info: Qq: remote URL changed
+  old: git@github.com:leanprover-community/quote4
+  new: https://github.com/leanprover-community/quote4
+info: batteries: remote URL changed
+  old: git@github.com:leanprover-community/batteries
+  new: https://github.com/leanprover-community/batteries
+info: Cli: remote URL changed
+  old: git@github.com:leanprover/lean4-cli
+  new: https://github.com/leanprover/lean4-cli
+⚠ [1897/2236] Replayed MemoryRank.Defs
+warning: lean/MemoryRank/Defs.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+⚠ [3138/3391] Replayed MemoryRank.CutRank
+warning: lean/MemoryRank/CutRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+info: lean/MemoryRank/CutRank.lean:52:0: 'MemoryRank.CutRank.memRank_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3139/3391] Replayed MemoryRank.IncrementalRank
+warning: lean/MemoryRank/IncrementalRank.lean:5:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+info: lean/MemoryRank/IncrementalRank.lean:63:0: 'MemoryRank.Incremental.S_k_rank_le_height' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/MemoryRank/IncrementalRank.lean:64:0: 'MemoryRank.Incremental.Q_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/MemoryRank/IncrementalRank.lean:65:0: 'MemoryRank.Incremental.zero_mem_Q' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/MemoryRank/IncrementalRank.lean:66:0: 'MemoryRank.Incremental.S_k_rank_le_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9049/9062] Replayed Decision.Thresholds
+warning: lean/Decision/Thresholds.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+warning: lean/Decision/Thresholds.lean:33:33: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: lean/Decision/Thresholds.lean:85:8: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  Set.mem_s̲diff
+warning: lean/Decision/Thresholds.lean:90:8: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  Set.mem_s̲diff
+warning: lean/Decision/Thresholds.lean:102:5: Variable name `hS_bdd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hS_bdd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9050/9062] Replayed Benchmarks.Quadratic
+warning: lean/Benchmarks/Quadratic.lean:13:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+warning: lean/Benchmarks/Quadratic.lean:38:19: This simp argument is unused:
+  h1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [eval_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9051/9062] Replayed Benchmarks.Smooth
+warning: lean/Benchmarks/Smooth.lean:12:0: 'Mathlib.Data.Real.Basic' has been deprecated: please replace this import by
+
+import Mathlib.Basic.Real.Basic
+warning: lean/Benchmarks/Smooth.lean:85:13: This simp argument is unused:
+  show ¬(k - 1 + 1 = N) from by omega
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [theta, show k - 1 + 1 < N from by omega, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Benchmarks/Smooth.lean:94:8: This simp argument is unused:
+  h1
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h2]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/Benchmarks/Smooth.lean:134:68: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: lean/Benchmarks/Smooth.lean:151:39: Variable name `hN` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hN
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [9054/9062] Replayed MemoryRank.ZeroLocus
+info: lean/MemoryRank/ZeroLocus.lean:42:0: 'MemoryRank.Incremental.Q_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9056/9062] Replayed Decision.ExactThresholds
+info: lean/Decision/ExactThresholds.lean:159:0: 'MemoryDecision.risk_le_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:160:0: 'MemoryDecision.risk_lt_iff_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:161:0: 'MemoryDecision.threshold_iff_value_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:162:0: 'MemoryDecision.thresholds_eq_ray_of_value_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:163:0: 'MemoryDecision.thresholds_empty_iff_value_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:164:0: 'MemoryDecision.gain_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:165:0: 'MemoryDecision.risk_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:166:0: 'MemoryDecision.value_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:167:0: 'MemoryDecision.value_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:168:0: 'MemoryDecision.gain_has_rational_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/Decision/ExactThresholds.lean:169:0: 'MemoryDecision.strict_separation_of_unique_attainment' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9058/9062] Replayed RealizationCore.BlockRank
+info: lean/RealizationCore/BlockRank.lean:102:0: 'MemoryBlock.blockOne_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/BlockRank.lean:103:0: 'MemoryBlock.upperBlock_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9059/9062] Replayed RealizationCore.RankIdentity
+warning: lean/RealizationCore/RankIdentity.lean:56:154: This simp argument is unused:
+  hi
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [M_k, Matrix.of_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: lean/RealizationCore/RankIdentity.lean:102:0: 'RealizationCore.rank_H_eq_one_add_rank_S' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [9060/9062] Built RealizationCore.RegisterMachine (30s)
+warning: lean/RealizationCore/RegisterMachine.lean:228:6: This simp argument is unused:
+  Nat.not_lt.mpr (Nat.le_add_right k t)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [show ∀ j : Fin k, j.val < k from fun j => j.isLt, Nat.add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: lean/RealizationCore/RegisterMachine.lean:287:38: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:16: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:43: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: lean/RealizationCore/RegisterMachine.lean:287:38: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:16: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: lean/RealizationCore/RegisterMachine.lean:288:43: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: lean/RealizationCore/RegisterMachine.lean:369:0: 'RegisterMachine.psi_mulVec_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RegisterMachine.lean:370:0: 'RegisterMachine.Hk_mulVec_truncTarget' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RegisterMachine.lean:371:0: 'RegisterMachine.necessity_rank_le_unconditional' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RegisterMachine.lean:395:0: 'RegisterMachine.Hk_eq_phi_mul_psi' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RegisterMachine.lean:396:0: 'RegisterMachine.increment_rank_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: lean/RealizationCore/RegisterMachine.lean:397:0: 'RegisterMachine.maxCutRank_le_registers' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9061/9062] Built RealizationCore (22s)
+Build completed successfully (9062 jobs).
