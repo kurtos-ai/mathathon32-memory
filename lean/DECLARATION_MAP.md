@@ -7,8 +7,11 @@ Lean 4.35.0 and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` are pi
 |---|---|---|
 | Proposition 2.3, rank identity | `RealizationCore.rank_H_eq_one_add_rank_S` | Exact identity for every finite N and cut k≤N, with the actual consecutive-row increment blocks. Includes empty endpoint cuts. |
 | Proposition 2.3, Q₀={0} | `MemoryRank.Incremental.Q_zero_iff` | Exact equivalence on strictly lower triangular T. The triangular hypothesis is explicit. |
-| Theorem 2.1, lower bound | `RegisterMachine.Hk_eq_phi_mul_psi`, `necessity_rank_le_unconditional`, `maxCutRank_le_registers` | Actual scalar register recursion initialized at e₁x₀; reproduces every query and terminal output for arbitrary formal inputs. The cut factorization is derived, not assumed. The tensor extension to arbitrary dimensions is in the written proof. |
-| Theorem 2.1, dimension bound | `MemoryRank.CutRank.memRank_le` | Bounds the maximum cut rank by 1+floor(N/2); does not identify it with the minimum register count. |
+| Theorem 2.1, lower bound | `RegisterMachine.Hk_eq_phi_mul_psi`, `necessity_rank_le_unconditional`, `maxCutRank_le_registers` | Actual scalar register recursion initialized at e₁x₀; reproduces every query and terminal output for arbitrary formal inputs. The cut factorization is derived, not assumed. |
+| Theorem 2.1, construction and equivalence | `RegisterMachine.realization_iff_rank_all`, `realization_iff_maxCutRank`, `isLeast_registerCount` | Constructs a machine from cut-rank bounds using the canonical cut ranges, finite-basis embeddings and proved left inverses. The top-level theorem assumes only the cut-rank bounds. The maximum cut rank is proved to be the least operational register count. Includes N=0 and s=0. |
+| Theorem 2.1, all finite dimensions | `RegisterMachine.vectorRealizes_iff_scalar`, `vectorRealization_iff_maxCutRank`, `isLeast_vectorRegisterCount` | Direct vector-state recursion and a coordinatewise induction. One predetermined coefficient machine works for every dimension; all query points and the terminal output are reproduced for arbitrary formal vector inputs. |
+| Theorem 2.1, dimension bound | `MemoryRank.CutRank.memRank_le` | Bounds the maximum cut rank by 1+floor(N/2), hence bounds the minimum register count by the equivalences above. |
+| Proposition 2.3, operational memory locus | `RegisterMachine.realization_iff_incrementLocus`, `one_register_iff_zero_increment` | Actual m+1-register realizability iff all interior increment-block ranks are at most m. One register iff T(W)=0. Endpoint blocks are proved harmless. The rank/minor equivalence itself is not formalized. |
 | Theorem 3.1, strict uniform bound | `MemoryDecision.risk_lt_iff_uniform_bound` | Exact equivalence for the EReal supremum of a supplied feasible real loss model, including unbounded loss. |
 | Theorem 3.1, projected performance set | `MemoryDecision.mem_performance_iff` | Performance is defined from the loss constraints using ∃d ∃b<γ ∀z, not from unknown minimax values. |
 | Theorem 3.1, threshold intersection | `MemoryDecision.threshold_iff_value_lt` | Exact equivalence to an independently defined infimum of risks. No attainment or finite-risk assumption. The memory set is an explicit input. |
@@ -20,7 +23,7 @@ Lean 4.35.0 and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` are pi
 | Smooth helpers | `SmoothBenchmark.theta_pos`, `theta_ge_one`, `theta_recurrence_standard`, `theta_recurrence_final` | Scalar θ recurrence and bounds. |
 | Generic rank-one cut construction | `SmoothBenchmark.factoredT_rank_le_one` | Rank bound for supplied outer-product coefficients; no identification with actual OGM coefficients. |
 
-The report's full realization equivalence, normalized-register equivalence,
+The report's normalized-register equivalence,
 projected-method theorems, exact interpolation models, effective quantifier
 elimination/root isolation, quadratic minimax theorem, OGM optimality and
 uniqueness, and benchmark attainment arguments are not yet Lean formalized.

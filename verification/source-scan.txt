@@ -1,2 +1,3 @@
-PASS: no sorry, admit, custom axiom, or native_decide in retained Lean code.
-Declaration types and #print axioms are audited separately.
+Retained Lean source scan: PASS
+No sorry, admit, native_decide, or custom axiom declarations.
+Public declaration dependency audit: 43 declarations; only propext, Classical.choice, Quot.sound.

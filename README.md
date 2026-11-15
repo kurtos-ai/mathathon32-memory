@@ -12,9 +12,11 @@ and Jack Mayo (kurtos.ai).
 
 The report proves the realization and decision results, and cites the established
 optimization results used in the examples. The Lean library verifies the
-operational register lower bound, cut/increment rank identity, the zero-increment locus, and extended-risk
-threshold/gain criterion, and supporting algebraic lemmas. The full realization
-and benchmark minimax proofs are not yet formalized. See
+full operational register realization theorem in every finite dimension,
+cut/increment rank identity, the rank-form memory locus and one-register
+characterization, the extended-risk threshold/gain criterion, and supporting
+algebraic lemmas. The benchmark minimax and effective quantifier-elimination
+proofs are not yet formalized. See
 `lean/DECLARATION_MAP.md`; a successful build is not a claim that the whole report
 has been formally verified.
 

@@ -3,3 +3,6 @@ module
 public import RealizationCore.BlockRank
 public import RealizationCore.RankIdentity
 public import RealizationCore.RegisterMachine
+public import RealizationCore.RealizationTheorem
+public import RealizationCore.MemoryCharacterization
+public import RealizationCore.VectorRealization
