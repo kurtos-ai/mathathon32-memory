@@ -72,3 +72,10 @@ public import RealizationCore
 #print axioms RealizationCore.W_of_dT_of
 #print axioms RealizationCore.coordinateEquiv
 #print axioms RealizationCore.realization_iff_coordinates
+
+#print axioms Continuation.Projected.projStateAux_succ
+#print axioms Continuation.Projected.projQuery_zero
+#print axioms Continuation.Projected.projQuery_succ_eq_piK
+#print axioms Continuation.Projected.projQuery_mem_K
+#print axioms Continuation.Projected.direct_singleton_a
+#print axioms Continuation.Projected.proj_singleton_a
