@@ -294,3 +294,15 @@ Remaining programme: connect actual smooth risk to approaching compact dual
 certificates, conclude actual coefficient uniqueness and the strict N≥2 memory
 gap, and finish general multivariate nonlinear quantifier elimination. Local
 agents continue these tasks; the external Open Math provider remains quota-blocked.
+
+## Actual smooth uniqueness and complete memory classification
+
+Accepted batch: 15 modules, 9,183 successful build jobs, 1,431 audited declarations.
+Actual-risk duality is proved by separation and Gram realization, and the
+approaching-certificate theorem closes the actual coefficient-uniqueness proof.
+The operational strict-gain and threshold-gain classifications now hold exactly
+when m=0 and N≥2. No abstract duality or uniqueness assumption remains.
+Arbitrary-degree univariate existential/universal Boolean decision is executable
+and proved correct. The final coverage audit continues for general nonlinear QE,
+algebraic coefficient rationalization, endpoint/minimax output composition,
+fixed-dimension realization, and quadratic/projected operational wrappers.

@@ -1,7 +1,7 @@
 # Formalization status
 
 The retained library builds with pinned Lean/Mathlib 4.35.0. Current verification:
-9,168 successful build jobs and 1,300 audited declarations. Audited declarations
+9,183 successful build jobs and 1,431 audited declarations. Audited declarations
 use only `propext`, `Classical.choice`, and `Quot.sound`; retained sources contain
 no proof holes, custom axioms, or `native_decide`.
 
@@ -50,9 +50,14 @@ The full admissible TC factorization is proved, including singular pivots.
 Optimal factors and the method certified by them are unique. Approaching optimal
 certificates converge to those factors, and closed feasibility supplies the
 limiting certificate. The coefficient normalization and actual smooth-instance
-scaling are also proved. Full coefficient uniqueness for actual oracle risk still
-requires the risk-to-certificate duality bridge. Consequently the strict gap from
-m=0 to m=1 at horizons N≥2 remains outside the accepted Lean result.
+scaling are also proved. The actual-risk duality bridge is now proved from finite-dimensional convex
+separation and positive-functional Gram realization. It supplies arbitrarily
+close compact certificates from actual oracle bounds, with no Slater,
+interpolation, or duality assumption. Actual optimal coefficient maps are exactly
+OGM. For every horizon and budget, increasing auxiliary memory m to m+1 strictly
+improves minimax performance exactly when m=0 and N≥2. The equivalent threshold
+set criterion is also proved. These are statements about independently defined
+all-dimensional operational risk, not just certificate optimization.
 
 Rational root isolation is now executable and certified. Coefficient-list
 arithmetic, division, gcd, Bezout coefficients, derivative and evaluation refine
@@ -67,7 +72,17 @@ Executable symbolic elimination is proved for arbitrary Boolean combinations
 affine in the eliminated variable, with rational polynomial parameter
 coefficients. It handles strict and weak inequalities, equality, negation and
 coefficient sign changes. Four guarded execution checks pass. This restricted
-result is not general multivariate nonlinear QE, which remains unfinished.
+result is not general multivariate nonlinear QE. A complete executable decision
+procedure now handles arbitrary-degree Boolean formulas with one quantified real
+variable and rational coefficients, for both existential and universal
+quantifiers. Root-free regions have certified rational representatives; exact
+algebraic signs handle roots. Five guarded runs check satisfiable, unsatisfiable,
+universal and constant cases.
+
+General multivariate nonlinear QE remains unfinished. The final coverage audit
+also identified algebraic-coefficient syntax reduction, composition of exact
+endpoint selection with minimax computation, fixed-dimension uniqueness, and
+small quadratic/projected operational wrappers; agents are completing these.
 
 The report is still partially formalized. Only checked modules enter the tracked
 library. External Open Math work is preserved; local Codex agents continue after

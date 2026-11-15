@@ -138,3 +138,33 @@ public import Continuation.Semialgebraic.SymbolicAffineQE
 public import Continuation.RootIsolation.AlgebraicZeroTest
 
 public import Continuation.RootIsolation.AlgebraicSign
+
+public import Continuation.GJP.ActualDuality
+
+public import Continuation.GJP.ActualUniqueness
+
+public import Continuation.GJP.ConicSeparation
+
+public import Continuation.GJP.DualAnnihilator
+
+public import Continuation.GJP.DualCone
+
+public import Continuation.GJP.DualCoordinates
+
+public import Continuation.GJP.DualFeasibility
+
+public import Continuation.GJP.DualInterpolation
+
+public import Continuation.GJP.DualPairing
+
+public import Continuation.GJP.DualRealization
+
+public import Continuation.GJP.FactorizationNormalization
+
+public import Continuation.GJP.OperationalGap
+
+public import Continuation.GJP.PositiveKernel
+
+public import Continuation.RootIsolation.SignSamples
+
+public import Continuation.Semialgebraic.UnivariateDecision

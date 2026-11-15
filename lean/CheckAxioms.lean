@@ -1597,3 +1597,265 @@ public import RealizationCore
 #print axioms RootIsolation.Executable.rootSign
 
 #print axioms RootIsolation.Executable.rootSign_correct
+
+#print axioms GJPDual.actual_bound_approximate_certificate
+
+#print axioms GJPDual.normalized_approaching_certificates
+
+#print axioms GJP.sharp_methods_equal
+
+#print axioms GJP.actual_method_unique
+
+#print axioms GJP.operational_method_unique
+
+#print axioms GJP.operational_coordinates_unique
+
+#print axioms GJP.operational_optimal_iff
+
+#print axioms ConicDuality.imageCone
+
+#print axioms ConicDuality.imageCone_zero
+
+#print axioms ConicDuality.imageCone_smul
+
+#print axioms ConicDuality.imageCone_convex
+
+#print axioms ConicDuality.imageCone_interior_of_positive_annihilator
+
+#print axioms ConicDuality.approximate_dual
+
+#print axioms GJPDual.positive_annihilator_zero
+
+#print axioms GJPDual.Q
+
+#print axioms GJPDual.Index
+
+#print axioms GJPDual.symmetricSpace
+
+#print axioms GJPDual.SymBlock
+
+#print axioms GJPDual.Off
+
+#print axioms GJPDual.E
+
+#print axioms GJPDual.Y
+
+#print axioms GJPDual.linearMatrix
+
+#print axioms GJPDual.linearMatrix_symm
+
+#print axioms GJPDual.linearMatrix_add
+
+#print axioms GJPDual.linearMatrix_smul
+
+#print axioms GJPDual.mapLinear
+
+#print axioms GJPDual.conicMap
+
+#print axioms GJPDual.cost
+
+#print axioms GJPDual.constantMatrix
+
+#print axioms GJPDual.constantMatrix_symm
+
+#print axioms GJPDual.constant
+
+#print axioms GJPDual.ConePred
+
+#print axioms GJPDual.conePred_closed
+
+#print axioms GJPDual.cone
+
+#print axioms GJPDual.mem_cone
+
+#print axioms GJPDual.matrixSymm_symm
+
+#print axioms GJPDual.matrixSymm_of_symm
+
+#print axioms GJPDual.symmetrize
+
+#print axioms GJPDual.matrixInjection
+
+#print axioms GJPDual.offInjection
+
+#print axioms GJPDual.rowInjection
+
+#print axioms GJPDual.colInjection
+
+#print axioms GJPDual.matrixFunctional
+
+#print axioms GJPDual.gram
+
+#print axioms GJPDual.offWeight
+
+#print axioms GJPDual.rowWeight
+
+#print axioms GJPDual.colWeight
+
+#print axioms GJPDual.matrixFunctional_eq
+
+#print axioms GJPDual.linear_pi_eq_sum
+
+#print axioms GJPDual.functional_eq
+
+#print axioms GJPDual.gram_symm
+
+#print axioms GJPDual.gram_psd
+
+#print axioms GJPDual.rowWeight_nonneg
+
+#print axioms GJPDual.colWeight_nonneg
+
+#print axioms GJPDual.offWeight_nonneg
+
+#print axioms GJPDual.slack_matrix
+
+#print axioms GJPDual.bordered_rate_pos
+
+#print axioms GJPDual.compact_of_cone
+
+#print axioms GJP.additiveHistory
+
+#print axioms GJP.additiveHistory_strict
+
+#print axioms GJP.sourceMatrix_additiveHistory
+
+#print axioms GJP.additiveHistory_sourceMatrix
+
+#print axioms GJP.gram_v_none
+
+#print axioms GJP.gram_v_some
+
+#print axioms GJP.shiftedSite
+
+#print axioms GJP.shiftedSite_none
+
+#print axioms GJP.shiftedSite_some
+
+#print axioms GJP.gram_shiftedSite
+
+#print axioms GJP.gramIndex
+
+#print axioms GJP.gramOfBlock
+
+#print axioms GJP.gramOfBlock_psd
+
+#print axioms GJP.shiftedPairing
+
+#print axioms GJP.shiftedSite_pairing
+
+#print axioms GJP.shifted_interpolation_identity
+
+#print axioms GJP.feasible_of_shifted_coordinates
+
+#print axioms GJP.shifted_coordinates_actual_loss
+
+#print axioms GJPDual.matrix_pair_symm
+
+#print axioms GJPDual.matrixFunctional_bordered
+
+#print axioms GJPDual.matrixFunctional_linearMatrix_single
+
+#print axioms GJPDual.matrixFunctional_radius
+
+#print axioms GJPDual.matrixFunctional_constant
+
+#print axioms GJPDual.functional_parts
+
+#print axioms GJPDual.functional_radius
+
+#print axioms GJPDual.functional_constant
+
+#print axioms GJPDual.offVector_single
+
+#print axioms GJPDual.offVector_diagonal
+
+#print axioms GJPDual.functional_single_offdiag
+
+#print axioms GJPDual.functional_single_diag
+
+#print axioms GJPDual.compatible_apply
+
+#print axioms GJPDual.compatible_radius
+
+#print axioms GJPDual.compatible_diagonal
+
+#print axioms GJPDual.compatible_pair
+
+#print axioms GJPDual.positive_functional_actual_loss
+
+#print axioms GJPDual.positive_functional_bound
+
+#print axioms GJP.UnitLower.first_row
+
+#print axioms GJP.UnitLower.first_row_sum
+
+#print axioms GJP.upper_mulVec_first_support
+
+#print axioms GJP.TCFactor.row_normalized_pivots
+
+#print axioms GJP.normalizeZeroRows
+
+#print axioms GJP.TCFactor.normalize_zero_rows
+
+#print axioms GJP.exists_TC_row_normalized
+
+#print axioms GJP.TCFactor.column_normalized
+
+#print axioms GJP.operational_zero_memory_gap
+
+#print axioms GJP.operational_strict_gain
+
+#print axioms GJP.operational_strict_gain_iff
+
+#print axioms GJP.operational_threshold_gain_iff
+
+#print axioms GJPDual.psd_column_zero
+
+#print axioms GJPDual.triangular_positive_kernel
+
+#print axioms RootIsolation.Executable.partition_cover_of_abs_le
+
+#print axioms RootIsolation.Executable.grid_cell_roots_unique
+
+#print axioms RootIsolation.Executable.rootfree_endpoint_of_unique
+
+#print axioms RootIsolation.Executable.signSamples
+
+#print axioms RootIsolation.Executable.exists_rootfree_sample
+
+#print axioms RootIsolation.Executable.realSign_eq_of_no_root_uIcc
+
+#print axioms RootIsolation.Executable.exists_sample_same_signs
+
+#print axioms RootIsolation.Executable.familyProduct
+
+#print axioms RootIsolation.Executable.familyProduct_ne_zero
+
+#print axioms RootIsolation.Executable.familyProduct_covers
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.compileUnivariate
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.compileUnivariate_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.realSign_eq_neg_one_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.realSign_eq_zero_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.realSign_eq_one_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.atomPolys
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.evalSigns
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.evalSigns_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.decideExists
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.decideExists_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.decideExists_toQF
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.decideForall
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.decideForall_correct
