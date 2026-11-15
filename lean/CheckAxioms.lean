@@ -4315,3 +4315,29 @@ public import TauCeti.FieldTheory.IsRealClosed.Real
 #print axioms NearQuadratic.ResponseBridge.hSeq
 #print axioms NearQuadratic.ResponseBridge.actual_response_displacement_bound
 #print axioms NearQuadratic.ResponseBridge.terminal_gap_of_response_estimates
+
+-- Four-query identities from actual normalized path conditions.
+#print axioms Submission2026.Separation.PathIdentities4.sum5
+#print axioms Submission2026.Separation.PathIdentities4.tail
+#print axioms Submission2026.Separation.PathIdentities4.weightedSquare
+#print axioms Submission2026.Separation.PathIdentities4.ratio_step
+#print axioms Submission2026.Separation.PathIdentities4.ratio_terminal
+#print axioms Submission2026.Separation.PathIdentities4.normalized_sum
+#print axioms Submission2026.Separation.PathIdentities4.tail_pairing
+#print axioms Submission2026.Separation.PathIdentities4.diagonal_weighted
+#print axioms Submission2026.Separation.PathIdentities4.weighted_stationarity
+#print axioms Submission2026.Separation.PathIdentities4.weightedSquare_eq
+#print axioms Submission2026.Separation.PathIdentities4.sum5_congr
+#print axioms Submission2026.Separation.PathIdentities4.ratio_moments
+#print axioms Submission2026.Separation.PathIdentities4.centered_variance
+#print axioms Submission2026.Separation.PathIdentities4.first_path_identity
+#print axioms Submission2026.Separation.PathIdentities4.pairVariation
+#print axioms Submission2026.Separation.PathIdentities4.pathLambda
+#print axioms Submission2026.Separation.PathIdentities4.pair_variance
+#print axioms Submission2026.Separation.PathIdentities4.lambda_eq
+#print axioms Submission2026.Separation.PathIdentities4.path_variance
+#print axioms Submission2026.Separation.PathIdentities4.second_path_identity
+#print axioms Submission2026.Separation.PathIdentities4.pairVariation_pos
+#print axioms Submission2026.Separation.PathIdentities4.weightedSquare_strict
+#print axioms Submission2026.Separation.PathIdentities4.totalStep
+#print axioms Submission2026.Separation.PathIdentities4.totalStep_eq
