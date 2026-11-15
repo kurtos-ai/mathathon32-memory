@@ -28,3 +28,5 @@ public import Continuation.Smooth.Attain.Coeff
 public import Continuation.Smooth.Attain.Continuity
 public import Continuation.Smooth.Necessary
 public import Continuation.Smooth.ActualInterpolation
+public import Continuation.OracleTrajectory
+public import Continuation.Smooth.GramModel

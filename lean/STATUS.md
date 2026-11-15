@@ -27,3 +27,9 @@ in Lean. Work-in-progress files with proof holes
 are excluded from this repository. A separate Open Math project retains the
 research history. A successful library build does not make the entire paper
 formally verified.
+
+The causal exact-oracle trajectory, its uniqueness and register-execution bridge,
+and the generic zero-chain induction are proved. The finite smooth Gram formula
+is explicitly defined and every actual all-dimensional loss is represented in
+it; the converse realizability direction still needs smooth interpolation
+sufficiency and its assembly.

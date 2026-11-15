@@ -481,3 +481,36 @@ public import RealizationCore
 #print axioms SmoothNecessary.interpolation_necessary
 #print axioms SmoothAttain.Instance.interpolation_necessary
 #print axioms SmoothAttain.Instance.gradient_at_minimizer
+
+-- Actual causal oracle execution and zero-chain support.
+#print axioms OracleTrajectory.run
+#print axioms OracleTrajectory.run_eq
+#print axioms OracleTrajectory.run_zero
+#print axioms OracleTrajectory.unique
+#print axioms OracleTrajectory.zero_chain
+#print axioms OracleTrajectory.run_eq_vectorTarget
+#print axioms OracleTrajectory.realization_executes_oracle
+
+-- Forward exact-function to finite Gram-model reduction.
+#print axioms SmoothGramModel.gram
+#print axioms SmoothGramModel.combination_inner
+#print axioms SmoothGramModel.combination_norm
+#print axioms SmoothGramModel.gram_psd
+#print axioms SmoothGramModel.Index
+#print axioms SmoothGramModel.index_card
+#print axioms SmoothGramModel.v
+#print axioms SmoothGramModel.w
+#print axioms SmoothGramModel.value
+#print axioms SmoothGramModel.Feasible
+#print axioms SmoothGramModel.site
+#print axioms SmoothGramModel.physical
+#print axioms SmoothGramModel.values
+#print axioms SmoothGramModel.combine_v
+#print axioms SmoothGramModel.combine_w
+#print axioms SmoothGramModel.value_values
+#print axioms SmoothGramModel.actual_feasible
+#print axioms SmoothGramModel.terminalLoss
+#print axioms SmoothGramModel.actualLossSet
+#print axioms SmoothGramModel.modelLossSet
+#print axioms SmoothGramModel.actualLossSet_subset_modelLossSet
+#print axioms SmoothGramModel.actual_uniform_bound_of_model_bound

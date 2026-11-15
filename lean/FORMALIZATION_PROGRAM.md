@@ -153,3 +153,12 @@ minimizer. The actual one-register recurrence is continuous in its schedule on
 every fixed instance. Product-polynomial coefficient identities are proved.
 Coercivity, unconditional risk lower semicontinuity, attainment, interpolation
 sufficiency, and the sharp smooth minimax bounds remain separate open targets.
+
+## Oracle execution and forward smooth Gram model
+
+The shared oracle trajectory uses actual recursively generated query points and
+is proved unique. Every vector-register realization executes it. A generic
+zero-chain induction is proved for arbitrary predetermined history matrices.
+The finite N+2-coordinate Gram model now represents every actual smooth loss;
+its PSD, radius, interpolation and terminal-loss constraints are all checked.
+The converse remains open, pending sufficient interpolation and assembly.
