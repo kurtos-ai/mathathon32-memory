@@ -6,6 +6,7 @@ Lean 4.35.0 and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` are pi
 | Report claim | Lean declaration | Coverage and hypotheses |
 |---|---|---|
 | Section 2, coefficient coordinates | `RealizationCore.coordinateEquiv`, `d_of_W_of`, `T_of_W_of`, `W_of_dT_of` | Actual bijection between strict history matrices and (first subdiagonal, strict increment matrix). Both inverse laws, all horizons, using the paper's finite sums and the accepted `T_of`. |
+| Proposition 2.2, coordinate-change construction | `RegisterMachine.A_equiv`, `A_equiv_q_eq_ones`, `e1_comp_A_equiv`, `A_equiv_symm_ones_eq_q`, `A_mat_mulVec`, `A_mat_inv_mulVec` | For c·q=1 and s>0, constructs an actual invertible linear change of coordinates with Aq=ones and first row c. Also derives the zero-gradient q_k and its readout identities from actual realization. The conjugated machine recursion and full normalized-realization equivalence remain open. |
 | Proposition 2.3, coordinate memory fibers | `RealizationCore.realization_iff_coordinates` | For every admissible T and every d, W(d,T) has an m+1-register realization iff T belongs to Q_m. |
 | Proposition 2.3, rank identity | `RealizationCore.rank_H_eq_one_add_rank_S` | Exact identity for every finite N and cut k≤N, with the actual consecutive-row increment blocks. Includes empty endpoint cuts. |
 | Proposition 2.3, Q₀={0} | `MemoryRank.Incremental.Q_zero_iff` | Exact equivalence on strictly lower triangular T. The triangular hypothesis is explicit. |
