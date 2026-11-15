@@ -15,7 +15,9 @@ memory fibers, projection/Gram support, quadratic polynomial recurrence and
 Chebyshev algebra and the scaled candidate's exact weighted maximum, the matrix residual identity and spectral risk maximum tied to the history-map trajectory, the actual OGM realization and exact one/two-register count, and algebraicity of
 rational quantifier-free endpoints are also proved. See `DECLARATION_MAP.md` for exact scope.
 
-Normalized-register equivalence, projected methods, interpolation, effective
+Normalized-register equivalence in every finite dimension, finite convex subgradient interpolation, and the actual Chebyshev root schedule with its exact achieved risk are now proved.
+
+General projected rank and loss-set equivalences, smooth-convex interpolation, effective
 quantifier elimination and the optimization benchmark proofs remain unfinished
 in Lean. Work-in-progress files with proof holes
 are excluded from this repository. A separate Open Math project retains the

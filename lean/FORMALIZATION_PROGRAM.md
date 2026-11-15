@@ -26,10 +26,10 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 
 | Workstream | Remaining targets |
 |---|---|
-| Normalization and coefficients | Proposition 2.2: full normalized trajectory equivalence. Rank/minor criterion and finite rational polynomial memory loci are now proved. |
+| Normalization and coefficients | Complete: Proposition 2.2 in all finite dimensions, rank/minor criterion and finite rational polynomial memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
-| Convex quadratics | Section 5: Chebyshev competing-polynomial lower bound and real-root schedule, all-horizon minimax and one-register optimality. |
+| Convex quadratics | Section 5: competing-polynomial lower bound, minimax and threshold assembly. Root factorization and the schedule's exact achieved risk are proved. |
 | Smooth convex methods | Section 6: interpolation and Gram reduction, optimum and uniqueness, one-register attainment and strict gap. |
 
 ## Acceptance requirements
@@ -110,3 +110,14 @@ the algebraic memory constraint, not effective quantifier elimination.
 Quadratic lower-bound and real-root schedule work now runs in a separate
 coordinator chat `chat-bc32b9d6c2`, actual Ultramath swarm `smwhnh69n`
 (Muse Spark Open, maximum reasoning).
+
+## Normalization, convex interpolation, and quadratic schedule
+
+The corrected normalized conjugacy is proved in both directions, including one
+coefficient machine for every finite dimension. The finite max-affine envelope
+proves exact convex/subgradient interpolation with a subgradient at every point.
+The explicit Chebyshev roots, factorization, schedule polynomial, and actual
+achieved risk are independently compiled and included in the axiom audit.
+The general projected rank theorem, smooth-convex interpolation, effective
+elimination, and the quadratic competing-polynomial lower bound remain open
+in this retained checkpoint.

@@ -14,3 +14,7 @@ public import Continuation.Normalization.Core
 public import Continuation.Quadratic.ChebyshevCandidate
 public import Continuation.Semialgebraic.MinorRank
 public import Continuation.Semialgebraic.MinorPolynomials
+public import Continuation.Projected.ConvexInterpolation
+public import Continuation.Quadratic.Lower.Basic
+public import Continuation.Quadratic.Lower.Schedule
+public import Continuation.Normalization.Trajectory
