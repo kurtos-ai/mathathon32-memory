@@ -744,3 +744,26 @@ public import RealizationCore
 #print axioms OGMEnergy.R_scale
 #print axioms OGMEnergy.S_scale
 #print axioms OGMEnergy.objective_bound_scaled
+
+-- Complete projected realization construction and minimum register count.
+#print axioms Continuation.Projected.readCoeffs
+#print axioms Continuation.Projected.read_scalar
+#print axioms Continuation.Projected.read_q
+#print axioms Continuation.Projected.vectorState
+#print axioms Continuation.Projected.vectorHistory
+#print axioms Continuation.Projected.vectorState_inner
+#print axioms Continuation.Projected.read_vector
+#print axioms Continuation.Projected.projectedLift
+#print axioms Continuation.Projected.weightedSum_shift
+#print axioms Continuation.Projected.vectorHistory_succ
+#print axioms Continuation.Projected.projectedLift_invariant
+#print axioms Continuation.Projected.projectedLift_realizes
+#print axioms Continuation.Projected.HasProjectedRealization
+#print axioms Continuation.Projected.projected_realization_of_rank
+#print axioms Continuation.Projected.projected_realization_iff_rank
+#print axioms Continuation.Projected.projected_least_registers
+#print axioms Continuation.Projected.projected_realization_iff_ordinary
+#print axioms Continuation.Projected.oneProjected
+#print axioms Continuation.Projected.projectedMachine_positive
+#print axioms Continuation.Projected.singleton_realization
+#print axioms Continuation.Projected.subsingleton_least_registers

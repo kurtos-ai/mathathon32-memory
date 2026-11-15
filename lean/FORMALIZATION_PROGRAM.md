@@ -28,7 +28,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 |---|---|
 | Normalization and coefficients | Complete: Proposition 2.2 in all finite dimensions, rank/minor criterion and finite rational polynomial memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
-| Projected methods | Section 4: projection graph, convex interpolation and exact loss model complete; projected-register lower bound complete; upper bound and effective decision theorem remain. |
+| Projected methods | Section 4: projection graph, convex interpolation and exact loss model complete; projected-register rank equivalence and singleton minimum complete; effective decision theorem remains. |
 | Convex quadratics | Complete in the quadratic matrix model: competing-polynomial lower bound, root schedule, every operational memory budget's EReal minimax value, threshold ray, and no memory gain. |
 | Smooth convex methods | Section 6: interpolation and exact Gram reduction complete; optimum and uniqueness and strict gap remain; one-register attainment complete. |
 
@@ -241,3 +241,10 @@ Root proved the fixed-horizon prefix identity, its terminal specialization,
 and the objective inequality with general-L scaling. The OGM worker owns the
 remaining coefficient/vector recurrence, theta identities, and actual-instance
 instantiation. The performance theorem remains open until these are connected.
+
+## Complete projected realization theorem
+
+Root completed the vector construction, full projected-state invariant,
+nontrivial-domain rank equivalence and singleton minimum. The scalar-only
+worker attempts are superseded and their duplicate lanes should be closed.
+Effective projected quantifier elimination remains part of the general QE task.

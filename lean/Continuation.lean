@@ -45,3 +45,4 @@ public import Continuation.Projected.LossModel
 public import Continuation.Projected.LowerBound
 public import Continuation.RootIsolation.SimpleRoots
 public import Continuation.Smooth.Energy
+public import Continuation.Projected.UpperBound
