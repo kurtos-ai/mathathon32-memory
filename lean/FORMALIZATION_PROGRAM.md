@@ -256,3 +256,7 @@ Exports15–16 are locally compiled and fully audited. The quotient by gcd has e
 ## Rational root bound and simplex minimization
 
 The rational coefficient bound is explicitly computed and verified locally. The exact exported GJP Lemma 3.1 source (SHA-256 0d8de45e724861b56ede320a7ae9c1d058e0edf26734f3b14a10ae3f189ec762) builds locally with all 37 declarations audited. This closes simplex minimization and equality uniqueness, not matrix elimination or actual OGM coefficient uniqueness.
+
+## Conditional isolator
+
+Coverage now states the concrete half-separation mesh. Soundness proves exactly one root in each filtered cell; squarefree equivalence transfers both properties to the original polynomial. The remaining executable work must replace/refine Mathlib noncomputable division/gcd; a syntactic ordinary `def` inside a noncomputable section is not evidence of code generation.

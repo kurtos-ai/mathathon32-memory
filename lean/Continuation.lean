@@ -52,3 +52,5 @@ public import Continuation.RootIsolation.CertifiedSeparation
 
 public import Continuation.RootIsolation.RationalBound
 public import Continuation.GJP.Simplex
+
+public import Continuation.RootIsolation.IsolationCertificate

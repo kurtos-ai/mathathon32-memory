@@ -791,7 +791,7 @@ public import RealizationCore
 #print axioms RootIsolation.SimpleRoots.sign_between_endpoint_and_local_neighborhood
 #print axioms RootIsolation.SimpleRoots.sign_between_local_and_endpoint_neighborhood
 #print axioms RootIsolation.SimpleRoots.endpoint_sign_of_unique_simple_root
-#print axioms RootIsolation.SimpleRoots.every_simple_root_mem_filteredIntervals_of_separation
+#print axioms RootIsolation.SimpleRoots.simple_root_mem_half_separation
 
 -- Continuation.RootIsolation.RationalBound
 #print axioms RootIsolation.rationalRootBound
@@ -837,3 +837,9 @@ public import RealizationCore
 #print axioms GJP.delta_le_of_sum_eq
 #print axioms GJP.uniqueness_of_partialSum_bound
 #print axioms GJP.uniqueness
+
+-- Continuation.RootIsolation.IsolationCertificate
+#print axioms RootIsolation.SimpleRoots.sign_change_has_root
+#print axioms RootIsolation.SimpleRoots.filteredIntervals_unique_root
+#print axioms RootIsolation.SimpleRoots.isolateWithCertificate
+#print axioms RootIsolation.SimpleRoots.isolateWithCertificate_correct

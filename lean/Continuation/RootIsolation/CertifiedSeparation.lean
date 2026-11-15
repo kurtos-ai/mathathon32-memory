@@ -182,16 +182,14 @@ theorem endpoint_sign_of_unique_simple_root (p : Polynomial ℚ) (x a b : ℝ)
       have hy_lt_x : y < x := lt_trans hy_mem.2 h_l_lt_x
       linarith
 
-theorem every_simple_root_mem_filteredIntervals_of_separation
+theorem simple_root_mem_half_separation
     (p : Polynomial ℚ) (eps : ℚ) (heps : 0 < eps)
     (hsep : ∀ x y:ℝ, p.aeval x = 0 → p.aeval y = 0 → x ≠ y → (eps:ℝ) ≤ |x - y|)
     (B : ℚ) (hB : 0 < B) (hBspec : ∀ x:ℝ, p.aeval x = 0 → ‖x‖ ≤ (B:ℝ))
     (h_simple : ∀ x:ℝ, p.aeval x = 0 → p.derivative.aeval x ≠0) :
-    ∃ delta : ℚ, 0 < delta ∧ ∀ x:ℝ,
-      (p.aeval x = 0) → ∃ I ∈ filteredIntervals p B delta, x ∈ I.toSet := by
+    ∀ x:ℝ, p.aeval x = 0 → ∃ I ∈ filteredIntervals p B (eps / 2), x ∈ I.toSet := by
   let delta : ℚ := eps / 2
   have h_delta_pos : 0 < delta := by simp [delta]; linarith
-  use delta, h_delta_pos
   intro x hx
   have hd : p.derivative.aeval x ≠ 0 := h_simple x hx
   have hp_ne : p ≠ 0 := by intro h_eq; simp [h_eq] at hd

@@ -753,9 +753,7 @@ info: Cli: remote URL changed
 'RootIsolation.SimpleRoots.endpoint_sign_of_unique_simple_root' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
-'RootIsolation.SimpleRoots.every_simple_root_mem_filteredIntervals_of_separation' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
+'RootIsolation.SimpleRoots.simple_root_mem_half_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
 'RootIsolation.rationalRootBound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'RootIsolation.rationalRootBound_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
 'RootIsolation.cauchyBound_le_rationalRootBound' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -797,3 +795,7 @@ info: Cli: remote URL changed
 'GJP.delta_le_of_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
 'GJP.uniqueness_of_partialSum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'GJP.uniqueness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootIsolation.SimpleRoots.sign_change_has_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootIsolation.SimpleRoots.filteredIntervals_unique_root' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootIsolation.SimpleRoots.isolateWithCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootIsolation.SimpleRoots.isolateWithCertificate_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
