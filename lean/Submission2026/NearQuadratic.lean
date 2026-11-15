@@ -1,0 +1,11 @@
+module
+public import Submission2026.NearQuadratic.ObjectiveResidual
+public import Submission2026.NearQuadratic.ObjectiveTransfer
+public import Submission2026.NearQuadratic.ExplicitConstants
+public import Submission2026.NearQuadratic.Neumann
+public import Submission2026.NearQuadratic.Trajectory
+public import Submission2026.NearQuadratic.TrajectoryNeumann
+public import Submission2026.NearQuadratic.NearTerminal
+public import Submission2026.NearQuadratic.Response
+public import Submission2026.NearQuadratic.ResponseTrajectory
+public import Submission2026.NearQuadratic.NearResponse
