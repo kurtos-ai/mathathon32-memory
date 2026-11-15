@@ -17,12 +17,11 @@ rational quantifier-free endpoints are also proved. See `DECLARATION_MAP.md` for
 
 Normalized-register equivalence in every finite dimension, finite convex subgradient interpolation, and the actual Chebyshev root schedule are now proved. The quadratic matrix-model minimax value, exact threshold ray, and absence of gains are proved at every operational register budget, using the independent EReal risk/value definitions.
 
-The necessary smooth interpolation inequality is proved from actual gradient, convexity and Lipschitz assumptions, together with zero gradient at a minimizer. Fixed-instance one-register trajectories and losses are continuous in the schedule; their coefficient identities are proved.
+Necessary and sufficient finite smooth-convex interpolation is proved from actual gradient, convexity and Lipschitz definitions. The finite dual construction has a proved everywhere-defined conjugate gradient, with existence, uniqueness and the exact Lipschitz bound. Fixed-instance one-register trajectories and losses are continuous in the schedule. The actual all-dimensional EReal risk is lower semicontinuous, with proved scalar-quadratic lower bounds and explicit coefficient and squared-step bounds.
 
-The finite dual max-quadratic construction has proved strong convexity and exact data contacts. Its conjugate regularity and the full smooth interpolation equivalence remain open.
-
-General projected rank and loss-set equivalences, smooth-convex interpolation, effective
-quantifier elimination and the smooth-convex optimization benchmark proofs remain unfinished
+General projected rank and projected loss-set equivalences, effective quantifier
+elimination and complete root isolation, and smooth-convex benchmark optimality,
+uniqueness and one-register attainment remain unfinished
 in Lean. Work-in-progress files with proof holes
 are excluded from this repository. A separate Open Math project retains the
 research history. A successful library build does not make the entire paper
@@ -30,6 +29,9 @@ formally verified.
 
 The causal exact-oracle trajectory, its uniqueness and register-execution bridge,
 and the generic zero-chain induction are proved. The finite smooth Gram formula
-is explicitly defined and every actual all-dimensional loss is represented in
-it; the converse realizability direction still needs smooth interpolation
-sufficiency and its assembly.
+is explicitly defined and proved equal to the actual all-dimensional loss set.
+Every feasible datum is realized in dimension N+2, with all causal queries and
+the terminal loss preserved. This includes zero-query horizons.
+
+Current verification: 9,112 successful build jobs and 574 audited declarations.
+The written report remains only partially formalized.
