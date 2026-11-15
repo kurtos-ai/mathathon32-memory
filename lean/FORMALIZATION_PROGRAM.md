@@ -260,3 +260,7 @@ The rational coefficient bound is explicitly computed and verified locally. The 
 ## Conditional isolator
 
 Coverage now states the concrete half-separation mesh. Soundness proves exactly one root in each filtered cell; squarefree equivalence transfers both properties to the original polynomial. The remaining executable work must replace/refine Mathlib noncomputable division/gcd; a syntactic ordinary `def` inside a noncomputable section is not evidence of code generation.
+
+## Actual OGM bound and constructed univariate certificates
+
+Root proved the actual OGM upper bound via vector Y/Eta/Z/V recurrences, actual oracle evaluation, smooth interpolation residuals, and the verified energy identity. It includes every horizon and finite dimension. The accepted Drori finite hard-data prefix and normalized coefficient recurrence are integrated. Export17 completes construction of the mathematical univariate isolation certificates and proves coverage, unique cells and disjointness. Executable division/gcd and QE, the Drori actual hard-function lower bound and full GJP coefficient uniqueness remain active obligations.

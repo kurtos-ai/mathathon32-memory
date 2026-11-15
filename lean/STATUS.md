@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,125 successful build jobs and 762 audited declarations.
+Current verification: 9,129 successful build jobs and 857 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -57,8 +57,9 @@ for every sufficiently small positive mesh. This is a refinement theorem with
 an existential mesh threshold, not complete effective root isolation.
 
 The fixed-horizon algebraic energy identity and its general-L objective bound
-are proved. Applying this certificate to the actual OGM coefficients and
-oracle trajectory remains separate from the generic certificate.
+are proved. The actual OGM vector recurrences and oracle trajectory now instantiate this
+certificate, proving the terminal bound L R²/(2 theta_N²) for every horizon
+and actual finite-dimensional smooth-convex instance.
 
 The projected realization theorem is now complete in every finite-dimensional
 real inner-product space: the least register count is the ordinary maximum
@@ -71,3 +72,7 @@ Squarefree preprocessing preserves every real root and gives nonzero derivative 
 An explicit rational Cauchy bound is computed from the coefficients and proved to bound all real roots. The GJP simplex minimization lemma is proved, including attainment and unique equality coordinates for every horizon. Connecting this lemma through the matrix elimination to actual OGM coefficient uniqueness remains open.
 
 The conditional isolator now uses the explicit half-separation mesh and proves coverage of every original root and exactly one original root per returned cell. Its squarefree preprocessing depends on Mathlib noncomputable polynomial division/gcd; an executable refinement remains open.
+
+The rational univariate isolation specification now constructs its own Bezout, root, coefficient, curvature and separation certificates from every nonzero input polynomial. It proves root coverage, unique cells and disjointness; executable polynomial arithmetic and multivariate QE remain open.
+
+Drori finite hard-data formulas, positivity and strict decrease and the exact terminal datum are verified (not the hard interpolant/lower bound). The separate normalized OGM weighted-coefficient recurrence includes the predecessor-diagonal correction and final theta step.

@@ -54,3 +54,11 @@ public import Continuation.RootIsolation.RationalBound
 public import Continuation.GJP.Simplex
 
 public import Continuation.RootIsolation.IsolationCertificate
+
+public import Continuation.Smooth.DroriHardData
+
+public import Continuation.Smooth.WeightedCoefficient
+
+public import Continuation.RootIsolation.Certificate
+
+public import Continuation.Smooth.OGMUpperBound
