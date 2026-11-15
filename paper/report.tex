@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{577171c2121936417569950db0cd1d2899a28d9e}}\\[2pt]
+{\small Lean formalization commit: \texttt{30f50e4fafaa34e8abe0fd99718ef811ca819834}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1090,6 +1090,13 @@ infinite values, and do not assume attainment. The formal performance set is
 constructed from loss inequalities, independently of the minimax value.
 It additionally proves the projection graph and correction-readout identities,
 query membership in $K$, singleton trajectories, and the Gram/PSD identities.
+For quadratics it proves the residual-polynomial recurrence and its identity
+with the matrix-gradient history trajectory, together with basic Chebyshev
+polynomial identities. For OGM it proves the actual two-register realization
+and the exact least register count: one for $N=1$, two for $N\ge2$, when $L>0$.
+It also proves that a finite minimax value is algebraic if a rational
+quantifier-free formula is supplied and proved to describe its threshold set.
+This last result does not construct the formula or perform elimination.
 The library does not yet formalize normalized-register equivalence,
 the general projected rank and trajectory equivalences, exact interpolation
 models, quantifier elimination, or the benchmark optimality proofs. Those
@@ -1113,7 +1120,9 @@ All mathematical exposition, proofs, and computations were developed
 during the Mathathon event window Nov~13, 8PM -- Nov~15, noon Pacific, 2026
 \supportlabel{Event proof/computation}, except where explicitly cited as literature.
 Coordination, editing, local proof development, and scripted checks used OpenAI Codex.
-Within Open Math OS, the coordinating model was Kimi K3.1~Pro at \texttt{reasoning\_effort=max}; Ultramath workers used
+Within Open Math OS, coordination was configured for Kimi K3.1~Pro at
+\texttt{reasoning\_effort=max}; the execution history also records coordinating
+turns served by DeepSeek V4.1 Flash. Ultramath workers used
 \texttt{meta/muse-spark-open} at \texttt{reasoning\_effort=max}. The authors directed
 the work; independent reruns and audits are documented in the project, and the new
 outputs await final human author review. No official Lean competition solution was used or copied.
