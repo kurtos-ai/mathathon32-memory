@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{6ba66e9bbc717fd480ba6ffcec95e0bc981c6035}}\\[2pt]
+{\small Lean formalization commit: \texttt{580dda0d6e164723bf1b0fa60a1248d28db3872e}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1075,66 +1075,43 @@ Convex $L$-smooth & $N\ge2$ & $1$ & $\displaystyle\frac{LR^2}{2\theta_N^2}$\\
 \FloatBarrier
 
 \section*{Verification scope}
-The accompanying Lean library is a partial formalization, pinned to Lean~4.35.0
-and Mathlib~4.35.0. It verifies Theorem~\ref{thm:realization} from the actual
-register recursion and formal-input correctness, with one coefficient machine
-working in every finite dimension. Proposition~\ref{prop:normalized} is also
-verified: the normalized and original implementations have the same register
-budgets, including their complete trajectories. The library proves the
-coefficient-coordinate bijection, cut/increment rank identity, rank/minor
-criterion, explicit finite rational determinant equations for memory, and
-$\Q_0=\{0\}$ on strictly lower triangular matrices.
+The accompanying Lean library is pinned to Lean~4.35.0 and Mathlib~4.35.0.
+It proves the exact register-realization theorem from the actual recursion,
+including one predetermined machine valid in every finite dimension, the
+normalized realization, coefficient-coordinate bijection, cut/increment rank
+identity, and determinant equations for memory. The threshold and gain
+criteria use independently defined extended-real suprema and infima and do
+not assume attainment. Algebraicity of finite endpoints is verified given
+an exact rational quantifier-free threshold formula.
 
-The threshold and gain statements in Theorem~\ref{thm:procedure} and
-Corollary~\ref{cor:gain} are verified for an explicitly supplied loss model and
-memory set. These use extended real suprema and infima, allow infinite values,
-and do not assume attainment. A finite minimax value is proved algebraic if
-an exact rational quantifier-free description of its threshold set is supplied;
-this does not yet construct that description or perform elimination.
+For convex quadratics, the library proves the complete scalar loss model,
+spectral risk, Chebyshev lower bound, explicit one-register schedule, and
+minimax value at every budget. For projected methods it proves the exact
+register count, finite subgradient interpolation and loss models, actual
+operational infimum, threshold rays, saturated budgets, and bounded-oracle
+finiteness, including singleton domains and repeated queries.
 
-For the quadratic matrix model, the formalization proves the matrix residual
-identity, exact spectral risk formula, Chebyshev alternation lower bound,
-positive distinct roots, factorization, and explicit one-register schedule.
-Using the actual all-dimensional history loss set and the operational memory
-constraint, it proves the minimax value and threshold ray at every budget,
-including the conclusion that additional memory never improves the value.
-For projected methods it proves the projection graph, correction-readout
-identities, query membership in $K$, singleton trajectories, and exact finite
-convex subgradient interpolation by a maximum of affine functions. Both projected
-loss models are verified, including arbitrary choices at repeated queries,
-the complete projected trajectory, and the bounded-oracle zero-step bound $MR$.
-On any non-singleton closed convex domain, the minimum register count for a
-coefficient map equals its ordinary maximum cut rank; the matching
-construction verifies every projected query and the terminal output. On a nonempty
-singleton the least count is one.
-For OGM it proves the actual realization and least register count: one at
-$N=1$ and two at $N\ge2$, when $L>0$.
+For smooth convex functions it proves necessary and sufficient interpolation
+with actual gradients, exact Gram loss models in every fixed dimension
+$n\ge N+2$, and compactness and attainment of one-register risk sublevels.
+The actual OGM upper bound and constructed Drori lower bound give the sharp
+value for every horizon at $m\ge1$, and at every budget for zero or one query.
+The GJP factorization, simplex projection, equality and limiting arguments,
+and a conic-duality bridge from actual risk, establish fixed-dimension
+coefficient uniqueness. The complete memory-gain classification follows:
+$V_{m+1}<V_m$ exactly when $m=0$ and $N\ge2$.
 
-For smooth convex functions, the library proves necessary and sufficient
-finite interpolation, including existence, differentiability, and the Lipschitz
-gradient of the constructed interpolant. It proves equality of the finite Gram
-loss model and the actual loss set over all positive finite dimensions, with
-realization in dimension $N+2$ and all causal oracle queries preserved.
-The actual one-register risk is lower semicontinuous; scalar quadratic examples,
-explicit coefficient and step bounds, compact risk sublevels, and attainment by
-an actual one-register coefficient map are also verified.
-
-For $N\ge1$, the sharp smooth-convex value $LR^2/(2\theta_N^2)$
-is verified for every auxiliary memory budget $m\ge1$, together with the
-exact threshold ray and absence of further memory gains. The upper bound uses
-the actual OGM trajectory. The lower bound uses a constructed smooth convex
-function with its minimizer radius and gradient zero-chain proved.
-For $N=1$, the value $LR^2/8$ is verified already at $m=0$.
-Executable rational polynomial arithmetic and root isolation are also verified,
-including squarefree preprocessing, computed separation bounds, coverage of
-every real root, uniqueness within each returned cell, and disjointness.
-The GJP simplex problem, matrix elimination, and projection onto the simplex
-are formalized. General quantifier elimination and full coefficient uniqueness
-remain open in Lean, as does the strict $m=0$ to $m=1$ gap for $N\ge2$;
-the latter uses the cited uniqueness theorem in the report.
-An exact declaration map and build/axiom audit accompany the source; all
-audited declarations use only \texttt{propext}, \texttt{Classical.choice},
-and \texttt{Quot.sound}.
+Executable rational polynomial arithmetic, root isolation, algebraic root
+signs, and arbitrary-degree univariate Boolean decision are verified, as is
+symbolic elimination affine in the quantified variable with polynomial
+parameter coefficients. General parameterized nonlinear elimination,
+algebraic-input syntax reduction, and composition into exact minimax output
+remain in progress. The library includes 38 unchanged TauCeti files providing
+verified Sturm--Tarski and sign-determination foundations~\cite{TauCeti}; these
+pre-existing results do not themselves supply the remaining algorithm.
+The declaration map and build/axiom audit record the exact scope. All audited
+declarations use only \texttt{propext}, \texttt{Classical.choice}, and
+\texttt{Quot.sound}.
 
 The accompanying computations are supplementary finite checks \computation.
 Exact rational arithmetic verifies the odd-Chebyshev polynomial certificate
@@ -1155,7 +1132,9 @@ Within Open Math OS, coordination was configured for Kimi K3.1~Pro at
 \texttt{reasoning\_effort=max}; the execution history also records coordinating
 turns served by DeepSeek V4.1 Flash. Ultramath workers used
 \texttt{meta/muse-spark-open} at \texttt{reasoning\_effort=max}. The authors directed
-the work; independent reruns and audits are documented in the project, and the new
+the work. The TauCeti files are pre-existing external library contributions;
+their original authors, Apache-2.0 license, revision, and source hashes are
+retained in the repository. Independent reruns and audits are documented, and the new
 outputs await final human author review. No official Lean competition solution was used or copied.
 
 \begin{thebibliography}{99}
@@ -1232,5 +1211,10 @@ L.~Vandenberghe.
 ECE236C --- Optimization Methods for Large-Scale Systems, Exercises.
 UCLA, June~7, 2022, Exercise~17 (odd-Chebyshev polynomial for quadratic minimax).
 \href{https://www.seas.ucla.edu/~vandenbe/236C/236C-exercises.pdf}{236C-exercises.pdf}.
+\bibitem{TauCeti}
+K.~Morrison and the Tau Ceti contributors.
+\emph{TauCeti: verified Lean mathematics}, revision \texttt{1c497c3} (2026).
+Sturm--Tarski and real-algebraic sign-determination modules; Apache-2.0.
+\href{https://github.com/TauCetiProject/TauCeti/tree/1c497c347f615b3087cb605f8cf743e591376105}{Source repository and revision}.
 \end{thebibliography}
 \end{document}
