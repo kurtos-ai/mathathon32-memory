@@ -1,0 +1,28 @@
+=== 1. WRONG / RETRACTED probe — arbitrary matrices violating the hypotheses ===
+A ones = [1. 0.] (=e1), but first row of A = [0.5 0.5] so e1ᵀ A = [0.5 0.5] ≠ e1ᵀ
+Ainv e1 = [1. 1.]
+FIRST ROW of the probe actually used instead of A_fixed:
+A = [[ 0.5 -0.5]
+ [ 0.5  0.5]]  with A ones = [0. 1.]  (INVALID for the hypotheses)
+F' = A F Ainv = [[-1.  0.]
+ [ 4.  1.]]
+e1ᵀ F' A = [-0.5  0.5]  versus e1ᵀ F = [ 2. -1.]
+=== 2. CORRECT examples: 2×2 and a general [[a,b],[c,d]] parameterization ===
+A = [[1.0, 0.0], [-1.0, 1.0]]  Ainv = [[1.0, 0.0], [1.0, 1.0]]
+A ones = [1. 0.] (should be e1)
+e1ᵀ A = [1. 0.] (should be e1ᵀ)
+A Ainv = [[1. 0.]
+ [0. 1.]]  Ainv A = [[1. 0.]
+ [0. 1.]]
+F ones = [1. 1.]
+F' = A F Ainv = [[ 1. -1.]
+ [ 0. -1.]]
+F' e1 = [1. 0.] (should be e1)
+e1ᵀ F' A = [ 2. -1.] versus e1ᵀ F = [ 2. -1.] (should be equal)
+e1ᵀ (A v) == e1ᵀ v for random v : True
+=== 3. General a+b=1 form (for reference) ===
+A = [[ 0.5  0.5]
+ [ 0.5 -0.5]]  satisfies A ones = [1. 0.]  (=e1) and first row = e1ᵀ? first row = [0.5 0.5]
+Ainv e1 = [1. 1.] (should be ones)
+F' e1 (should be e1): [1. 0.]  F' ones (not fixed, expected not ones): [ 5. -1.]
+=== DONE ===
