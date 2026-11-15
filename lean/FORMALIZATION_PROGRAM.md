@@ -248,3 +248,7 @@ Root completed the vector construction, full projected-state invariant,
 nontrivial-domain rank equivalence and singleton minimum. The scalar-only
 worker attempts are superseded and their duplicate lanes should be closed.
 Effective projected quantifier elimination remains part of the general QE task.
+
+## Squarefree preprocessing and certified coverage
+
+Exports15–16 are locally compiled and fully audited. The quotient by gcd has exactly the original real roots, all simple. Given certified rational bounds and separation, the finite filtered grid with mesh half the separation covers every root. This does not yet compute the certificates or prove complete effective isolation/QE. The duplicate projected workers have been stopped because the full projected register theorem is now accepted.

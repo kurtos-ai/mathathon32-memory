@@ -767,3 +767,28 @@ public import RealizationCore
 #print axioms Continuation.Projected.projectedMachine_positive
 #print axioms Continuation.Projected.singleton_realization
 #print axioms Continuation.Projected.subsingleton_least_registers
+
+-- Continuation.RootIsolation.SquarefreePreprocessing
+#print axioms SquarefreePreprocessing.rootMultiplicity_gcd_eq_min
+#print axioms SquarefreePreprocessing.squarefreePart
+#print axioms SquarefreePreprocessing.gcd_ne_zero_of_p_ne_zero
+#print axioms SquarefreePreprocessing.squarefreePart_mul
+#print axioms SquarefreePreprocessing.squarefreePart_ne_zero
+#print axioms SquarefreePreprocessing.qToR
+#print axioms SquarefreePreprocessing.map_qToR_ne_zero
+#print axioms SquarefreePreprocessing.derivative_map_qToR
+#print axioms SquarefreePreprocessing.gcd_map_qToR
+#print axioms SquarefreePreprocessing.pR_eq_dR_mul_qR
+#print axioms SquarefreePreprocessing.aeval_eq_map_eval
+#print axioms SquarefreePreprocessing.isRoot_map_iff_aeval
+#print axioms SquarefreePreprocessing.eq_C_of_deriv_eq_zero'
+#print axioms SquarefreePreprocessing.nat_min_sub_one
+#print axioms SquarefreePreprocessing.nat_sub_sub_one
+#print axioms SquarefreePreprocessing.squarefree_aeval_root_iff
+#print axioms SquarefreePreprocessing.squarefree_deriv_ne_zero
+
+-- Continuation.RootIsolation.CertifiedSeparation
+#print axioms RootIsolation.SimpleRoots.sign_between_endpoint_and_local_neighborhood
+#print axioms RootIsolation.SimpleRoots.sign_between_local_and_endpoint_neighborhood
+#print axioms RootIsolation.SimpleRoots.endpoint_sign_of_unique_simple_root
+#print axioms RootIsolation.SimpleRoots.every_simple_root_mem_filteredIntervals_of_separation

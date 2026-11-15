@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,120 successful build jobs and 696 audited declarations.
+Current verification: 9,122 successful build jobs and 717 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -65,3 +65,5 @@ real inner-product space: the least register count is the ordinary maximum
 cut rank on a nontrivial closed convex domain, and one on a nonempty singleton.
 The construction proves the entire actual projected trajectory and uses one
 predetermined scalar coefficient machine across all dimensions.
+
+Squarefree preprocessing preserves every real root and gives nonzero derivative at each root. Given certified rational root and separation bounds, every simple root lies in the actual filtered grid output with mesh equal to half the separation. Computation of these certificates and complete effective isolation/QE are still separate obligations.

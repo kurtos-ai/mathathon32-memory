@@ -46,3 +46,6 @@ public import Continuation.Projected.LowerBound
 public import Continuation.RootIsolation.SimpleRoots
 public import Continuation.Smooth.Energy
 public import Continuation.Projected.UpperBound
+
+public import Continuation.RootIsolation.SquarefreePreprocessing
+public import Continuation.RootIsolation.CertifiedSeparation

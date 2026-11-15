@@ -727,3 +727,32 @@ info: Cli: remote URL changed
 'Continuation.Projected.projectedMachine_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Continuation.Projected.singleton_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
 'Continuation.Projected.subsingleton_least_registers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.rootMultiplicity_gcd_eq_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.squarefreePart' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.gcd_ne_zero_of_p_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.squarefreePart_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.squarefreePart_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.qToR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.map_qToR_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.derivative_map_qToR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.gcd_map_qToR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.pR_eq_dR_mul_qR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.aeval_eq_map_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.isRoot_map_iff_aeval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.eq_C_of_deriv_eq_zero'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.nat_min_sub_one' depends on axioms: [propext]
+'SquarefreePreprocessing.nat_sub_sub_one' depends on axioms: [propext]
+'SquarefreePreprocessing.squarefree_aeval_root_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SquarefreePreprocessing.squarefree_deriv_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RootIsolation.SimpleRoots.sign_between_endpoint_and_local_neighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RootIsolation.SimpleRoots.sign_between_local_and_endpoint_neighborhood' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RootIsolation.SimpleRoots.endpoint_sign_of_unique_simple_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RootIsolation.SimpleRoots.every_simple_root_mem_filteredIntervals_of_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
