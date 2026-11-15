@@ -280,3 +280,17 @@ The constrained-conjugate helper and actual Drori instance are verified, includi
 The full actual Drori lower-bound chain now compiles and passes the global axiom audit, including a genuine zero-chain proved by dual tail-candidate comparison and constrained-maximizer uniqueness. Combined with OGM, the independent operational value, threshold ray and absence of gains beyond m=1 are proved. The N=1,m=0 endpoint is included. The GJP factor-to-simplex projection is also integrated.
 
 The executable coefficient-list polynomial layer refines Mathlib operations for all inputs, including zero divisors, and the complete executable rational isolator refines the proved certificate. Coverage, uniqueness, disjointness and exact zero-polynomial detection are proved; fourteen guarded runtime checks pass. General nonlinear QE and full actual-risk coefficient uniqueness remain active obligations.
+
+## Local continuation: factor stability and symbolic affine elimination
+
+Accepted batch: 19 modules, 9,168 successful build jobs, 1,300 audited declarations.
+The new proofs cover singular TC factorization, exact optimal factors, convergence
+of approaching certificates and their limiting feasibility, compact-certificate
+uniqueness, actual-instance scaling, and the zero-query smooth benchmark.
+Executable affine elimination with polynomial parameters and exact algebraic
+root zero/sign tests are also checked.
+
+Remaining programme: connect actual smooth risk to approaching compact dual
+certificates, conclude actual coefficient uniqueness and the strict N≥2 memory
+gap, and finish general multivariate nonlinear quantifier elimination. Local
+agents continue these tasks; the external Open Math provider remains quota-blocked.

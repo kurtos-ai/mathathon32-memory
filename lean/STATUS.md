@@ -1,7 +1,7 @@
 # Formalization status
 
 The retained library builds with pinned Lean/Mathlib 4.35.0. Current verification:
-9,149 successful build jobs and 1,132 audited declarations. Audited declarations
+9,168 successful build jobs and 1,300 audited declarations. Audited declarations
 use only `propext`, `Classical.choice`, and `Quot.sound`; retained sources contain
 no proof holes, custom axioms, or `native_decide`.
 
@@ -39,14 +39,20 @@ proved gradient, minimizer radius, zero-chain property, and loss lower bound for
 every history matrix. Exact threshold rays and no gain beyond m=1 follow from
 the independent operational risk/value definitions. For one query the exact
 value LR²/8 is proved already at m=0 and hence at every memory budget.
+At zero queries the exact value LR²/2 and threshold ray hold for every budget;
+the sharp formula at m≥1 therefore covers every nonnegative horizon.
 
 The GJP simplex problem is proved, including its unique equality case. Matrix
 elimination starts from the actual bordered PSD condition, treats singular
 triangular completion, and proves tight nonsingular uniqueness. Projection of
 admissible factors onto the simplex and its lower-rate implication are proved.
-Full coefficient uniqueness for actual oracle risk remains unfinished, including
-its duality and limiting-factor bridges. Consequently the strict gap from m=0 to
-m=1 at horizons N≥2 remains outside the accepted Lean result.
+The full admissible TC factorization is proved, including singular pivots.
+Optimal factors and the method certified by them are unique. Approaching optimal
+certificates converge to those factors, and closed feasibility supplies the
+limiting certificate. The coefficient normalization and actual smooth-instance
+scaling are also proved. Full coefficient uniqueness for actual oracle risk still
+requires the risk-to-certificate duality bridge. Consequently the strict gap from
+m=0 to m=1 at horizons N≥2 remains outside the accepted Lean result.
 
 Rational root isolation is now executable and certified. Coefficient-list
 arithmetic, division, gcd, Bezout coefficients, derivative and evaluation refine
@@ -54,7 +60,14 @@ Mathlib polynomial operations. The computed squarefree polynomial, rational
 bounds and separation grid produce a finite list covering every real root,
 exactly one original-polynomial root per cell, and disjoint distinct cells.
 The zero polynomial is detected separately. Fourteen guarded execution checks
-exercise arithmetic and isolation. General multivariate QE remains unfinished.
+exercise arithmetic and isolation. Exact zero and sign tests at represented
+algebraic roots are proved and execute in six further guarded checks.
+
+Executable symbolic elimination is proved for arbitrary Boolean combinations
+affine in the eliminated variable, with rational polynomial parameter
+coefficients. It handles strict and weak inequalities, equality, negation and
+coefficient sign changes. Four guarded execution checks pass. This restricted
+result is not general multivariate nonlinear QE, which remains unfinished.
 
 The report is still partially formalized. Only checked modules enter the tracked
 library. External Open Math work is preserved; local Codex agents continue after

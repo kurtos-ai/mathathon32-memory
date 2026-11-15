@@ -102,3 +102,39 @@ public import Continuation.GJP.FactorProjection
 public import Continuation.GJP.ScalarProjection
 
 public import Continuation.GJP.Projection
+
+public import Continuation.GJP.FactorEquality
+
+public import Continuation.GJP.OptimalFactors
+
+public import Continuation.GJP.SimplexStability
+
+public import Continuation.GJP.MassStability
+
+public import Continuation.GJP.FactorBounds
+
+public import Continuation.GJP.ClosedFeasibility
+
+public import Continuation.GJP.FactorStability
+
+public import Continuation.GJP.HistoryNormalization
+
+public import Continuation.GJP.SmoothScaling
+
+public import Continuation.GJP.DualUniqueness
+
+public import Continuation.GJP.FactorizationCore
+
+public import Continuation.GJP.FactorizationAdmissible
+
+public import Continuation.GJP.FactorizationNonsingular
+
+public import Continuation.Smooth.DroriZeroQuery
+
+public import Continuation.Semialgebraic.AffineElimination
+
+public import Continuation.Semialgebraic.SymbolicAffineQE
+
+public import Continuation.RootIsolation.AlgebraicZeroTest
+
+public import Continuation.RootIsolation.AlgebraicSign

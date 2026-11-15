@@ -1261,3 +1261,339 @@ public import RealizationCore
 #print axioms GJP.equation15_flow_bound
 #print axioms GJP.equation15_projects_simplex
 #print axioms GJP.equation15_rate_lower
+
+#print axioms GJP.UnitLower.eq_one_of_row_sum
+
+#print axioms GJP.upper_prefix_tight_zero
+
+#print axioms GJP.deltaStar_pos
+
+#print axioms GJP.equation15_optimal_equalities
+
+#print axioms GJP.optimalFactorDiag
+
+#print axioms GJP.optimalFactorT
+
+#print axioms GJP.upper_successor_entry
+
+#print axioms GJP.equation15_optimal_factors
+
+#print axioms GJP.optimalFactorDiag_pos
+
+#print axioms GJP.optimalFactorT_upper
+
+#print axioms GJP.optimalFactorT_diag
+
+#print axioms GJP.optimalFactorT_isUnit
+
+#print axioms GJP.equation15_optimal_method_unique
+
+#print axioms GJP.continuous_partial_sum
+
+#print axioms GJP.simplex_coordinate_le_one
+
+#print axioms GJP.simplex_polynomial_bound
+
+#print axioms GJP.simplex_terminal_bound
+
+#print axioms GJP.simplex_Phi_le_of_polynomial
+
+#print axioms GJP.simplex_limit_eq_deltaStar
+
+#print axioms GJP.simplex_stability
+
+#print axioms GJP.projected_square_bound_with_mass
+
+#print axioms GJP.projected_terminal_bound_with_mass
+
+#print axioms GJP.mass_stability
+
+#print axioms GJP.equation15_mass_stability
+
+#print axioms GJP.offdiag_entry_lower
+
+#print axioms GJP.TCAdmissible.upper_entry_bounds
+
+#print axioms GJP.UnitLower.entry_bounds
+
+#print axioms GJP.factors_bounded_of_mass
+
+#print axioms GJP.isClosed_posSemidef
+
+#print axioms GJP.matrix_entry_tendsto
+
+#print axioms GJP.limit_eq_of_forall
+
+#print axioms GJP.UnitLower.of_tendsto
+
+#print axioms GJP.TCAdmissible.of_tendsto
+
+#print axioms GJP.continuous_equation15Matrix
+
+#print axioms GJP.equation15_psd_of_tendsto
+
+#print axioms GJP.equation15_factor_stability
+
+#print axioms GJP.equation15_limit_certificate
+
+#print axioms GJP.equation15_approaching_method_unique
+
+#print axioms GJP.sourceMatrix
+
+#print axioms GJP.sourceMatrix_entry_lt
+
+#print axioms GJP.sourceMatrix_injective
+
+#print axioms GJP.sourceMatrix_unitLower
+
+#print axioms GJP.run_sourceMatrix
+
+#print axioms GJP.sourceMatrix_coordinates_injective
+
+#print axioms GJP.scaled_hasGradient
+
+#print axioms GJP.rescaleInstance
+
+#print axioms GJP.rescale_trajectory
+
+#print axioms GJP.rescale_terminalLoss
+
+#print axioms GJP.uniform_bound_rescale
+
+#print axioms GJP.normalized_radius
+
+#print axioms GJP.normalized_benchmark
+
+#print axioms GJP.uniform_bound_normalized
+
+#print axioms GJP.sourceMatrix_normalized
+
+#print axioms GJP.compactDualMatrix
+
+#print axioms GJP.CompactDualFeasible
+
+#print axioms GJP.compactDualMatrix_factor
+
+#print axioms GJP.CompactDualFeasible.factor
+
+#print axioms GJP.compactDual_rate_lower
+
+#print axioms GJP.compactDual_limit_certificate
+
+#print axioms GJP.compactDual_approaching_method_unique
+
+#print axioms GJP.DDMZ
+
+#print axioms GJP.DDMZ.diag_nonneg
+
+#print axioms GJP.DDMZ.zero_pivot
+
+#print axioms GJP.border
+
+#print axioms GJP.border_cast_cast
+
+#print axioms GJP.border_cast_last
+
+#print axioms GJP.border_last_cast
+
+#print axioms GJP.border_last_last
+
+#print axioms GJP.border_mul
+
+#print axioms GJP.matrix_eq_border
+
+#print axioms GJP.border_upper
+
+#print axioms GJP.border_unitLower
+
+#print axioms GJP.lastSchur
+
+#print axioms GJP.lastSchur_rows
+
+#print axioms GJP.lastSchur_cols
+
+#print axioms GJP.DDMZ.schur
+
+#print axioms GJP.TCFactor
+
+#print axioms GJP.TCFactor.border
+
+#print axioms GJP.exists_TC_factor
+
+#print axioms GJP.UnitLower.inverse_nonneg
+
+#print axioms GJP.TCFactor.colsum_nonneg
+
+#print axioms GJP.exists_TC_factor_nonnegative
+
+#print axioms GJP.exists_TC_admissible
+
+#print axioms GJP.TCFactor.isUnit_upper
+
+#print axioms GJP.TCFactor.diag_pos
+
+#print axioms GJP.TCFactor.upper_inverse_nonneg
+
+#print axioms GJP.TCFactor.unique
+
+#print axioms SmoothDrori.scalar_zero_query_witness
+
+#print axioms SmoothDrori.operational_risk_zero_query
+
+#print axioms SmoothDrori.operational_value_zero_query
+
+#print axioms SmoothDrori.operational_thresholds_zero_query
+
+#print axioms SmoothDrori.operational_value_eq_all_queries
+
+#print axioms MemorySemialgebraic.AffineElimination.Rel
+
+#print axioms MemorySemialgebraic.AffineElimination.rel_le
+
+#print axioms MemorySemialgebraic.AffineElimination.rel_of_lt
+
+#print axioms MemorySemialgebraic.AffineElimination.rel_trans
+
+#print axioms MemorySemialgebraic.AffineElimination.rel_sub
+
+#print axioms MemorySemialgebraic.AffineElimination.rel_mul_pos
+
+#print axioms MemorySemialgebraic.AffineElimination.finite_bounds_iff
+
+#print axioms MemorySemialgebraic.AffineElimination.positive_affine_iff
+
+#print axioms MemorySemialgebraic.AffineElimination.negative_affine_iff
+
+#print axioms MemorySemialgebraic.AffineElimination.opposing_bounds_iff
+
+#print axioms MemorySemialgebraic.AffineElimination.feasible_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.sub
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.denote
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.evalReal
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.evalRat
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.evalReal_refines
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.evalReal_cast
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.denote_surjective
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.evalReal
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.evalRat
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toQF
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toQF_refines
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.evalRat_refines
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.relation
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.relation_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.all
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.all_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.any
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.any_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint.holds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint.constantCondition
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint.pairCondition
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint.constantCondition_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Constraint.pairCondition_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminateConjunction
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminateConjunction_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminateConjunction_toQF
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminateDNF
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminateDNF_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.negateConstraint
+
+#print axioms MemorySemialgebraic.SymbolicQE.negateConstraint_holds
+
+#print axioms MemorySemialgebraic.SymbolicQE.AffineFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.AffineFormula.evalReal
+
+#print axioms MemorySemialgebraic.SymbolicQE.AffineFormula.equalZero
+
+#print axioms MemorySemialgebraic.SymbolicQE.AffineFormula.equalZero_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.clausesHold
+
+#print axioms MemorySemialgebraic.SymbolicQE.clausesHold_nil
+
+#print axioms MemorySemialgebraic.SymbolicQE.clausesHold_singleton
+
+#print axioms MemorySemialgebraic.SymbolicQE.clausesHold_append
+
+#print axioms MemorySemialgebraic.SymbolicQE.meetClauses
+
+#print axioms MemorySemialgebraic.SymbolicQE.meetClauses_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.toDNF
+
+#print axioms MemorySemialgebraic.SymbolicQE.toDNF_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminate
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminate_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.eliminate_toQF
+
+#print axioms RootIsolation.Executable.squarefreePart_aeval_iff
+
+#print axioms RootIsolation.Executable.squarefreePart_derivative_ne_zero
+
+#print axioms RootIsolation.Executable.gcd_denote_ne_zero
+
+#print axioms RootIsolation.Executable.squarefree_gcd_aeval_iff
+
+#print axioms RootIsolation.Executable.roots_eq_of_mem_interval
+
+#print axioms RootIsolation.Executable.open_mem_intervals_sign
+
+#print axioms RootIsolation.Executable.open_mem_intervals_endpoints_nonzero
+
+#print axioms RootIsolation.Executable.exists_root_of_eval_product_neg
+
+#print axioms RootIsolation.Executable.rootZero
+
+#print axioms RootIsolation.Executable.rootZero_correct
+
+#print axioms RootIsolation.Executable.rationalSign
+
+#print axioms RootIsolation.Executable.realSign
+
+#print axioms RootIsolation.Executable.realSign_cast
+
+#print axioms RootIsolation.Executable.realSign_zero
+
+#print axioms RootIsolation.Executable.realSign_eq_of_no_root
+
+#print axioms RootIsolation.Executable.rootSign
+
+#print axioms RootIsolation.Executable.rootSign_correct
