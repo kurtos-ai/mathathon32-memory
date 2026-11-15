@@ -13,7 +13,7 @@ and Jack Mayo (kurtos.ai).
 The report proves the realization and decision results, and cites the established
 optimization results used in the examples. The Lean library verifies the
 full operational register realization theorem in every finite dimension,
-cut/increment rank identity, the rank-form memory locus and one-register
+cut/increment rank identity, the rank-form memory locus, its finite rational determinant equations, and one-register
 characterization, the extended-risk threshold/gain criterion, and supporting
 algebraic lemmas. The benchmark minimax and effective quantifier-elimination
 proofs are not yet formalized. See
