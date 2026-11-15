@@ -316,3 +316,14 @@ projected operational minimax/ray composition now cover the identified
 noncomputational benchmark gaps. TauCeti attribution, pin, license and hashes
 are retained under third_party/TauCeti; this is pre-existing work.
 General effective QE and exact minimax-output composition continue.
+
+## Algebraic inputs, symbolic remainder chains, and exact endpoints
+
+Accepted batch: 20 project modules, 204 project declarations and one additional
+unchanged TauCeti instance file. Verification: 9,248 successful build jobs and
+2,013 audited declarations, including 338 external declarations. Algebraic
+constant rationalization and literal first-order reduction, exact executable
+endpoint selection, determinant/minor syntax, and symbolic Tarski-query
+foundations are verified. Full Boolean nonlinear elimination and the final
+loss-model-to-minimax pipeline are still being assembled. Conditional composition
+lemmas explicitly retain the central QE step premise until it is discharged.

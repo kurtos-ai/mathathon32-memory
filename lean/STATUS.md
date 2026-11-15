@@ -1,8 +1,8 @@
 # Formalization status
 
 The retained library builds with pinned Lean/Mathlib 4.35.0. Current verification:
-9,227 successful build jobs and 1,808 audited declarations
-(1,471 project declarations and 337 public declarations from the attributed
+9,248 successful build jobs and 2,013 audited declarations
+(1,675 project declarations and 338 public declarations from the attributed
 TauCeti dependency). Audited declarations
 use only `propext`, `Classical.choice`, and `Quot.sound`; retained sources contain
 no proof holes, custom axioms, or `native_decide`.
@@ -87,11 +87,19 @@ quantifiers. Root-free regions have certified rational representatives; exact
 algebraic signs handle roots. Five guarded runs check satisfiable, unsatisfiable,
 universal and constant cases.
 
-General multivariate nonlinear QE remains unfinished. Algebraic-coefficient
-syntax reduction and composition of exact endpoint selection with minimax
-computation are also in progress. The targeted Sturm–Tarski/sign-determination
+Algebraic input constants now have certified minimal-polynomial/root-cell codes.
+Their exact rationalization preserves arbitrary first-order quantifier alternation.
+Exact endpoint selection from rational threshold formulas is executable and proved,
+including infinite endpoints. Composition through a supplied correct rational QE
+step yields the independently defined minimax value. The general parameterized
+nonlinear QE step remains unfinished; no assumed step is presented as complete.
+Executable determinant/minor formulas now characterize actual register memory.
+Finite sign branching, positive symbolic pseudo-division, signed remainder chains,
+infinity signs, and symbolic Tarski queries are implemented and proved under every
+real coefficient specialization, including zero and degree-drop cases.
+The targeted Sturm–Tarski/sign-determination
 foundation from TauCeti is retained unchanged under Apache-2.0 at revision
-1c497c347f615b3087cb605f8cf743e591376105. All 38 vendored files build against the
+1c497c347f615b3087cb605f8cf743e591376105. All 39 vendored files build against the
 project pin; source hashes, authors and license are under third_party/TauCeti.
 These are pre-existing library results and do not by themselves provide the
 remaining executable parameterized elimination.

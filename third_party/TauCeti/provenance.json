@@ -312,6 +312,14 @@
       "authors": "Kim Morrison",
       "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
       "local_modifications": []
+    },
+    "TauCeti.FieldTheory.IsRealClosed.Real": {
+      "sha256": "2865f850d08c62dcefb33e7ece9994b8832b5173fbe252164ecfe2726976907b",
+      "exit_code": 0,
+      "upstream_url": "https://github.com/TauCetiProject/TauCeti/blob/1c497c347f615b3087cb605f8cf743e591376105/TauCeti/FieldTheory/IsRealClosed/Real.lean",
+      "authors": "Kim Morrison",
+      "copyright": "Copyright (c) 2026 Lean FRO, LLC. All rights reserved.",
+      "local_modifications": []
     }
   },
   "scope": "Generic ordered real closed field Sturm\u2013Tarski and finite BKR moment inversion/whole-line sign realizability. No quantifier elimination imported. Source unchanged. Compilation only so far; not yet accepted as repository source.",

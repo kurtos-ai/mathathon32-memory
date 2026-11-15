@@ -180,3 +180,43 @@ public import Continuation.Quadratic.ExactLossModel
 public import Continuation.Projected.Operational
 
 public import Continuation.Projected.OperationalThresholds
+
+public import Continuation.Semialgebraic.AlgebraicFirstOrder
+
+public import Continuation.Semialgebraic.AlgebraicParameters
+
+public import Continuation.Semialgebraic.AlgebraicReduction
+
+public import Continuation.Semialgebraic.AlgebraicSyntax
+
+public import Continuation.Semialgebraic.EndpointRoots
+
+public import Continuation.Semialgebraic.EndpointSelection
+
+public import Continuation.Semialgebraic.ExecutableMemory
+
+public import Continuation.Semialgebraic.ExecutableMinors
+
+public import Continuation.Semialgebraic.FirstOrder
+
+public import Continuation.Semialgebraic.FirstOrderBlocks
+
+public import Continuation.Semialgebraic.FirstOrderRename
+
+public import Continuation.Semialgebraic.InfinitySamples
+
+public import Continuation.Semialgebraic.SignBranching
+
+public import Continuation.Semialgebraic.SymbolicHeadCompilation
+
+public import Continuation.Semialgebraic.SymbolicPolynomial
+
+public import Continuation.Semialgebraic.SymbolicPseudoDivision
+
+public import Continuation.Semialgebraic.SymbolicSignDNF
+
+public import Continuation.Semialgebraic.SymbolicSigns
+
+public import Continuation.Semialgebraic.SymbolicSturm
+
+public import Continuation.Semialgebraic.SymbolicTarski

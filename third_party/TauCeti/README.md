@@ -1,6 +1,6 @@
 # TauCeti dependency
 
-This repository vendors 38 unchanged Lean source files from the TauCeti project,
+This repository vendors 39 unchanged Lean source files from the TauCeti project,
 revision `1c497c347f615b3087cb605f8cf743e591376105`. They supply verified
 Sturm–Tarski and sign-determination foundations.
 

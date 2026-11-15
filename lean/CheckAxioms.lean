@@ -44,6 +44,8 @@ public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Polynomial
 public import TauCeti.Geometry.RealAlgebraic.SignDetermination.WholeLine
 public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots
 
+public import TauCeti.FieldTheory.IsRealClosed.Real
+
 #print axioms MemoryDecision.risk_lt_iff_uniform_bound
 #print axioms MemoryDecision.mem_performance_iff
 #print axioms MemoryDecision.threshold_iff_value_lt
@@ -2652,3 +2654,413 @@ public import TauCeti.Geometry.RealAlgebraic.SignDetermination.Roots
 #print axioms Polynomial.tarskiQuery_eq_sum_signCount
 
 #print axioms Polynomial.fullInverse_mulVec_tarskiQuery
+
+#print axioms Real.instIsRealClosed
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr.compileWith
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr.compileWith_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.compileWith
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.compileWith_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.evalReal
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.headMap
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.headMap_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.coefficientMap_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.compileWith
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.compileWith_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.compile
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.compile_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.rationalBody
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFirstOrder.rationalBody_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.value
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.value_spec
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.value_unique
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.value_algebraic
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.exists_minpoly_code
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.exists_minpoly_codes
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.power
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.power_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.polynomialAt
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.polynomialAt_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.cellConstraint
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.cellConstraint_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.constraint
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.Code.constraint_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.constraints
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.constraints_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.assignment
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.assignment_left
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.assignment_right
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.coefficient_realization_unique
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.rationalizeFirstOrder
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.rationalizeFirstOrder_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.algebraic_firstOrder_rational_reduction
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.eliminateFirstOrder
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.eliminateFirstOrder_correct
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.minimaxOutput
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.minimaxOutput_correct
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr.evalReal
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr.compile
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicExpr.compile_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.evalReal
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.compile
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.compile_eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.rationalBody
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.rationalBody_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.AlgebraicFormula.rationalBody_toQF_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.RationalExistential
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.RationalExistential.eval
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.rationalize
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.rationalize_exact
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.algebraic_coefficients_rational_reduction
+
+#print axioms MemorySemialgebraic.EndpointSelection.center
+
+#print axioms MemorySemialgebraic.EndpointSelection.center_lt_of_disjoint
+
+#print axioms MemorySemialgebraic.EndpointSelection.compileUnivariate_toPoly
+
+#print axioms MemorySemialgebraic.EndpointSelection.qf_root_covered
+
+#print axioms MemorySemialgebraic.EndpointSelection.ray_endpoint_is_root
+
+#print axioms MemorySemialgebraic.EndpointSelection.falseRootCells
+
+#print axioms MemorySemialgebraic.EndpointSelection.mem_falseRootCells
+
+#print axioms MemorySemialgebraic.EndpointSelection.eval_at_isolated_root
+
+#print axioms MemorySemialgebraic.EndpointSelection.Output
+
+#print axioms MemorySemialgebraic.EndpointSelection.select
+
+#print axioms MemorySemialgebraic.EndpointSelection.select_empty
+
+#print axioms MemorySemialgebraic.EndpointSelection.select_full
+
+#print axioms MemorySemialgebraic.EndpointSelection.select_ray
+
+#print axioms MemorySemialgebraic.EndpointSelection.Output.Denotes
+
+#print axioms MemorySemialgebraic.EndpointSelection.select_minimax
+
+#print axioms MemorySemialgebraic.SymbolicQE.cutEntries
+
+#print axioms MemorySemialgebraic.SymbolicQE.cutEntries_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.memoryFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.memoryFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.entryVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.matrixAssignment
+
+#print axioms MemorySemialgebraic.SymbolicQE.entryVariables_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.flatMemoryFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.flatMemoryFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.flatMemoryFormula_realization
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.sumList
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.eval_sumList
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.eval_sumList_ofFn
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.determinant
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.determinant_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.allTuples
+
+#print axioms MemorySemialgebraic.SymbolicQE.mem_allTuples
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.all_ofFn_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.rankBound
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.rankBound_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.strictLower
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.strictLower_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.evalReal
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.eliminate
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.eliminate_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.cast
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.evalReal_cast
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.cons_addCases_cast
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.existsBlock
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.existsBlock_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.renameVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.renameVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.renameVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.renameVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.liftRenaming
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.cons_comp_liftRenaming
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.renameVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.renameVariables_correct
+
+#print axioms MemorySemialgebraic.InfinitySamples.outerBound
+
+#print axioms MemorySemialgebraic.InfinitySamples.root_abs_lt_outerBound
+
+#print axioms MemorySemialgebraic.InfinitySamples.divisor_no_root_right
+
+#print axioms MemorySemialgebraic.InfinitySamples.divisor_no_root_left
+
+#print axioms MemorySemialgebraic.InfinitySamples.sign_outer_right
+
+#print axioms MemorySemialgebraic.InfinitySamples.sign_outer_left
+
+#print axioms MemorySemialgebraic.InfinitySamples.family_signs_atTop
+
+#print axioms MemorySemialgebraic.InfinitySamples.family_signs_atBot
+
+#print axioms MemorySemialgebraic.InfinitySamples.realized_iff_infinity_or_roots
+
+#print axioms MemorySemialgebraic.InfinitySamples.realized_iff_infinity_or_tarski
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.evalRat
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.evalReal
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.evalReal_cast
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.bind
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.map
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.evalReal_bind
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.evalReal_map
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.toFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.toFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.normalizeCoeffs
+
+#print axioms MemorySemialgebraic.SymbolicQE.normalizeCoeffs_length
+
+#print axioms MemorySemialgebraic.SymbolicQE.normalizeCoeffs_head_ne_zero
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.compileHead
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.compileHead_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.derivative
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_derivative
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_derivative
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.compileHead_derivative_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_nil
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_cons
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.degree_lt_length
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.degree_cons
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.leadingCoeff_cons
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_normalize
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.addLow
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.add
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.neg
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.sub
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.scale
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.shift
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_add
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_neg
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_sub
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_scale
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_replicate_zero
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_shift
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.mul
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_mul
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_addLow
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_add
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_neg
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_sub
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_scale
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_shift
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.cancel
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.length_cancel
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.cancel_identity
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.pseudoRemainder
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.pseudoRemainder_length
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.pseudoRemainder_identity
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.pseudoRemainder_signed
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.SignClause
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.SignDNF
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.clauseHolds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.dnfHolds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.andDNF
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.andDNF_holds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.appendDNF_holds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.signCases
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.signCases_holds
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toSignDNFWith
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toSignDNFWith_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toSignDNF
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.toSignDNF_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.expressionSign
+
+#print axioms MemorySemialgebraic.SymbolicQE.expressionSign_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.sequence
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.sequence_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinitySigns
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinitySigns_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityVariations
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityVariations_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.chainAux
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.chainAux_head
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.chainAux_second
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.chainAux_signed
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.query
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.query_correct
