@@ -946,3 +946,13 @@ public import RealizationCore
 #print axioms OGMVerified.Y_query
 #print axioms OGMVerified.Y_shift
 #print axioms OGMVerified.actual_upper_bound
+
+-- Operational OGM risk and minimax upper bounds.
+#print axioms OGMVerified.coordinates
+#print axioms OGMVerified.coordinates_recover
+#print axioms OGMVerified.lossSet_upper
+#print axioms OGMVerified.risk_upper
+#print axioms OGMVerified.coordinates_mem_memory
+#print axioms OGMVerified.value_upper
+#print axioms OGMVerified.coordinates_mem_memory_one_query
+#print axioms OGMVerified.value_upper_one_query

@@ -264,3 +264,7 @@ Coverage now states the concrete half-separation mesh. Soundness proves exactly 
 ## Actual OGM bound and constructed univariate certificates
 
 Root proved the actual OGM upper bound via vector Y/Eta/Z/V recurrences, actual oracle evaluation, smooth interpolation residuals, and the verified energy identity. It includes every horizon and finite dimension. The accepted Drori finite hard-data prefix and normalized coefficient recurrence are integrated. Export17 completes construction of the mathematical univariate isolation certificates and proves coverage, unique cells and disjointness. Executable division/gcd and QE, the Drori actual hard-function lower bound and full GJP coefficient uniqueness remain active obligations.
+
+## Operational OGM bound
+
+The actual trajectory upper bound is now connected to the independent EReal risk and minimax definitions via the coefficient-coordinate equivalence and proved operational memory characterization. This proves the upper bound at every m≥1 and, for N=1, already at m=0. Drori lower bounds, full GJP coefficient uniqueness, and executable elimination remain unfinished.

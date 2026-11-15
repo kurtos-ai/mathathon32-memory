@@ -62,3 +62,5 @@ public import Continuation.Smooth.WeightedCoefficient
 public import Continuation.RootIsolation.Certificate
 
 public import Continuation.Smooth.OGMUpperBound
+
+public import Continuation.Smooth.OGMOperational

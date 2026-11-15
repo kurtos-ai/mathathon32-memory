@@ -20,7 +20,7 @@ Normalized-register equivalence in every finite dimension, finite convex subgrad
 Necessary and sufficient finite smooth-convex interpolation is proved from actual gradient, convexity and Lipschitz definitions. The finite dual construction has a proved everywhere-defined conjugate gradient, with existence, uniqueness and the exact Lipschitz bound. Fixed-instance one-register trajectories and losses are continuous in the schedule. The actual all-dimensional EReal risk is lower semicontinuous, with proved scalar-quadratic lower bounds and explicit coefficient and squared-step bounds.
 
 Effective quantifier
-elimination and complete root isolation, and smooth-convex benchmark optimality,
+elimination, executable root isolation, and smooth-convex benchmark optimality,
 and uniqueness remain unfinished
 in Lean. Work-in-progress files with proof holes
 are excluded from this repository. A separate Open Math project retains the
@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,129 successful build jobs and 857 audited declarations.
+Current verification: 9,130 successful build jobs and 865 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -67,7 +67,7 @@ cut rank on a nontrivial closed convex domain, and one on a nonempty singleton.
 The construction proves the entire actual projected trajectory and uses one
 predetermined scalar coefficient machine across all dimensions.
 
-Squarefree preprocessing preserves every real root and gives nonzero derivative at each root. Given certified rational root and separation bounds, every simple root lies in the actual filtered grid output with mesh equal to half the separation. Computation of these certificates and complete effective isolation/QE are still separate obligations.
+Squarefree preprocessing preserves every real root and gives nonzero derivative at each root. Given certified rational root and separation bounds, every simple root lies in the actual filtered grid output with mesh equal to half the separation. The later certificate construction supplies these bounds; executable isolation and QE remain separate obligations.
 
 An explicit rational Cauchy bound is computed from the coefficients and proved to bound all real roots. The GJP simplex minimization lemma is proved, including attainment and unique equality coordinates for every horizon. Connecting this lemma through the matrix elimination to actual OGM coefficient uniqueness remains open.
 
@@ -76,3 +76,5 @@ The conditional isolator now uses the explicit half-separation mesh and proves c
 The rational univariate isolation specification now constructs its own Bezout, root, coefficient, curvature and separation certificates from every nonzero input polynomial. It proves root coverage, unique cells and disjointness; executable polynomial arithmetic and multivariate QE remain open.
 
 Drori finite hard-data formulas, positivity and strict decrease and the exact terminal datum are verified (not the hard interpolant/lower bound). The separate normalized OGM weighted-coefficient recurrence includes the predecessor-diagonal correction and final theta step.
+
+The actual OGM upper bound is connected to the independently defined operational risk and minimax value, at every auxiliary memory budget m≥1. For one query, it holds already at m=0 with bound LR²/8.
