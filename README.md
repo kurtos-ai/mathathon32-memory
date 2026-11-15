@@ -8,7 +8,7 @@ a complete executable real-algebraic decision procedure, concrete quadratic and
 smooth-convex loss compilers, the classical objective-error benchmarks, and projected
 subgradient models. These results concern predetermined scalar-coefficient methods.
 
-**The revised 69-page paper is not yet fully formalized.** Its new weak-convexity,
+**The revised paper is not yet fully formalized.** Its new weak-convexity,
 second-auxiliary-register separation, and some method-replacement results require
 further proofs. Both quadratic-replacement assertions are now checked: an actual
 two-register machine reproduces every terminal point, and a one-register machine

@@ -7,3 +7,9 @@ public import Submission2026.LemniscateMemory
 public import Submission2026.StrongConvexMemory
 public import Submission2026.ExtremalMemory
 public import Submission2026.CompletionMemory
+public import Submission2026.CausalTransport
+public import Submission2026.CompletionFactorization
+public import Submission2026.NearQuadratic.ActualSmoothTransfer
+public import Submission2026.Separation.RidgeBalance
+public import Submission2026.Separation.WeightBounds
+public import Submission2026.Separation.B11Enclosures
