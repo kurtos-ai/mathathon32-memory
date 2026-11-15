@@ -520,3 +520,112 @@ public import RealizationCore
 #print axioms SmoothGramModel.exists_gram_in_dimension
 #print axioms SmoothGramModel.model_data_inequalities
 #print axioms SmoothGramModel.realize_of_interpolant
+
+-- Continuation/Smooth/Attain/ScalarRisk.lean
+#print axioms SmoothAttain.scalarObj
+#print axioms SmoothAttain.scalarGrad
+#print axioms SmoothAttain.scalar_hasGradientAt
+#print axioms SmoothAttain.scalar_lipschitz
+#print axioms SmoothAttain.scalar_convexOn
+#print axioms SmoothAttain.scalarInstance
+#print axioms SmoothAttain.prodRange'
+#print axioms SmoothAttain.prodRange'_zero
+#print axioms SmoothAttain.prodRange'_succ
+#print axioms SmoothAttain.prodRange'_eq_pReal
+#print axioms SmoothAttain.scalar_iter_sub_range
+#print axioms SmoothAttain.scalar_terminalLoss_eq
+#print axioms SmoothAttain.mkX
+#print axioms SmoothAttain.norm_mkX
+#print axioms SmoothAttain.norm_mkX_eq_abs
+#print axioms SmoothAttain.norm_mkX_eq_R
+#print axioms SmoothAttain.norm_sub_mkX_zero
+#print axioms SmoothAttain.scalarInstanceExtremal
+#print axioms SmoothAttain.scalar_extremal_loss
+#print axioms SmoothAttain.continuous_real_toEReal
+#print axioms SmoothAttain.terminalLoss_ereal_lsc
+#print axioms SmoothAttain.AllInstances
+#print axioms SmoothAttain.risk0
+#print axioms SmoothAttain.risk0_lsc
+#print axioms SmoothAttain.risk0_ge_scalar
+
+-- Continuation/Smooth/Attain/Coercivity.lean
+#print axioms SmoothAttain.lam
+#print axioms SmoothAttain.lam_mem_Icc
+#print axioms SmoothAttain.lam_pos
+#print axioms SmoothAttain.lam_ne_zero
+#print axioms SmoothAttain.lam_lt_L
+#print axioms SmoothAttain.lam_injective
+#print axioms SmoothAttain.lam_le_L1
+#print axioms SmoothAttain.lam_nonneg
+#print axioms SmoothAttain.productPoly_natDegree_le
+#print axioms SmoothAttain.Mmat
+#print axioms SmoothAttain.Mmat_eq_diag_mul_vandermonde
+#print axioms SmoothAttain.det_Mmat_ne_zero
+#print axioms SmoothAttain.eval_M_mul_zeta
+#print axioms SmoothAttain.abs_det_le
+#print axioms SmoothAttain.C_entry
+#print axioms SmoothAttain.C_entry_nonneg
+#print axioms SmoothAttain.C_entry_ge_S1
+#print axioms SmoothAttain.C_entry_ge_pow
+#print axioms SmoothAttain.lam_pow_le_C_entry
+#print axioms SmoothAttain.M_entries_le_C
+#print axioms SmoothAttain.b_bound
+#print axioms SmoothAttain.cramer_eq_det_smul_zeta
+#print axioms SmoothAttain.K_bound
+#print axioms SmoothAttain.K_bound_nonneg
+#print axioms SmoothAttain.coeff_bound
+#print axioms SmoothAttain.coeff_bound_two_step
+#print axioms SmoothAttain.B_bound
+#print axioms SmoothAttain.B_bound_nonneg
+#print axioms SmoothAttain.sumAlphaSq_le_B_bound
+
+-- Continuation/Smooth/ConjBounds.lean
+#print axioms SmoothDual.F_conj
+#print axioms SmoothDual.F_conj_bddAbove
+#print axioms SmoothDual.F_conj_at_xi
+#print axioms SmoothDual.F_conj_subgradient
+
+-- Continuation/RootIsolation/Separation.lean
+#print axioms RootIsolation.coeffAbsSum
+#print axioms RootIsolation.aeval_bound_of_coeffAbsSum
+#print axioms RootIsolation.abs_le_C_of_mem_Icc
+#print axioms RootIsolation.bezout_at_root
+#print axioms RootIsolation.separationBound_of_bezout
+#print axioms RootIsolation.separationEps
+#print axioms RootIsolation.separationEps_pos
+#print axioms RootIsolation.separationEps_le
+#print axioms RootIsolation.separation_ge_eps
+#print axioms RootIsolation.squarefreePart
+#print axioms RootIsolation.squarefreePart_ne_zero
+#print axioms RootIsolation.existsBezout_of_coprime
+#print axioms RootIsolation.existsBezout_of_gcd_one
+#print axioms RootIsolation.squarefreePart_dvd
+#print axioms RootIsolation.root_of_squarefreePart_root
+
+-- General strong-convex-conjugate regularity.
+#print axioms ConjugateRegularity.strong_support
+#print axioms ConjugateRegularity.maximizers_monotone
+#print axioms ConjugateRegularity.maximizers_lipschitz
+#print axioms ConjugateRegularity.value
+#print axioms ConjugateRegularity.value_ge
+#print axioms ConjugateRegularity.value_support
+#print axioms ConjugateRegularity.value_remainder
+#print axioms ConjugateRegularity.value_convex
+#print axioms ConjugateRegularity.value_hasGradientAt
+#print axioms ConjugateRegularity.maximizer_unique
+#print axioms ConjugateRegularity.exists_maximizer
+#print axioms ConjugateRegularity.exists_smooth_conjugate
+
+-- Necessary and sufficient smooth-convex finite interpolation.
+#print axioms SmoothDual.Hi_continuous
+#print axioms SmoothDual.H_continuous
+#print axioms SmoothDual.interpolation_sufficient
+#print axioms SmoothInterpolation.sufficient
+#print axioms SmoothInterpolation.iff_interpolable
+
+-- Exact finite Gram loss model and dimension reduction.
+#print axioms SmoothGramModel.realize_feasible
+#print axioms SmoothGramModel.modelLossSet_subset_actualLossSet
+#print axioms SmoothGramModel.actualLossSet_eq_modelLossSet
+#print axioms SmoothGramModel.dimension_reduction
+#print axioms SmoothGramModel.uniform_bound_iff

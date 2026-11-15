@@ -31,3 +31,10 @@ public import Continuation.Smooth.ActualInterpolation
 public import Continuation.OracleTrajectory
 public import Continuation.Smooth.GramModel
 public import Continuation.Smooth.GramReconstruction
+public import Continuation.Smooth.Attain.ScalarRisk
+public import Continuation.Smooth.Attain.Coercivity
+public import Continuation.Smooth.ConjBounds
+public import Continuation.RootIsolation.Separation
+public import Continuation.Smooth.ConjugateRegularity
+public import Continuation.Smooth.Sufficient
+public import Continuation.Smooth.GramExact

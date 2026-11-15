@@ -30,7 +30,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
 | Convex quadratics | Complete in the quadratic matrix model: competing-polynomial lower bound, root schedule, every operational memory budget's EReal minimax value, threshold ray, and no memory gain. |
-| Smooth convex methods | Section 6: interpolation and Gram reduction, optimum and uniqueness, one-register attainment and strict gap. |
+| Smooth convex methods | Section 6: interpolation and exact Gram reduction complete; optimum and uniqueness, one-register attainment and strict gap remain. |
 
 ## Acceptance requirements
 
@@ -167,3 +167,36 @@ Gram reconstruction in dimension N+2 is now proved. Given an actual smooth
 interpolant for the reconstructed data, the converse execution, radius,
 minimizer and terminal loss are proved. The remaining interpolation-sufficiency
 dependency is explicit; no unconditional loss-set equality is claimed yet.
+
+## Scalar risk, coefficient bounds, and conjugate values
+
+The actual one-register EReal risk now ranges over genuine instances in all positive
+finite dimensions. Its lower semicontinuity and scalar-quadratic lower bounds are
+proved. A fixed Vandermonde system and Cramer's identity give explicit coefficient
+and squared-step bounds from finitely many polynomial samples. Compact sublevels,
+attainment, and the bridge to Q0 remain the next obligations.
+
+The actual dual conjugate is finite and has the prescribed values and subgradients.
+General differentiability and smooth interpolation sufficiency are separate work.
+Rational Bezout data and coefficient bounds now certify root separation, but the
+algorithm's full output coverage remains unproved; a previous claim covering only
+the unfiltered partition was rejected. No complete root-isolation or QE algorithm
+is claimed.
+
+General strong-convex-conjugate regularity is now proved locally: explicit-ball
+existence, uniqueness, inverse-strong monotonicity, Lipschitz maximizer map,
+convex conjugate value and actual gradient. Applying it to the finite dual
+construction and closing the exact Gram model are the next integration steps.
+
+## Exact smooth interpolation and finite loss model
+
+The finite THG inequalities are now proved necessary and sufficient for an actual
+convex differentiable L-smooth interpolant, for every nonempty finite data set
+and Euclidean dimension. The proof uses the actual finite dual maximum, proved
+conjugate regularity and uniqueness at the prescribed gradient contacts.
+
+Every feasible Gram data set is then realized by an actual instance in dimension
+N+2, including all intermediate oracle queries and the terminal loss. The finite
+model is proved equal to the actual loss set over all positive finite dimensions.
+The OGM performance/optimality and uniqueness results and one-register attainment
+are still open; exact interpolation is no longer an assumed dependency.
