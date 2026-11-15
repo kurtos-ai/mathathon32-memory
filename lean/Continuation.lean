@@ -11,3 +11,4 @@ public import Continuation.Smooth.OGMInstalledMemory
 public import Continuation.Quadratic.MatrixResidual
 public import Continuation.Quadratic.SpectralRisk
 public import Continuation.Normalization.Core
+public import Continuation.Quadratic.ChebyshevCandidate

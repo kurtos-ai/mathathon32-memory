@@ -311,4 +311,70 @@ lemma A_equiv_maps_ker {s : ℕ} (hs : 0 < s) {c q : Fin s → ℝ} (h : dot c q
   rw [h1, hv]
 
 
+-- STEP 2: A_of construction from machine
+
+def A_of {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin (N+1)) : Matrix (Fin s) (Fin s) ℝ :=
+  if hk : k.val < N then
+    A_mat hR.1 (dot_c_qFin N s W M hR ⟨k.val, hk⟩)
+  else
+    A_mat hR.1 (dot_o_qFin N s W M hR)
+
+lemma A_of_q_eq_ones {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin (N+1)) :
+    A_of M W hR k *ᵥ qFin N s M k = onesVec s := by
+  unfold A_of
+  by_cases hk : k.val < N
+  · simp only [hk, dite_true]
+    exact A_mat_q_eq_ones hR.1 (dot_c_qFin N s W M hR ⟨k.val, hk⟩)
+  · simp only [hk, dite_false]
+    have hN : k.val = N := by omega
+    have heq : k = ⟨N, Nat.lt_succ_self N⟩ := Fin.ext hN
+    rw [heq]
+    exact A_mat_q_eq_ones hR.1 (dot_o_qFin N s W M hR)
+
+lemma e1_dot_A_of {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin (N+1)) (v : Fin s → ℝ) :
+    dot (e1 s) (A_of M W hR k *ᵥ v) = dot (if hk : k.val < N then M.c ⟨k.val, hk⟩ else M.o) v := by
+  unfold A_of
+  by_cases hk : k.val < N
+  · simp only [hk, dite_true]
+    exact e1_dot_A_mat hR.1 (dot_c_qFin N s W M hR ⟨k.val, hk⟩) v
+  · simp only [hk, dite_false]
+    exact e1_dot_A_mat hR.1 (dot_o_qFin N s W M hR) v
+
+def A_of_inv_mat {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin (N+1)) : Matrix (Fin s) (Fin s) ℝ :=
+  if hk : k.val < N then
+    A_mat_inv hR.1 (dot_c_qFin N s W M hR ⟨k.val, hk⟩)
+  else
+    A_mat_inv hR.1 (dot_o_qFin N s W M hR)
+
+lemma A_of_inv_ones_eq_qFin {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin (N+1)) :
+    A_of_inv_mat M W hR k *ᵥ onesVec s = qFin N s M k := by
+  unfold A_of_inv_mat
+  by_cases hk : k.val < N
+  · simp only [hk, dite_true]
+    exact A_mat_inv_ones_eq_q hR.1 (dot_c_qFin N s W M hR ⟨k.val, hk⟩)
+  · simp only [hk, dite_false]
+    have hN : k.val = N := by omega
+    have heq : k = ⟨N, Nat.lt_succ_self N⟩ := Fin.ext hN
+    rw [heq]
+    exact A_mat_inv_ones_eq_q hR.1 (dot_o_qFin N s W M hR)
+
+def normF {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin N) : Matrix (Fin s) (Fin s) ℝ :=
+  A_of M W hR ⟨k.val+1, by omega⟩ * M.F k * A_of_inv_mat M W hR ⟨k.val, by omega⟩
+
+def normB {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin N) : Fin s → ℝ :=
+  A_of M W hR ⟨k.val+1, by omega⟩ *ᵥ M.b k
+
+lemma normF_ones {N s : ℕ} (M : Machine N s) (W : Matrix (Fin (N+1)) (Fin (N+1)) ℝ) (hR : Realizes N s W M) (k : Fin N) :
+    normF M W hR k *ᵥ onesVec s = onesVec s := by
+  unfold normF
+  have hq : M.F k *ᵥ qFin N s M ⟨k.val, by omega⟩ = qFin N s M ⟨k.val+1, by omega⟩ := F_mul_qFin N s M k.val k.isLt
+  have hAinv : A_of_inv_mat M W hR ⟨k.val, by omega⟩ *ᵥ onesVec s = qFin N s M ⟨k.val, by omega⟩ := A_of_inv_ones_eq_qFin M W hR _
+  calc (A_of M W hR ⟨k.val+1, by omega⟩ * M.F k * A_of_inv_mat M W hR ⟨k.val, by omega⟩) *ᵥ onesVec s
+      = A_of M W hR ⟨k.val+1, by omega⟩ *ᵥ (M.F k *ᵥ (A_of_inv_mat M W hR ⟨k.val, by omega⟩ *ᵥ onesVec s)) := by
+          rw [Matrix.mulVec_mulVec, Matrix.mulVec_mulVec]
+    _ = A_of M W hR ⟨k.val+1, by omega⟩ *ᵥ (M.F k *ᵥ qFin N s M ⟨k.val, by omega⟩) := by rw [hAinv]
+    _ = A_of M W hR ⟨k.val+1, by omega⟩ *ᵥ qFin N s M ⟨k.val+1, by omega⟩ := by rw [hq]
+    _ = onesVec s := A_of_q_eq_ones M W hR _
+
+
 end RegisterMachine

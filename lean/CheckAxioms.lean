@@ -209,3 +209,33 @@ public import RealizationCore
 #print axioms RegisterMachine.A_equiv_symm_ones_eq_q
 #print axioms RegisterMachine.e1_comp_A_equiv
 #print axioms RegisterMachine.A_equiv_maps_ker
+
+#print axioms RegisterMachine.A_of
+#print axioms RegisterMachine.A_of_q_eq_ones
+#print axioms RegisterMachine.e1_dot_A_of
+#print axioms RegisterMachine.A_of_inv_mat
+#print axioms RegisterMachine.A_of_inv_ones_eq_qFin
+#print axioms RegisterMachine.normF
+#print axioms RegisterMachine.normB
+#print axioms RegisterMachine.normF_ones
+
+#print axioms QuadraticFoundations.chebM_s_comp_neg
+#print axioms QuadraticFoundations.chebM_s_odd_coeff_zero
+#print axioms QuadraticFoundations.chebM_derivative_eval_zero
+#print axioms QuadraticFoundations.evenHalve
+#print axioms QuadraticFoundations.evenHalve_coeff
+#print axioms QuadraticFoundations.monomial_comp_X_sq
+#print axioms QuadraticFoundations.sum_comp_lemma
+#print axioms QuadraticFoundations.evenHalve_comp_X_sq
+#print axioms QuadraticFoundations.chebM_q
+#print axioms QuadraticFoundations.chebM_q_comp_X_sq
+#print axioms QuadraticFoundations.chebM_s_eq_q_mul
+#print axioms QuadraticFoundations.p_star
+#print axioms QuadraticFoundations.p_star_eval
+#print axioms QuadraticFoundations.p_star_at_zero
+#print axioms QuadraticFoundations.p_star_natDegree_le
+#print axioms QuadraticFoundations.chebM_sq_le_one
+#print axioms QuadraticFoundations.p_star_weight_identity
+#print axioms QuadraticFoundations.p_star_weight_le
+#print axioms QuadraticFoundations.p_star_weight_at_L
+#print axioms QuadraticFoundations.p_star_isGreatest_weight
