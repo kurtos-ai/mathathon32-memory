@@ -645,3 +645,47 @@ public import RealizationCore
 #print axioms SmoothOperational.zero_increment_risk
 #print axioms SmoothOperational.value_zero_eq_inf_risk0
 #print axioms SmoothOperational.performance_iff_gram
+
+-- Actual compact risk sublevels and attaining one-register schedules.
+#print axioms SmoothAttain.sublevel_pReal_sq_le
+#print axioms SmoothAttain.risk0_nonneg
+#print axioms SmoothAttain.sublevel_pReal_abs_le
+#print axioms SmoothAttain.sublevel_sum_sq_le_B
+#print axioms SmoothAttain.finiteSublevel
+#print axioms SmoothAttain.finiteSublevel_closed
+#print axioms SmoothAttain.norm_bound_of_sum_sq_le
+#print axioms SmoothAttain.finiteSublevel_bounded
+#print axioms SmoothAttain.finiteSublevel_isCompact
+#print axioms SmoothAttain.iter_zero_aux
+#print axioms SmoothAttain.iter_zero
+#print axioms SmoothAttain.terminalLoss_zero
+#print axioms SmoothAttain.terminalLoss_le_half
+#print axioms SmoothAttain.risk0_at_zero_le
+#print axioms SmoothAttain.finiteSublevel_nonempty
+#print axioms SmoothAttain.exists_minimizer
+#print axioms SmoothAttain.isMinOn_attains_iInf
+
+-- Attainment in the actual operational one-register class.
+#print axioms SmoothOperational.exists_optimal_one_register
+#print axioms SmoothOperational.value_zero_bounds
+
+-- Exact projected loss model and bounded-subgradient variant.
+#print axioms ProjectedLossModel.Instance
+#print axioms ProjectedLossModel.pre
+#print axioms ProjectedLossModel.site
+#print axioms ProjectedLossModel.slope
+#print axioms ProjectedLossModel.val
+#print axioms ProjectedLossModel.Feasible
+#print axioms ProjectedLossModel.Admissible
+#print axioms ProjectedLossModel.terminalLoss
+#print axioms ProjectedLossModel.direct_mem
+#print axioms ProjectedLossModel.trajectory_of_feasible
+#print axioms ProjectedLossModel.realize_feasible
+#print axioms ProjectedLossModel.actual_feasible
+#print axioms ProjectedLossModel.actualLossSet
+#print axioms ProjectedLossModel.modelLossSet
+#print axioms ProjectedLossModel.lossSet_eq
+#print axioms ProjectedLossModel.direct_zero
+#print axioms ProjectedLossModel.bounded_zero_loss
+#print axioms ProjectedLossModel.bounded_lossSet_eq
+#print axioms ProjectedLossModel.unbounded_lossSet_eq

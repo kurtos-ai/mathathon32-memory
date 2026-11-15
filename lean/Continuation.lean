@@ -39,3 +39,6 @@ public import Continuation.Smooth.ConjugateRegularity
 public import Continuation.Smooth.Sufficient
 public import Continuation.Smooth.GramExact
 public import Continuation.Smooth.Operational
+public import Continuation.Smooth.Attain.Attainment
+public import Continuation.Smooth.OperationalAttainment
+public import Continuation.Projected.LossModel

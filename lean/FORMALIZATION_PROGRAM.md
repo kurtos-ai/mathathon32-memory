@@ -28,9 +28,9 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 |---|---|
 | Normalization and coefficients | Complete: Proposition 2.2 in all finite dimensions, rank/minor criterion and finite rational polynomial memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
-| Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
+| Projected methods | Section 4: projection graph, convex interpolation and exact loss model complete; projected-register rank theorem and effective decision theorem remain. |
 | Convex quadratics | Complete in the quadratic matrix model: competing-polynomial lower bound, root schedule, every operational memory budget's EReal minimax value, threshold ray, and no memory gain. |
-| Smooth convex methods | Section 6: interpolation and exact Gram reduction complete; optimum and uniqueness, one-register attainment and strict gap remain. |
+| Smooth convex methods | Section 6: interpolation and exact Gram reduction complete; optimum and uniqueness and strict gap remain; one-register attainment complete. |
 
 ## Acceptance requirements
 
@@ -206,3 +206,21 @@ all-dimensional EReal risks. The operational one-register minimax value is
 exactly the infimum over step schedules, and the actual performance condition
 is exactly the finite Gram test. This closes the semantic bridge needed by
 the independent compactness/attainment proof.
+
+## Actual one-register attainment
+
+For every horizon and L,R>0, actual risk sublevels are proved compact, an
+optimal schedule is attained, and the Q0 bridge gives a genuinely realizable
+one-register coefficient map attaining the operational minimax value. The
+value is finite and nonnegative. Smooth benchmark optimality and uniqueness
+remain open, so the strict memory gap is not yet fully formalized.
+
+## Exact projected loss models
+
+Both the arbitrary-subgradient and norm-bounded oracle variants now have exact
+finite loss models on every fixed nonempty closed convex K. The proof constructs
+the actual finite envelope, its minimizer and permitted subgradients everywhere,
+and proves all intermediate projected iterates agree with the feasible data.
+Actual executions produce the same finite inequalities, including an auxiliary
+terminal subgradient. The zero-increment loss bound MR is proved for the bounded
+variant. Projected register rank and effective elimination remain separate.

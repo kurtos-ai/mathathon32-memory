@@ -19,9 +19,9 @@ Normalized-register equivalence in every finite dimension, finite convex subgrad
 
 Necessary and sufficient finite smooth-convex interpolation is proved from actual gradient, convexity and Lipschitz definitions. The finite dual construction has a proved everywhere-defined conjugate gradient, with existence, uniqueness and the exact Lipschitz bound. Fixed-instance one-register trajectories and losses are continuous in the schedule. The actual all-dimensional EReal risk is lower semicontinuous, with proved scalar-quadratic lower bounds and explicit coefficient and squared-step bounds.
 
-General projected rank and projected loss-set equivalences, effective quantifier
+General projected rank, effective quantifier
 elimination and complete root isolation, and smooth-convex benchmark optimality,
-uniqueness and one-register attainment remain unfinished
+and uniqueness remain unfinished
 in Lean. Work-in-progress files with proof holes
 are excluded from this repository. A separate Open Math project retains the
 research history. A successful library build does not make the entire paper
@@ -33,8 +33,16 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,113 successful build jobs and 588 audited declarations.
+Current verification: 9,116 successful build jobs and 626 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
 actual trajectories and EReal risks, including the operational minimax infimum.
+
+Actual risk sublevels are compact for L,R>0, and an optimal one-register
+coefficient map is proved to exist with its operational realization. The
+finite/nonnegative value bounds are also proved.
+
+Projected finite loss-set exactness is now proved for unbounded and norm-bounded
+subgradient oracles, including repeated queries with distinct returns and the
+complete projection recurrence. The bounded zero-increment loss is at most MR.
