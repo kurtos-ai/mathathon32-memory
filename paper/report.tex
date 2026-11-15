@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{580dda0d6e164723bf1b0fa60a1248d28db3872e}}\\[2pt]
+{\small Lean formalization commit: \texttt{9b48a4457000892718f7d6da2a9feaceb41a86b8}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1075,52 +1075,53 @@ Convex $L$-smooth & $N\ge2$ & $1$ & $\displaystyle\frac{LR^2}{2\theta_N^2}$\\
 \FloatBarrier
 
 \section*{Verification scope}
-The accompanying Lean library is pinned to Lean~4.35.0 and Mathlib~4.35.0.
-It proves the exact register-realization theorem from the actual recursion,
-including one predetermined machine valid in every finite dimension, the
-normalized realization, coefficient-coordinate bijection, cut/increment rank
-identity, and determinant equations for memory. The threshold and gain
-criteria use independently defined extended-real suprema and infima and do
-not assume attainment. Algebraicity of finite endpoints is verified given
-an exact rational quantifier-free threshold formula.
+The accompanying library formalizes the report's results in Lean~4.35.0
+with pinned Mathlib. Register realizations reproduce every query and the
+terminal output, using one predetermined machine in every finite dimension.
+The normalization, coordinate bijection, cut-rank identity, memory minors,
+and threshold and gain criteria are proved from the actual recursions and
+independently defined extended-real risks and minimax values.
 
-For convex quadratics, the library proves the complete scalar loss model,
-spectral risk, Chebyshev lower bound, explicit one-register schedule, and
-minimax value at every budget. For projected methods it proves the exact
-register count, finite subgradient interpolation and loss models, actual
-operational infimum, threshold rays, saturated budgets, and bounded-oracle
-finiteness, including singleton domains and repeated queries.
+The three-step procedure is executable and verified. It accepts a finite
+loss formula with specified algebraic coefficients, constructs the memory
+and threshold conditions, and performs nonlinear real quantifier elimination
+with arbitrary quantifier alternation. Certified root isolation and sign
+tests give exact finite algebraic or infinite endpoints, strict-gain decisions,
+and the least sufficient memory budget. No elimination oracle or unknown
+minimax value is an input. Assumption~\ref{ass:finite} remains the explicit
+input requirement for a general function class. For both benchmarks and the
+projected extension, concrete formula compilers are proved exact.
 
-For smooth convex functions it proves necessary and sufficient interpolation
-with actual gradients, exact Gram loss models in every fixed dimension
-$n\ge N+2$, and compactness and attainment of one-register risk sublevels.
-The actual OGM upper bound and constructed Drori lower bound give the sharp
-value for every horizon at $m\ge1$, and at every budget for zero or one query.
-The GJP factorization, simplex projection, equality and limiting arguments,
-and a conic-duality bridge from actual risk, establish fixed-dimension
-coefficient uniqueness. The complete memory-gain classification follows:
-$V_{m+1}<V_m$ exactly when $m=0$ and $N\ge2$.
+For quadratics, the library proves the matrix residual identity, scalar
+loss model, Chebyshev lower bound, optimal schedule, and all-budget minimax
+formula. For smooth convex functions it proves interpolation in both
+directions, exact Gram loss models, OGM's upper bound, the Drori lower bound
+for the report's predetermined linear-history methods, one-register
+compactness and attainment, conic duality, and coefficient uniqueness in
+every fixed dimension $n\ge N+2$. The executable benchmark procedures are
+proved to return the stated endpoints and memory classification for all
+horizons and rational or specified algebraic parameters. These are proofs
+about their outputs, not large numerical runs of quantifier elimination.
 
-Executable rational polynomial arithmetic, root isolation, algebraic root
-signs, and arbitrary-degree univariate Boolean decision are verified, as is
-symbolic elimination affine in the quantified variable with polynomial
-parameter coefficients. General parameterized nonlinear elimination,
-algebraic-input syntax reduction, and composition into exact minimax output
-remain in progress. The library includes 38 unchanged TauCeti files providing
-verified Sturm--Tarski and sign-determination foundations~\cite{TauCeti}; these
-pre-existing results do not themselves supply the remaining algorithm.
-The declaration map and build/axiom audit record the exact scope. All audited
-declarations use only \texttt{propext}, \texttt{Classical.choice}, and
-\texttt{Quot.sound}.
+The projected development proves the projection graph, actual register
+count including singleton domains, convex subgradient interpolation, exact
+loss models, and the effective memory procedure in fixed dimension.
+The bounded-oracle variant has proved finite minimax values. Every audited
+declaration uses only \texttt{propext}, \texttt{Classical.choice}, and
+\texttt{Quot.sound}; the retained library has no proof holes or custom axioms.
+The declaration map and build logs give the precise statements. Thirty-nine
+unchanged, attributed TauCeti files supply pre-existing verified
+Sturm--Tarski and sign-determination foundations~\cite{TauCeti}.
 
 The accompanying computations are supplementary finite checks \computation.
-Exact rational arithmetic verifies the odd-Chebyshev polynomial certificate
-for $N=1,\ldots,20$ and sampled cut-rank identities for $N=1,\ldots,8$.
-Floating-point checks verify the OGM recurrence and coefficient calculations
-for $N=1,\ldots,10$, and projected recurrences for $N=1,\ldots,6$, with tolerance
-$10^{-9}$. These checks do not replace the all-horizon proofs, and the floating
-point checks are not exact certificates. The programs, fixed inputs, and logs
-are included in the accompanying source archive.
+Exact arithmetic checks the odd-Chebyshev certificate for $N=1,\ldots,20$
+and sampled cut-rank identities for $N=1,\ldots,8$. Floating-point checks
+cover OGM for $N=1,\ldots,10$ and projected recurrences for $N=1,\ldots,6$,
+with tolerance $10^{-9}$. Guarded Lean executions exercise polynomial
+arithmetic, root isolation, sign tests, and small elimination examples.
+These checks do not replace the proofs. General elimination has no claimed
+practical runtime bound; an interrupted parameterized probe is preserved
+with its status. Programs, fixed inputs, and logs accompany the source.
 
 \section*{Provenance and AI disclosure}
 \addcontentsline{toc}{section}{Provenance and AI disclosure}
