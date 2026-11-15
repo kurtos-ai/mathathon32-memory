@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{a0f9b8519caa90f8871cb242ec137bed7832c2af}}\\[2pt]
+{\small Lean formalization commit: \texttt{06dd2fbeda84a322dcdff4910257e098acc1709e}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1103,8 +1103,10 @@ identities, query membership in $K$, singleton trajectories, and exact finite
 convex subgradient interpolation by a maximum of affine functions. Both projected
 loss models are verified, including arbitrary choices at repeated queries,
 the complete projected trajectory, and the bounded-oracle zero-step bound $MR$.
-On any non-singleton closed convex domain, every correct projected implementation
-is proved to satisfy the ordinary cut-rank lower bound.
+On any non-singleton closed convex domain, the minimum register count for a
+coefficient map equals its ordinary maximum cut rank; the matching
+construction verifies every projected query and the terminal output. On a nonempty
+singleton the least count is one.
 For OGM it proves the actual realization and least register count: one at
 $N=1$ and two at $N\ge2$, when $L>0$.
 
@@ -1119,8 +1121,12 @@ an actual one-register coefficient map are also verified.
 
 The algebraic energy identity and its scaled objective bound are proved;
 identification of the actual OGM trajectory with that certificate remains open.
-The projected rank upper bound, effective quantifier elimination and complete
-root isolation, and smooth benchmark optimality and uniqueness remain open in Lean. Those claims are
+Squarefree preprocessing, an explicit rational root bound, and filtered-grid
+coverage and unique cells from a certified separation bound are proved.
+Executable polynomial division and gcd remain open. The GJP simplex
+minimization lemma, including its unique equality case, is also verified.
+Effective quantifier elimination, complete root isolation, and smooth benchmark
+optimality and coefficient uniqueness remain open in Lean. Those claims are
 supported by the written proofs and cited results.
 An exact declaration map and build/axiom audit accompany the source; all
 audited declarations use only \texttt{propext}, \texttt{Classical.choice},
