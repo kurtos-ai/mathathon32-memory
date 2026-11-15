@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{47198777156ee68f1b1d16b1a443131ad8dbf9a2}}\\[2pt]
+{\small Lean formalization commit: \texttt{577171c2121936417569950db0cd1d2899a28d9e}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1081,14 +1081,17 @@ starting from the actual state recursion and formal-input correctness. The
 construction and lower bound are proved for scalar inputs and extended to
 one coefficient machine acting in every finite dimension. It also verifies
 the cut/increment rank identity in
-Proposition~\ref{prop:loci}, the equality $\Q_0=\{0\}$ on strictly lower triangular
+Proposition~\ref{prop:loci}, both inverse laws for the coefficient coordinates,
+the equality $\Q_0=\{0\}$ on strictly lower triangular
 matrices, and the threshold and gain statements in Theorem~\ref{thm:procedure}
 and Corollary~\ref{cor:gain} for an explicitly supplied feasible-loss model and
 memory set. The latter proofs use extended real suprema and infima, allow
 infinite values, and do not assume attainment. The formal performance set is
 constructed from loss inequalities, independently of the minimax value.
+It additionally proves the projection graph and correction-readout identities,
+query membership in $K$, singleton trajectories, and the Gram/PSD identities.
 The library does not yet formalize normalized-register equivalence,
-projected-method results, exact interpolation
+the general projected rank and trajectory equivalences, exact interpolation
 models, quantifier elimination, or the benchmark optimality proofs. Those
 claims are supported by the written proofs and cited results above.
 An exact declaration map and a build/axiom audit accompany the source;
