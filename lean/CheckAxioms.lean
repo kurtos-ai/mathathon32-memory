@@ -956,3 +956,108 @@ public import RealizationCore
 #print axioms OGMVerified.value_upper
 #print axioms OGMVerified.coordinates_mem_memory_one_query
 #print axioms OGMVerified.value_upper_one_query
+
+-- Smooth/ConstrainedConjugateRegularity
+#print axioms ConstrainedConjugate.strong_support
+#print axioms ConstrainedConjugate.maximizers_monotone
+#print axioms ConstrainedConjugate.maximizers_lipschitz
+#print axioms ConstrainedConjugate.value
+#print axioms ConstrainedConjugate.value_ge
+#print axioms ConstrainedConjugate.value_support
+#print axioms ConstrainedConjugate.value_remainder
+#print axioms ConstrainedConjugate.value_convex
+#print axioms ConstrainedConjugate.value_hasGradientAt
+#print axioms ConstrainedConjugate.maximizer_unique
+#print axioms ConstrainedConjugate.exists_maximizer
+#print axioms ConstrainedConjugate.exists_smooth_conjugate
+
+-- GJP/Elimination
+#print axioms GJP.matrixSymm
+#print axioms GJP.borderedMatrix
+#print axioms GJP.borderedMatrix_posSemidef_iff
+#print axioms GJP.equation15Matrix
+#print axioms GJP.equation15_schur
+#print axioms GJP.posSemidef_eq_zero_of_diagonal
+#print axioms GJP.matrixSymm_transpose
+#print axioms GJP.matrixSymm_congruence
+#print axioms GJP.outer_congruence
+#print axioms GJP.colSum_eq
+#print axioms GJP.reducedSlack
+#print axioms GJP.equation15_congruence
+#print axioms GJP.equation15_reduced_iff
+#print axioms GJP.UnitLower
+#print axioms GJP.UnitLower.det_eq_one
+#print axioms GJP.UnitLower.isUnit
+#print axioms GJP.lower_mul_diag
+#print axioms GJP.UnitLower.inv
+#print axioms GJP.UnitLower.mul
+#print axioms GJP.matrixSymm_injective_lower
+#print axioms GJP.transformed_lower
+#print axioms GJP.transformed_diag
+#print axioms GJP.reducedSlack_diag
+#print axioms GJP.equation15_diagonal_necessary
+#print axioms GJP.equation15_tight_slack_zero
+#print axioms GJP.equation15_tight_unique
+
+-- GJP/Completion
+#print axioms GJP.triangularCompletion
+#print axioms GJP.triangularCompletion_lower
+#print axioms GJP.triangularCompletion_diag
+#print axioms GJP.triangularCompletion_zero_row
+#print axioms GJP.triangularCompletion_slack
+#print axioms GJP.exists_unitLower_solution
+#print axioms GJP.diagonal_inequality_zero
+#print axioms GJP.upper_zero_column
+#print axioms GJP.equation15_exists_of_diagonal
+#print axioms GJP.equation15_exists_iff_diagonal
+
+-- GJP/TriangularOrder
+#print axioms GJP.lower_comparison
+#print axioms GJP.upper_comparison
+#print axioms GJP.upper_zero_column_of_colsum
+#print axioms GJP.upper_exists_solution_bounded
+
+-- Smooth/DroriCoordinates
+#print axioms SmoothDrori.hardX_apply
+#print axioms SmoothDrori.hardG_apply
+#print axioms SmoothDrori.hardG_inner
+#print axioms SmoothDrori.hardG_inner_hardX
+#print axioms SmoothDrori.hardG_inner_hardG_ne
+#print axioms SmoothDrori.hardF_sub_norm
+#print axioms SmoothDrori.zetaStar_antitone_bounded
+#print axioms SmoothDrori.hardG_norm_sub_sq
+#print axioms SmoothDrori.hardData_interpolation
+#print axioms SmoothDrori.exists_hardData_interpolant
+
+-- Smooth/DroriRadius
+#print axioms SmoothDrori.zetaStar_step_mul
+#print axioms SmoothDrori.zetaStar_last_mul
+#print axioms SmoothDrori.zetaStar_square_div_step
+#print axioms SmoothDrori.zetaStar_square_div_last
+#print axioms SmoothDrori.zetaStar_weighted_sum
+#print axioms SmoothDrori.hardX_minimizer_norm_sq_sum
+#print axioms SmoothDrori.hardX_minimizer_norm
+
+-- Smooth/DroriOracle
+#print axioms SmoothDrori.hardX_zero
+#print axioms SmoothDrori.Space
+#print axioms SmoothDrori.orthant
+#print axioms SmoothDrori.hardDual
+#print axioms SmoothDrori.orthant_closed
+#print axioms SmoothDrori.orthant_convex
+#print axioms SmoothDrori.hardG_mem_orthant
+#print axioms SmoothDrori.hardDual_strongConvex
+#print axioms SmoothDrori.hardDual_continuous
+#print axioms SmoothDrori.hardDual_support
+#print axioms SmoothDrori.hardDual_contact
+#print axioms SmoothDrori.exists_orthant_hardGradient
+#print axioms SmoothDrori.hardGradient
+#print axioms SmoothDrori.hardFunction
+#print axioms SmoothDrori.hardGradient_spec
+#print axioms SmoothDrori.hardGradient_at_data
+#print axioms SmoothDrori.hardFunction_at_data
+#print axioms SmoothDrori.hardFunction_minimizer
+#print axioms SmoothDrori.hardInstance
+#print axioms SmoothDrori.prefixSpace
+#print axioms SmoothDrori.prefixSpace_mono
+#print axioms SmoothDrori.hardFunction_lower_on_prefix

@@ -268,3 +268,9 @@ Root proved the actual OGM upper bound via vector Y/Eta/Z/V recurrences, actual 
 ## Operational OGM bound
 
 The actual trajectory upper bound is now connected to the independent EReal risk and minimax definitions via the coefficient-coordinate equivalence and proved operational memory characterization. This proves the upper bound at every m≥1 and, for N=1, already at m=0. Drori lower bounds, full GJP coefficient uniqueness, and executable elimination remain unfinished.
+
+## Local continuation after external quota exhaustion
+
+On Nov15 around12:45UTC, Open Math OS's provider key reached its weekly limit; Kimi and the Muse fallback both returned HTTP429, with reset Nov21 06:43:56UTC. Existing remote sources remain preserved. Three local Codex agents continue Drori's lower bound, GJP uniqueness, and executable arithmetic/elimination. Root reviews, builds, audits, and integrates their completed modules.
+
+The constrained-conjugate helper and actual Drori instance are verified, including interpolation, exact radius and prefix-space lower bounds. The zero-chain is still under development. GJP Lemma3.3 now has the true bordered-matrix equivalence, singular completion, and tight nonsingular uniqueness; full actual-risk coefficient uniqueness remains open.

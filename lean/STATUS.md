@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,130 successful build jobs and 865 audited declarations.
+Current verification: 9,137 successful build jobs and 956 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -78,3 +78,5 @@ The rational univariate isolation specification now constructs its own Bezout, r
 Drori finite hard-data formulas, positivity and strict decrease and the exact terminal datum are verified (not the hard interpolant/lower bound). The separate normalized OGM weighted-coefficient recurrence includes the predecessor-diagonal correction and final theta step.
 
 The actual OGM upper bound is connected to the independently defined operational risk and minimax value, at every auxiliary memory budget m≥1. For one query, it holds already at m=0 with bound LR²/8.
+
+The actual orthant-constrained Drori hard function now exists as a smooth-convex radius-R instance, with every prescribed value/gradient, the minimizer, and lower bounds on prefix subspaces. The zero-chain and all-method minimax lower bound remain unfinished. GJP Lemma3.3 is proved from the actual bordered PSD matrix, including singular triangular completion and tight nonsingular uniqueness; full coefficient uniqueness remains unfinished.

@@ -64,3 +64,17 @@ public import Continuation.RootIsolation.Certificate
 public import Continuation.Smooth.OGMUpperBound
 
 public import Continuation.Smooth.OGMOperational
+
+public import Continuation.Smooth.ConstrainedConjugateRegularity
+
+public import Continuation.GJP.Elimination
+
+public import Continuation.GJP.Completion
+
+public import Continuation.GJP.TriangularOrder
+
+public import Continuation.Smooth.DroriCoordinates
+
+public import Continuation.Smooth.DroriRadius
+
+public import Continuation.Smooth.DroriOracle
