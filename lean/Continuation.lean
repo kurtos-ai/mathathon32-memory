@@ -9,3 +9,4 @@ public import Continuation.Semialgebraic.Endpoints
 public import Continuation.Semialgebraic.ThresholdEndpoints
 public import Continuation.Smooth.OGMInstalledMemory
 public import Continuation.Quadratic.MatrixResidual
+public import Continuation.Quadratic.SpectralRisk

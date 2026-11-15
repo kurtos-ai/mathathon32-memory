@@ -151,3 +151,12 @@ public import RealizationCore
 #print axioms QuadraticResidual.vectorTarget_step
 #print axioms QuadraticResidual.errorIter_eq_history
 #print axioms QuadraticResidual.history_eq_polynomial
+
+#print axioms QuadraticSpectral.polynomial_energy_bound
+#print axioms QuadraticSpectral.lossSet
+#print axioms QuadraticSpectral.scalar_loss_mem
+#print axioms QuadraticSpectral.isGreatest_lossSet
+#print axioms QuadraticSpectral.spectral_risk_attained
+#print axioms QuadraticSpectral.historyLossSet
+#print axioms QuadraticSpectral.historyLossSet_eq
+#print axioms QuadraticSpectral.history_risk_eq_scalar_max

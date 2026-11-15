@@ -1,2 +1,2 @@
 Retained Lean source scan: no sorry, admit, custom axiom, or native_decide tokens.
-Expanded declaration axiom audit: 135 declarations; only propext, Classical.choice, Quot.sound.
+Expanded declaration axiom audit: 143 declarations; only propext, Classical.choice, Quot.sound.
