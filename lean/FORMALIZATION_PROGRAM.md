@@ -29,7 +29,7 @@ build of helper lemmas does not imply that a paper theorem has been formalized.
 | Normalization and coefficients | Proposition 2.2; rank/minor criterion and algebraic memory loci. |
 | Semialgebraic decision procedure | Polynomial formula syntax/semantics, effective real quantifier elimination, termination, root isolation, root extraction and exact minimax decisions. |
 | Projected methods | Section 4: projected-register rank theorem, projection graph, convex interpolation, exact loss model and decision theorem. |
-| Convex quadratics | Section 5: spectral risk formula, Chebyshev construction and lower bound, all-horizon minimax and one-register optimality. |
+| Convex quadratics | Section 5: Chebyshev competing-polynomial lower bound and real-root schedule, all-horizon minimax and one-register optimality. |
 | Smooth convex methods | Section 6: interpolation and Gram reduction, optimum and uniqueness, one-register attainment and strict gap. |
 
 ## Acceptance requirements
@@ -88,3 +88,13 @@ and rational quantifier-free endpoint algebraicity, with its conditional bridge
 to finite minimax values. The accepted build has 9082 jobs and the audit names
 135 declarations. These milestones do not establish interpolation exactness,
 benchmark optimality, effective elimination, or the projected rank theorem.
+
+## Verified continuation through f5aeb9c
+
+The exact spectral risk formula is proved for the actual linear-oracle trajectory
+over all positive finite dimensions, with dimension-one attainment. The scaled
+Chebyshev candidate has proved normalization, degree bound and exact weighted
+interval maximum. The coordinate-change core and time-dependent normalization
+matrices preserve the all-ones state. Full build: 9085 jobs; expanded audit: 219
+declarations. Missing quadratic lower-bound optimality and one-register schedule,
+and missing normalized trajectory conjugacy, remain explicit.
