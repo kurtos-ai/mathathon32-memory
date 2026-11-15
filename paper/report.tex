@@ -49,7 +49,7 @@ and two convex benchmarks\par}
 Francisco Hern\'andez Iglesias and Jack Mayo\\[2pt]
 {\small \textit{kurtos.ai} --- Computation/Applied Math}\\[4pt]
 {\small Repository: \url{https://github.com/kurtos-ai/mathathon32-memory} (private)}\\[2pt]
-{\small Lean formalization commit: \texttt{1b1d806e1637705af4fe94c579858b787717510d}}\\[2pt]
+{\small Lean formalization commit: \texttt{a0f9b8519caa90f8871cb242ec137bed7832c2af}}\\[2pt]
 {\small Event work: Nov~13, 8PM -- Nov~15, noon Pacific, 2026}\\[2pt]
 November 2026
 \end{center}
@@ -1103,6 +1103,8 @@ identities, query membership in $K$, singleton trajectories, and exact finite
 convex subgradient interpolation by a maximum of affine functions. Both projected
 loss models are verified, including arbitrary choices at repeated queries,
 the complete projected trajectory, and the bounded-oracle zero-step bound $MR$.
+On any non-singleton closed convex domain, every correct projected implementation
+is proved to satisfy the ordinary cut-rank lower bound.
 For OGM it proves the actual realization and least register count: one at
 $N=1$ and two at $N\ge2$, when $L>0$.
 
@@ -1115,7 +1117,9 @@ The actual one-register risk is lower semicontinuous; scalar quadratic examples,
 explicit coefficient and step bounds, compact risk sublevels, and attainment by
 an actual one-register coefficient map are also verified.
 
-The general projected rank theorem, effective quantifier elimination and complete
+The algebraic energy identity and its scaled objective bound are proved;
+identification of the actual OGM trajectory with that certificate remains open.
+The projected rank upper bound, effective quantifier elimination and complete
 root isolation, and smooth benchmark optimality and uniqueness remain open in Lean. Those claims are
 supported by the written proofs and cited results.
 An exact declaration map and build/axiom audit accompany the source; all
