@@ -13,3 +13,4 @@ public import Submission2026.NearQuadratic.ActualSmoothTransfer
 public import Submission2026.Separation.RidgeBalance
 public import Submission2026.Separation.WeightBounds
 public import Submission2026.Separation.B11Enclosures
+public import Submission2026.WeakCurvature
