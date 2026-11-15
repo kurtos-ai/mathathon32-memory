@@ -30,3 +30,4 @@ public import Continuation.Smooth.Necessary
 public import Continuation.Smooth.ActualInterpolation
 public import Continuation.OracleTrajectory
 public import Continuation.Smooth.GramModel
+public import Continuation.Smooth.GramReconstruction

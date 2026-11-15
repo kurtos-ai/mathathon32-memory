@@ -162,3 +162,8 @@ zero-chain induction is proved for arbitrary predetermined history matrices.
 The finite N+2-coordinate Gram model now represents every actual smooth loss;
 its PSD, radius, interpolation and terminal-loss constraints are all checked.
 The converse remains open, pending sufficient interpolation and assembly.
+
+Gram reconstruction in dimension N+2 is now proved. Given an actual smooth
+interpolant for the reconstructed data, the converse execution, radius,
+minimizer and terminal loss are proved. The remaining interpolation-sufficiency
+dependency is explicit; no unconditional loss-set equality is claimed yet.

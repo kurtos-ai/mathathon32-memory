@@ -514,3 +514,9 @@ public import RealizationCore
 #print axioms SmoothGramModel.modelLossSet
 #print axioms SmoothGramModel.actualLossSet_subset_modelLossSet
 #print axioms SmoothGramModel.actual_uniform_bound_of_model_bound
+
+-- Gram reconstruction and execution given an actual interpolating function.
+#print axioms SmoothGramModel.exists_euclidean_gram
+#print axioms SmoothGramModel.exists_gram_in_dimension
+#print axioms SmoothGramModel.model_data_inequalities
+#print axioms SmoothGramModel.realize_of_interpolant
