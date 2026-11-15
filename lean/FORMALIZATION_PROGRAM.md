@@ -274,3 +274,9 @@ The actual trajectory upper bound is now connected to the independent EReal risk
 On Nov15 around12:45UTC, Open Math OS's provider key reached its weekly limit; Kimi and the Muse fallback both returned HTTP429, with reset Nov21 06:43:56UTC. Existing remote sources remain preserved. Three local Codex agents continue Drori's lower bound, GJP uniqueness, and executable arithmetic/elimination. Root reviews, builds, audits, and integrates their completed modules.
 
 The constrained-conjugate helper and actual Drori instance are verified, including interpolation, exact radius and prefix-space lower bounds. The zero-chain is still under development. GJP Lemma3.3 now has the true bordered-matrix equivalence, singular completion, and tight nonsingular uniqueness; full actual-risk coefficient uniqueness remains open.
+
+## Sharp smooth benchmark and executable isolation
+
+The full actual Drori lower-bound chain now compiles and passes the global axiom audit, including a genuine zero-chain proved by dual tail-candidate comparison and constrained-maximizer uniqueness. Combined with OGM, the independent operational value, threshold ray and absence of gains beyond m=1 are proved. The N=1,m=0 endpoint is included. The GJP factor-to-simplex projection is also integrated.
+
+The executable coefficient-list polynomial layer refines Mathlib operations for all inputs, including zero divisors, and the complete executable rational isolator refines the proved certificate. Coverage, uniqueness, disjointness and exact zero-polynomial detection are proved; fourteen guarded runtime checks pass. General nonlinear QE and full actual-risk coefficient uniqueness remain active obligations.

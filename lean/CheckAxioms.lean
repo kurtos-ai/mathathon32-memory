@@ -1061,3 +1061,203 @@ public import RealizationCore
 #print axioms SmoothDrori.prefixSpace
 #print axioms SmoothDrori.prefixSpace_mono
 #print axioms SmoothDrori.hardFunction_lower_on_prefix
+
+-- Smooth/DroriTail
+#print axioms DroriTail.prefixSum
+#print axioms DroriTail.base
+#print axioms DroriTail.B
+#print axioms DroriTail.B_eq_base
+#print axioms DroriTail.prefixSum_nonneg
+#print axioms DroriTail.prefixSum_mono
+#print axioms DroriTail.base_step
+#print axioms DroriTail.scalar_tail_bound
+#print axioms DroriTail.candidate
+#print axioms DroriTail.candidate_nonneg
+#print axioms DroriTail.base_le_of_prefixSum_le_one
+#print axioms DroriTail.base_candidate_small
+#print axioms DroriTail.base_candidate_large
+#print axioms DroriTail.candidate_base_bound_small_sum
+#print axioms DroriTail.candidate_base_bound_large_sum
+
+-- Smooth/DroriDualFormula
+#print axioms SmoothDrori.hardShift
+#print axioms SmoothDrori.hardShift_apply
+#print axioms SmoothDrori.hardHi_eq_shift
+#print axioms SmoothDrori.hardScale
+#print axioms SmoothDrori.hardUnscale
+#print axioms SmoothDrori.hardUnscale_apply
+#print axioms SmoothDrori.hardUnscale_hardScale
+#print axioms SmoothDrori.hardScale_hardUnscale
+#print axioms SmoothDrori.hardScale_nonneg
+#print axioms SmoothDrori.hardUnscale_mem_orthant
+#print axioms SmoothDrori.hardUnscale_norm_sq
+#print axioms SmoothDrori.hardShift_inner_unscale
+#print axioms SmoothDrori.hardHi_unscale
+
+-- Smooth/DroriGeometry
+#print axioms SmoothDrori.hardX_mem_prefix
+#print axioms SmoothDrori.hardG_mem_prefix
+#print axioms SmoothDrori.eq_zero_of_mem_prefix_zero
+#print axioms SmoothDrori.hardGradient_prefix_zero
+#print axioms SmoothDrori.hardFunction_minimum_zero
+#print axioms SmoothDrori.hardFunction_terminal_lower
+
+-- Smooth/DroriTailGeometry
+#print axioms DroriTail.quad
+#print axioms DroriTail.prefixQuad
+#print axioms DroriTail.tailQuad
+#print axioms DroriTail.quad_split
+#print axioms DroriTail.quad_candidate
+#print axioms DroriTail.tailQuad_nonneg
+#print axioms DroriTail.quad_candidate_zero_le
+#print axioms SmoothDrori.inner_unscale_candidate
+#print axioms SmoothDrori.hardDual_unscale_ge
+#print axioms SmoothDrori.hardDual_unscale_eq_piece
+#print axioms SmoothDrori.hardUnscale_candidate_mem_prefix
+#print axioms SmoothDrori.hardGradient_eq_tail_candidate
+
+-- Smooth/DroriTailCost
+#print axioms DroriTail.prefixSum_succ
+#print axioms DroriTail.B_at_next
+#print axioms DroriTail.candidate_cost_large_coordinate
+#print axioms DroriTail.candidate_cost_small_coordinate
+
+-- Smooth/DroriLowerBound
+#print axioms SmoothDrori.zetaStar_antitone_through_zero
+#print axioms SmoothDrori.hardDual_candidate_small_sum
+#print axioms SmoothDrori.hardDual_candidate_large_sum
+#print axioms SmoothDrori.hardGradient_zero_chain
+#print axioms SmoothDrori.hardInstance_all_linear_history_lower
+#print axioms SmoothDrori.actualLossSet_has_sharp_lower_witness
+
+-- Smooth/DroriOperational
+#print axioms SmoothDrori.operational_risk_lower
+#print axioms SmoothDrori.operational_value_lower
+#print axioms SmoothDrori.operational_value_eq
+#print axioms SmoothDrori.operational_ogm_risk_eq
+#print axioms SmoothDrori.operational_thresholds_eq_ray
+#print axioms SmoothDrori.operational_no_gain_beyond_one
+#print axioms SmoothDrori.operational_no_strict_gain_beyond_one
+#print axioms SmoothDrori.operational_value_one_query_zero_memory
+#print axioms SmoothDrori.operational_value_one_query
+#print axioms SmoothDrori.operational_thresholds_one_query
+
+-- RootIsolation/ExecutablePolynomial
+#print axioms RootIsolation.Executable.Poly
+#print axioms RootIsolation.Executable.denote
+#print axioms RootIsolation.Executable.denote_nil
+#print axioms RootIsolation.Executable.ofCoeffList_append
+#print axioms RootIsolation.Executable.denote_cons
+#print axioms RootIsolation.Executable.degree_denote_lt_length
+#print axioms RootIsolation.Executable.degree_denote_cons
+#print axioms RootIsolation.Executable.leadingCoeff_denote_cons
+#print axioms RootIsolation.Executable.trim
+#print axioms RootIsolation.Executable.denote_trim
+#print axioms RootIsolation.Executable.trim_head_ne_zero
+#print axioms RootIsolation.Executable.trim_eq_nil_iff
+#print axioms RootIsolation.Executable.natDegree
+#print axioms RootIsolation.Executable.leadingCoeff
+#print axioms RootIsolation.Executable.natDegree_refines
+#print axioms RootIsolation.Executable.leadingCoeff_refines
+#print axioms RootIsolation.Executable.add
+#print axioms RootIsolation.Executable.sub
+#print axioms RootIsolation.Executable.scale
+#print axioms RootIsolation.Executable.monomial
+#print axioms RootIsolation.Executable.denote_add
+#print axioms RootIsolation.Executable.denote_sub
+#print axioms RootIsolation.Executable.denote_scale
+#print axioms RootIsolation.Executable.denote_replicate_zero
+#print axioms RootIsolation.Executable.denote_monomial
+#print axioms RootIsolation.Executable.shift
+#print axioms RootIsolation.Executable.denote_shift
+#print axioms RootIsolation.Executable.mul
+#print axioms RootIsolation.Executable.denote_mul
+#print axioms RootIsolation.Executable.degree
+#print axioms RootIsolation.Executable.degree_refines
+#print axioms RootIsolation.Executable.monicDivMod
+#print axioms RootIsolation.Executable.monicDivMod_refines
+#print axioms RootIsolation.Executable.monicDivMod_quotient
+#print axioms RootIsolation.Executable.monicDivMod_remainder
+#print axioms RootIsolation.Executable.normalized_monic
+#print axioms RootIsolation.Executable.divMod
+#print axioms RootIsolation.Executable.divMod_quotient
+#print axioms RootIsolation.Executable.divMod_remainder
+#print axioms RootIsolation.Executable.divMod_refines
+#print axioms RootIsolation.Executable.denote_surjective
+#print axioms RootIsolation.Executable.divMod_reconstructs
+#print axioms RootIsolation.Executable.divMod_remainder_lt
+#print axioms RootIsolation.Executable.gcd
+#print axioms RootIsolation.Executable.gcd_refines
+#print axioms RootIsolation.Executable.xgcdAux
+#print axioms RootIsolation.Executable.xgcdAux_refines
+#print axioms RootIsolation.Executable.xgcd
+#print axioms RootIsolation.Executable.gcdA
+#print axioms RootIsolation.Executable.gcdB
+#print axioms RootIsolation.Executable.denote_one
+#print axioms RootIsolation.Executable.xgcd_refines
+#print axioms RootIsolation.Executable.gcdA_refines
+#print axioms RootIsolation.Executable.gcdB_refines
+#print axioms RootIsolation.Executable.gcd_bezout
+#print axioms RootIsolation.Executable.coeff
+#print axioms RootIsolation.Executable.coeff_refines
+#print axioms RootIsolation.Executable.derivative
+#print axioms RootIsolation.Executable.derivative_refines
+#print axioms RootIsolation.Executable.eval
+#print axioms RootIsolation.Executable.eval_foldl
+#print axioms RootIsolation.Executable.eval_refines
+
+-- RootIsolation/ExecutableIsolation
+#print axioms RootIsolation.Executable.squarefreePart
+#print axioms RootIsolation.Executable.squarefreePart_refines
+#print axioms RootIsolation.Executable.bezoutA
+#print axioms RootIsolation.Executable.bezoutB
+#print axioms RootIsolation.Executable.A
+#print axioms RootIsolation.Executable.B
+#print axioms RootIsolation.Executable.A_refines
+#print axioms RootIsolation.Executable.B_refines
+#print axioms RootIsolation.Executable.rootBound
+#print axioms RootIsolation.Executable.rootBound_refines
+#print axioms RootIsolation.Executable.coeffAbsSum
+#print axioms RootIsolation.Executable.coeffAbsSum_refines
+#print axioms RootIsolation.Executable.coefficientBound
+#print axioms RootIsolation.Executable.curvatureBound
+#print axioms RootIsolation.Executable.epsilon
+#print axioms RootIsolation.Executable.gridStep
+#print axioms RootIsolation.Executable.coefficientBound_refines
+#print axioms RootIsolation.Executable.curvatureBound_refines
+#print axioms RootIsolation.Executable.epsilon_refines
+#print axioms RootIsolation.Executable.gridStep_refines
+#print axioms RootIsolation.Executable.filteredIntervals
+#print axioms RootIsolation.Executable.filteredIntervals_refines
+#print axioms RootIsolation.Executable.intervals
+#print axioms RootIsolation.Executable.intervals_refines
+#print axioms RootIsolation.Executable.every_root_mem_intervals
+#print axioms RootIsolation.Executable.existsUnique_root_of_mem_intervals
+#print axioms RootIsolation.Executable.disjoint_intervals_of_ne
+#print axioms RootIsolation.Executable.isolate
+#print axioms RootIsolation.Executable.isolate_none_iff
+#print axioms RootIsolation.Executable.isolate_some_iff
+#print axioms RootIsolation.Executable.isolate_spec
+
+-- GJP/FactorProjection
+#print axioms GJP.TCAdmissible
+#print axioms GJP.UnitLower.row_sum_le_one
+#print axioms GJP.TCAdmissible.colsum_nonneg
+#print axioms GJP.TCAdmissible.exists_b
+#print axioms GJP.upper_prefix_bound
+#print axioms GJP.upper_terminal_row
+
+-- GJP/ScalarProjection
+#print axioms GJP.projected_square_bound
+#print axioms GJP.projected_fraction_bound
+#print axioms GJP.projected_terminal_bound
+#print axioms GJP.projected_fraction_equality
+#print axioms GJP.projected_terminal_equality
+
+-- GJP/Projection
+#print axioms GJP.flowDelta
+#print axioms GJP.flowDelta_simplex
+#print axioms GJP.flowDelta_prefix_bound
+#print axioms GJP.equation15_flow_bound
+#print axioms GJP.equation15_projects_simplex
+#print axioms GJP.equation15_rate_lower

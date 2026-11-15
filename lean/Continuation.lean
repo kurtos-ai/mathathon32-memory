@@ -78,3 +78,27 @@ public import Continuation.Smooth.DroriCoordinates
 public import Continuation.Smooth.DroriRadius
 
 public import Continuation.Smooth.DroriOracle
+
+public import Continuation.Smooth.DroriTail
+
+public import Continuation.Smooth.DroriDualFormula
+
+public import Continuation.Smooth.DroriGeometry
+
+public import Continuation.Smooth.DroriTailGeometry
+
+public import Continuation.Smooth.DroriTailCost
+
+public import Continuation.Smooth.DroriLowerBound
+
+public import Continuation.Smooth.DroriOperational
+
+public import Continuation.RootIsolation.ExecutablePolynomial
+
+public import Continuation.RootIsolation.ExecutableIsolation
+
+public import Continuation.GJP.FactorProjection
+
+public import Continuation.GJP.ScalarProjection
+
+public import Continuation.GJP.Projection
