@@ -4341,3 +4341,57 @@ public import TauCeti.FieldTheory.IsRealClosed.Real
 #print axioms Submission2026.Separation.PathIdentities4.weightedSquare_strict
 #print axioms Submission2026.Separation.PathIdentities4.totalStep
 #print axioms Submission2026.Separation.PathIdentities4.totalStep_eq
+
+-- Actual polynomial response and uniform finite-dimensional spectral bounds.
+#print axioms NearQuadratic.PolynomialResponse.pPoly
+#print axioms NearQuadratic.PolynomialResponse.rPoly
+#print axioms NearQuadratic.PolynomialResponse.pOp_eq_aeval
+#print axioms NearQuadratic.PolynomialResponse.ROp_eq_aeval
+#print axioms NearQuadratic.PolynomialResponse.repr_aeval
+#print axioms NearQuadratic.PolynomialResponse.norm_aeval_le_of_eigenbasis
+#print axioms NearQuadratic.PolynomialResponse.eigenvalues_mem_Icc
+#print axioms NearQuadratic.PolynomialResponse.norm_aeval_le_pi
+#print axioms NearQuadratic.PolynomialResponse.response_estimates
+#print axioms NearQuadratic.PolynomialResponse.terminal_gap
+
+-- Actual four-query forward-data master identity and weak duality.
+#print axioms Submission2026.Separation.ForwardIdentity4.tau
+#print axioms Submission2026.Separation.ForwardIdentity4.mass
+#print axioms Submission2026.Separation.ForwardIdentity4.omega
+#print axioms Submission2026.Separation.ForwardIdentity4.prefixSum
+#print axioms Submission2026.Separation.ForwardIdentity4.suffix
+#print axioms Submission2026.Separation.ForwardIdentity4.epsilon
+#print axioms Submission2026.Separation.ForwardIdentity4.Upper4
+#print axioms Submission2026.Separation.ForwardIdentity4.Solves4
+#print axioms Submission2026.Separation.ForwardIdentity4.ForwardData4
+#print axioms Submission2026.Separation.ForwardIdentity4.total_weight
+#print axioms Submission2026.Separation.ForwardIdentity4.prefix_mass_sub_tau
+#print axioms Submission2026.Separation.ForwardIdentity4.epsilon_eq
+#print axioms Submission2026.Separation.ForwardIdentity4.sum5_nonneg
+#print axioms Submission2026.Separation.ForwardIdentity4.prefix_mass_sub_tau_nonneg
+#print axioms Submission2026.Separation.ForwardIdentity4.epsilon_nonneg
+#print axioms Submission2026.Separation.ForwardIdentity4.energy
+#print axioms Submission2026.Separation.ForwardIdentity4.xi
+#print axioms Submission2026.Separation.ForwardIdentity4.kappa
+#print axioms Submission2026.Separation.ForwardIdentity4.boundary
+#print axioms Submission2026.Separation.ForwardIdentity4.dualValue
+#print axioms Submission2026.Separation.ForwardIdentity4.bilinear_tail
+#print axioms Submission2026.Separation.ForwardIdentity4.energy_square_expansion
+#print axioms Submission2026.Separation.ForwardIdentity4.energy_kappa
+#print axioms Submission2026.Separation.ForwardIdentity4.tau_sum
+#print axioms Submission2026.Separation.ForwardIdentity4.master_identity
+#print axioms Submission2026.Separation.ForwardIdentity4.energy_nonneg
+#print axioms Submission2026.Separation.ForwardIdentity4.dualValue_le_boundary
+#print axioms Submission2026.Separation.ForwardIdentity4.kappa_terminal
+#print axioms Submission2026.Separation.ForwardIdentity4.kappa_nonpos
+#print axioms Submission2026.Separation.ForwardIdentity4.boundary_eq_totalStep
+#print axioms Submission2026.Separation.ForwardIdentity4.dualValue_le_path_totalStep
+#print axioms Submission2026.Separation.ForwardWeakDuality4.pi
+#print axioms Submission2026.Separation.ForwardWeakDuality4.psi
+#print axioms Submission2026.Separation.ForwardWeakDuality4.weightedPsi
+#print axioms Submission2026.Separation.ForwardWeakDuality4.weighted_sqrt_bound
+#print axioms Submission2026.Separation.ForwardWeakDuality4.sum5_mono
+#print axioms Submission2026.Separation.ForwardWeakDuality4.psi_le_weightedPsi
+#print axioms Submission2026.Separation.ForwardWeakDuality4.weightedPsi_eq_dualValue
+#print axioms Submission2026.Separation.ForwardWeakDuality4.psi_le_dualValue
+#print axioms Submission2026.Separation.ForwardWeakDuality4.psi_le_path_totalStep

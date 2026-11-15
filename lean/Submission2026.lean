@@ -16,3 +16,5 @@ public import Submission2026.Separation.B11Enclosures
 public import Submission2026.WeakCurvature
 public import Submission2026.NearQuadratic
 public import Submission2026.Separation.PathIdentities4
+public import Submission2026.Separation.ForwardIdentity4
+public import Submission2026.Separation.ForwardWeakDuality4
