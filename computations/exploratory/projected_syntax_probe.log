@@ -1,0 +1,17 @@
+/Users/francisco/Documents/Codex/2026-11-14/loo/work/mathathon-submission/local-qe/ProjectedAudit.lean:7:2: warning: Redundant `[expose]` attribute, it is meaningful on public definitions only
+32
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.endpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.strictGain_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.leastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

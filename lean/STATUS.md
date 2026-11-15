@@ -1,110 +1,68 @@
 # Formalization status
 
-The retained library builds with pinned Lean/Mathlib 4.35.0. Current verification:
-9,248 successful build jobs and 2,013 audited declarations
-(1,675 project declarations and 338 public declarations from the attributed
-TauCeti dependency). Audited declarations
-use only `propext`, `Classical.choice`, and `Quot.sound`; retained sources contain
-no proof holes, custom axioms, or `native_decide`.
+The checked library builds at pinned Lean 4.35.0 and Mathlib revision
+`56a005855ea17e0b0958f73ec801ae140b0a1679`: **9,271 successful build jobs** and
+**2,328 audited declarations** (1,990 project and 338 attributed TauCeti declarations).
+Only `propext`, `Classical.choice`, and `Quot.sound` occur in the audit.
+There are no proof holes, custom axioms, or `native_decide` in retained sources.
 
-The operational register-realization theorem is proved in both directions,
-including one predetermined coefficient machine valid in every finite dimension.
-The coefficient-coordinate bijection, cut/increment rank identity, finite rational
-determinant equations for memory, normalized realization theorem, and exact
-one-register characterization are proved from the actual recursion.
+The actual register realization theorem, normalization, coordinate bijection,
+cut/increment rank identity, executable minor equations, and one-register
+characterization are proved. One predetermined machine reproduces all query
+points and the terminal output in every finite dimension.
 
-The independent extended-real risk/value definitions satisfy the strict-threshold
-and memory-gain criteria, including infinite values without attainment assumptions.
-Rational quantifier-free threshold endpoints are proved algebraic. General
-quantifier elimination, which must produce those formulas, remains unfinished.
+The exact three-step procedure is now executable and proved. It constructs
+threshold formulas from a supplied finite loss formula, performs general nonlinear
+real quantifier elimination with arbitrary quantifier alternation, isolates the
+finite algebraic endpoint or returns an infinite endpoint, decides strict memory
+gain, and selects the least sufficient budget. Finite algebraic input coefficients
+are encoded and rationalized exactly. No QE, root, endpoint, or minimax oracle is
+assumed. Exactness of the supplied loss model is the paper's explicit input
+hypothesis, not an input containing an unknown optimum.
 
-The quadratic benchmark is complete: exact equality with the scalar two-variable
-loss model, actual matrix oracle trajectories, residual
-polynomials, spectral risk, Chebyshev alternation, explicit root schedules, and
-the exact minimax value at every operational memory budget. Additional memory
-never improves that value.
+The quadratic benchmark is proved for all horizons and budgets, including actual
+matrix-gradient trajectories, the exact scalar loss model, Chebyshev lower bound,
+and one-register optimal schedule. Its concrete rational input compiler is checked,
+and the complete program is proved to return the sharp value, no strict gain,
+and least auxiliary memory zero.
 
-The projected setting is verified: closed-convex projection and every query,
-finite convex subgradient interpolation and exact finite loss models, including
-repeated queries and bounded/unbounded subgradient returns. The minimum register
-count is the ordinary maximum cut rank on every nontrivial closed convex set,
-including empty-interior sets, and one on a nonempty singleton. Operational
-projected minimax values equal the register-constrained infima, with exact
-threshold rays, saturated budgets and rational gain witnesses. For bounded
-subgradients the values lie in [0,MR] at every budget.
+The smooth benchmark is proved from actual convex differentiable functions:
+necessary and sufficient interpolation, exact Gram loss sets, OGM upper bound,
+constructed Drori lower bound for the paper's predetermined linear-history class,
+one-register compactness and attainment, conic duality, and GJP uniqueness. Fixed
+dimension n≥N+2 has the same loss set as all finite dimensions. Strict memory gain
+occurs exactly at m=0,N≥2; there is no gain beyond m=1. Zero and one query are also
+covered. The concrete rational smooth input compiler is checked.
 
-For smooth convex functions, necessary and sufficient interpolation, exact finite
-Gram loss models, and all-dimensional oracle realization are proved. The actual
-one-register risk is lower semicontinuous, has compact sublevels, and attains its
-infimum. OGM has its proved implementation and exact one/two-register count.
+Projected rank, singleton memory, convex subgradient interpolation, exact actual
+loss sets, operational minimax composition and bounded-oracle finiteness are
+proved. The projected symbolic compiler accepts supplied algebraic domain and
+slope constraints, binds every trajectory and projection-test variable, and
+computes the actual endpoint, strict gain and least sufficient memory. The
+explicit norm-ball specialization proves bounded values finite and in [0,MR].
+Its register interpretation uses nontrivial domains, exactly as in the report;
+singleton loss semantics and the separate one-register theorem are also proved.
 
-The sharp smooth-convex minimax value is proved for every positive query horizon
-and every auxiliary memory budget m≥1. The upper bound uses the actual OGM oracle
-trajectory. The lower bound uses an actual orthant-conjugate Drori function with
-proved gradient, minimizer radius, zero-chain property, and loss lower bound for
-every history matrix. Exact threshold rays and no gain beyond m=1 follow from
-the independent operational risk/value definitions. For one query the exact
-value LR²/8 is proved already at m=0 and hence at every memory budget.
-At zero queries the exact value LR²/2 and threshold ray hold for every budget;
-the sharp formula at m≥1 therefore covers every nonnegative horizon.
+The formalization programme is complete for the report's stated results.
+Both benchmark algorithms have concrete rational and algebraic inputs and
+proved exact outputs. Smooth least memory is zero for N≤1 and one for N≥2.
+The generic procedure retains only the report's explicit exact finite-loss-model
+input hypothesis; all benchmark and projected compilers discharge it in their
+stated settings. No unproved literature result or assumed computational oracle
+is used by these final theorems.
 
-The GJP simplex problem is proved, including its unique equality case. Matrix
-elimination starts from the actual bordered PSD condition, treats singular
-triangular completion, and proves tight nonsingular uniqueness. Projection of
-admissible factors onto the simplex and its lower-rate implication are proved.
-The full admissible TC factorization is proved, including singular pivots.
-Optimal factors and the method certified by them are unique. Approaching optimal
-certificates converge to those factors, and closed feasibility supplies the
-limiting certificate. The coefficient normalization and actual smooth-instance
-scaling are also proved. The actual-risk duality bridge is now proved from finite-dimensional convex
-separation and positive-functional Gram realization. It supplies arbitrarily
-close compact certificates from actual oracle bounds, with no Slater,
-interpolation, or duality assumption. Actual optimal coefficient maps are exactly
-OGM. For every horizon and budget, increasing auxiliary memory m to m+1 strictly
-improves minimax performance exactly when m=0 and N≥2. The equivalent threshold
-set criterion is also proved. These are statements about independently defined
-all-dimensional operational risk, not just certificate optimization. Zero-padding
-and actual interpolation identify the same loss set in every fixed dimension
-n≥N+2 and prove the fixed-dimension uniqueness theorem as stated in the paper.
+The computation has no claimed practical complexity bound. Four closed nonlinear
+runtime checks pass. A parameterized quadratic runtime probe was stopped after
+more than one minute without a result; its source and status are preserved under
+`computations/exploratory/`. Benchmark outputs are proved for every horizon rather
+than inferred from large runs of elimination.
 
-Rational root isolation is now executable and certified. Coefficient-list
-arithmetic, division, gcd, Bezout coefficients, derivative and evaluation refine
-Mathlib polynomial operations. The computed squarefree polynomial, rational
-bounds and separation grid produce a finite list covering every real root,
-exactly one original-polynomial root per cell, and disjoint distinct cells.
-The zero polynomial is detected separately. Fourteen guarded execution checks
-exercise arithmetic and isolation. Exact zero and sign tests at represented
-algebraic roots are proved and execute in six further guarded checks.
+The 39 unchanged pre-existing TauCeti files are pinned at
+`1c497c347f615b3087cb605f8cf743e591376105`, with original authors, Apache-2.0 license
+and source hashes in `third_party/TauCeti`. They provide verified Sturm–Tarski and
+sign-determination foundations; the project supplies the executable symbolic
+elimination and memory procedure. The report identifies the accepted source checkpoint; its verification section
+and the declaration map state the same mathematical scope.
 
-Executable symbolic elimination is proved for arbitrary Boolean combinations
-affine in the eliminated variable, with rational polynomial parameter
-coefficients. It handles strict and weak inequalities, equality, negation and
-coefficient sign changes. Four guarded execution checks pass. This restricted
-result is not general multivariate nonlinear QE. A complete executable decision
-procedure now handles arbitrary-degree Boolean formulas with one quantified real
-variable and rational coefficients, for both existential and universal
-quantifiers. Root-free regions have certified rational representatives; exact
-algebraic signs handle roots. Five guarded runs check satisfiable, unsatisfiable,
-universal and constant cases.
-
-Algebraic input constants now have certified minimal-polynomial/root-cell codes.
-Their exact rationalization preserves arbitrary first-order quantifier alternation.
-Exact endpoint selection from rational threshold formulas is executable and proved,
-including infinite endpoints. Composition through a supplied correct rational QE
-step yields the independently defined minimax value. The general parameterized
-nonlinear QE step remains unfinished; no assumed step is presented as complete.
-Executable determinant/minor formulas now characterize actual register memory.
-Finite sign branching, positive symbolic pseudo-division, signed remainder chains,
-infinity signs, and symbolic Tarski queries are implemented and proved under every
-real coefficient specialization, including zero and degree-drop cases.
-The targeted Sturm–Tarski/sign-determination
-foundation from TauCeti is retained unchanged under Apache-2.0 at revision
-1c497c347f615b3087cb605f8cf743e591376105. All 39 vendored files build against the
-project pin; source hashes, authors and license are under third_party/TauCeti.
-These are pre-existing library results and do not by themselves provide the
-remaining executable parameterized elimination.
-
-The report is still partially formalized. Only checked modules enter the tracked
-library. External Open Math work is preserved; local Codex agents continue after
-the external provider quota was exhausted. `DECLARATION_MAP.md` records exact
-scope and `FORMALIZATION_PROGRAM.md` retains the development history.
+`DECLARATION_MAP.md` records theorem coverage. `FORMALIZATION_PROGRAM.md` retains
+the development history and external/local AI provenance.

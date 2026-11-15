@@ -3064,3 +3064,633 @@ public import TauCeti.FieldTheory.IsRealClosed.Real
 #print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.query
 
 #print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.query_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.constantValue
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.constantValue_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.pruneConstants
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.pruneConstants_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.sumRational
+
+#print axioms MemorySemialgebraic.SymbolicQE.SignTree.sumRational_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.power
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_power
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.product
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_product
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.powerProduct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_powerProduct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.ternaryWords
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.sum_ternaryWords
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.count
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.count_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.normalize_eq_nil_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.nonzeroFactor
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.nonzeroFactor_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.familyProduct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.familyProduct_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityCondition
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityCondition_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.rootCondition
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.rootCondition_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.eliminateSignCondition
+
+#print axioms MemorySemialgebraic.SymbolicQE.SymbolicPoly.eliminateSignCondition_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.eliminateClause
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.eliminateClause_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.eliminateExists
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.eliminateExists_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate_toQF
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.decideSentence
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.decideSentence_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.coefficientIndex
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdIndex
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.lossRenaming
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.memory_assignment
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.loss_assignment
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.boundFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.boundFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.feasible
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.loss
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.memory
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_mem
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_value
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.packCoefficients
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackStep
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackIncrement
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackStep_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackIncrement_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.packCoefficients_unpack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.coefficientEquiv
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.incrementEntries
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.incrementEntries_eval
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodMemoryFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodMemoryFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula_value
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.allBlock
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.allBlock_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.pair
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.pair_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.symmetricFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.symmetricFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.quadraticBody
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.quadraticBody_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.psdFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.GramSyntax.psdFormula_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.QEStep
+
+#print axioms MemorySemialgebraic.EndpointSelection.StepCorrect
+
+#print axioms MemorySemialgebraic.EndpointSelection.decideClosed
+
+#print axioms MemorySemialgebraic.EndpointSelection.decideClosed_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.rootConstraint
+
+#print axioms MemorySemialgebraic.EndpointSelection.rootConstraint_eval
+
+#print axioms MemorySemialgebraic.EndpointSelection.rootLessFormula
+
+#print axioms MemorySemialgebraic.EndpointSelection.rootLessFormula_eval
+
+#print axioms MemorySemialgebraic.EndpointSelection.compare_roots_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.compareOutputs
+
+#print axioms MemorySemialgebraic.EndpointSelection.valueOrdering
+
+#print axioms MemorySemialgebraic.EndpointSelection.valueOrdering_lt
+
+#print axioms MemorySemialgebraic.EndpointSelection.valueOrdering_eq
+
+#print axioms MemorySemialgebraic.EndpointSelection.compareOutputs_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.compareOutputs_none_iff
+
+#print axioms MemorySemialgebraic.EndpointSelection.equalOutputs
+
+#print axioms MemorySemialgebraic.EndpointSelection.equalOutputs_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.strictGain
+
+#print axioms MemorySemialgebraic.EndpointSelection.strictGain_correct
+
+#print axioms MemorySemialgebraic.EndpointSelection.strictGain_thresholds
+
+#print axioms MemorySemialgebraic.MemorySelection.memory
+
+#print axioms MemorySemialgebraic.MemorySelection.memory_saturated
+
+#print axioms MemorySemialgebraic.MemorySelection.unrestrictedValue
+
+#print axioms MemorySemialgebraic.MemorySelection.value_eq_unrestricted
+
+#print axioms MemorySemialgebraic.MemorySelection.budgetMatches
+
+#print axioms MemorySemialgebraic.MemorySelection.leastBudget
+
+#print axioms MemorySemialgebraic.MemorySelection.budgetMatches_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.leastBudget_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.leastSufficientBudget
+
+#print axioms MemorySemialgebraic.MemorySelection.leastSufficientBudget_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.methodThresholds
+
+#print axioms MemorySemialgebraic.MemorySelection.methodThresholds_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.methodLeastBudget
+
+#print axioms MemorySemialgebraic.MemorySelection.methodLeastBudget_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.methodStrictGain
+
+#print axioms MemorySemialgebraic.MemorySelection.methodStrictGain_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.thresholdOutput_ne_invalid
+
+#print axioms MemorySemialgebraic.MemorySelection.methodThresholdOutput_ne_invalid
+
+#print axioms MemorySemialgebraic.MemorySelection.algebraicMethodLeastBudget
+
+#print axioms MemorySemialgebraic.MemorySelection.algebraicMethodLeastBudget_correct
+
+#print axioms MemorySemialgebraic.MemorySelection.algebraicMethodStrictGain
+
+#print axioms MemorySemialgebraic.MemorySelection.algebraicMethodStrictGain_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.eliminateAlgebraic
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.eliminateAlgebraic_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.endpoint
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.endpoint_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicEndpoint
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicEndpoint_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.compareEndpoints
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.compareEndpoints_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.compareEndpoints_none_iff
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.methodEndpoint
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.methodEndpoint_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.methodEndpoint_ne_invalid
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.strictGain
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.strictGain_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.leastSufficientMemory
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.leastSufficientMemory_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicMethodEndpoint
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicMethodEndpoint_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicStrictGain
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicStrictGain_correct
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicLeastSufficientMemory
+
+#print axioms MemorySemialgebraic.EffectiveProcedure.algebraicLeastSufficientMemory_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.allIndex
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.allIndex_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.sumIndex
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.sumIndex_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.pair
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.pair_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.valueExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.valueExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.gradientExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.gradientExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.queryExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.queryExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.difference
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.difference_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.psdFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.psdFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.scaled_nonneg_iff
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.interpolationFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.feasibleFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.feasibleFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.residual
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.residual_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.lossFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.lossFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.input
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.input_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.parametricInput
+
+#print axioms MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.parametricInput_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.witnessSize
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackGram
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackValues
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.packWitness
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackGram_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackValues_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.liftExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.liftExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.bodyFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.bodyFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula_model
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula_correct
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.specializePrefix
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.specializePrefix_correct
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.twoParameterOrder
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.twoParameterOrder_assignment
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.twoCodes
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.specializeTwoParameters
+
+#print axioms MemorySemialgebraic.AlgebraicParameters.specializeTwoParameters_correct
+
+#print axioms MemorySemialgebraic.QuadraticProcedure.endpoint_correct
+
+#print axioms MemorySemialgebraic.QuadraticProcedure.strictGain_false
+
+#print axioms MemorySemialgebraic.QuadraticProcedure.leastSufficientMemory_zero
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.extendedIncrement
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.extendedIncrement_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.history
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.history_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.coefficientHistory
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.coefficientHistory_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.input
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.input_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.parametricInput
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.parametricInput_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.threshold_correct
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.algebraicInput
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.algebraicInput_correct
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.endpoint
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.strictGain
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.leastSufficientMemory
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.endpoint_correct
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.strictGain_false
+
+#print axioms MemorySemialgebraic.QuadraticAlgebraicProcedure.leastSufficientMemory_zero
+
+#print axioms MemorySemialgebraic.SmoothProcedure.endpoint
+
+#print axioms MemorySemialgebraic.SmoothProcedure.strictGain
+
+#print axioms MemorySemialgebraic.SmoothProcedure.leastSufficientMemory
+
+#print axioms MemorySemialgebraic.SmoothProcedure.endpoint_correct
+
+#print axioms MemorySemialgebraic.SmoothProcedure.endpoint_sharp
+
+#print axioms MemorySemialgebraic.SmoothProcedure.endpoint_zero_query
+
+#print axioms MemorySemialgebraic.SmoothProcedure.endpoint_one_query
+
+#print axioms MemorySemialgebraic.SmoothProcedure.strictGain_correct
+
+#print axioms MemorySemialgebraic.SmoothProcedure.least_budget
+
+#print axioms MemorySemialgebraic.SmoothProcedure.leastSufficientMemory_correct
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.input
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.input_correct
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.endpoint
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.strictGain
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.leastSufficientMemory
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.endpoint_correct
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.endpoint_sharp
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.strictGain_correct
+
+#print axioms MemorySemialgebraic.SmoothAlgebraicInput.leastSufficientMemory_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.substitute
+
+#print axioms MemorySemialgebraic.SymbolicQE.Expr.substitute_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.substitute
+
+#print axioms MemorySemialgebraic.SymbolicQE.Formula.substitute_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.allList
+
+#print axioms MemorySemialgebraic.SymbolicQE.FirstOrder.allList_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.Space
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector_apply
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lift
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lift_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.vectorSub
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector_sub
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.innerExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.innerExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domainAt
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domainAt_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.projectionFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.projectionFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.indices
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.mem_indices
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.siteExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.siteExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.interpolationFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.interpolationFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.preExpr
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.preExpr_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.feasibleFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.feasibleFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.witnessSize
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueSlot
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackStar
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackPoints
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackSlopes
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackValues
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.packWitness
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackStar_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackPoints_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackSlopes_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackValues_pack
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueVariables
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueVariables_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.bodyFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.bodyFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula_model
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.extendDomain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_extendDomain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.parameterInput
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.parameterInput_model
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input_model
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.endpoint
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.strictGain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.leastSufficientMemory
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.endpoint_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.strictGain_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.leastSufficientMemory_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.algebraicDomain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_algebraicDomain
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.slopeBall
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_slopeBall
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_unrestricted
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint_correct
+
+#print axioms MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint_finite

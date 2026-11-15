@@ -1,5 +1,7 @@
 # Full-paper Lean continuation
 
+**Completed.** The final checked programme covers the report’s stated results, including concrete nonlinear elimination and rational/algebraic benchmark and projected input compilers. See `STATUS.md` and `DECLARATION_MAP.md` for current scope; the entries below preserve the chronological work record.
+
 The authors requested continuing toward formalization of the whole paper on
 November 14, 2026. The verified starting source is repository commit
 `712749132ed8ba3e7177a9a6509e2f5a02ad66d4` (Lean source checkpoint
@@ -327,3 +329,15 @@ endpoint selection, determinant/minor syntax, and symbolic Tarski-query
 foundations are verified. Full Boolean nonlinear elimination and the final
 loss-model-to-minimax pipeline are still being assembled. Conditional composition
 lemmas explicitly retain the central QE step premise until it is discharged.
+
+## Complete general elimination and minimax composition
+
+The new accepted checkpoint has 9,265 successful build jobs and 2,219 audited declarations. General nonlinear rational QE, arbitrary quantifier alternation, algebraic coefficient reduction, exact endpoint selection and comparison, strict gain, and least sufficient memory are now proved with concrete executable algorithms. No assumed elimination/minimax oracle remains. Concrete rational quadratic and smooth loss compilers are checked, and the quadratic program's exact value/no-gain/zero-memory outputs are proved. Projected symbolic-domain compilation and the final algebraic/smooth output wrappers remain active integration work. The general procedure is not claimed efficient; the stopped parameterized runtime probe is preserved separately.
+
+## Both benchmark algorithms completed
+
+Concrete rational and algebraic inputs now instantiate the completed procedure for both benchmark classes. For every horizon, Lean proves the computed quadratic endpoint, no gain, and zero least auxiliary memory; for smooth convex functions it proves the endpoint semantics, sharp plateau, exact gain classification, and least memory zero at N≤1 and one otherwise. Accepted build: 9,268 jobs; audit: 2,246 declarations. The projected-domain symbolic compiler is the sole remaining integration task.
+
+## Programme completed
+
+The final projected bridge is complete: exact semialgebraic domain/slope syntax, universally bound projection test points, existential trajectory witnesses, algebraic coefficient specialization, and actual endpoint/gain/least-memory correctness. Explicit norm-ball syntax and bounded-value finiteness are proved. Together with the already proved projected register theorem, this closes the final report-to-program gap. All three local agents completed their assignments and froze sources. Final combined verification: 9,271 successful build jobs and 2,328 audited declarations (1,990 project and 338 external), using only propext, Classical.choice and Quot.sound. The remaining human tasks are author review and any eventual organizer access/submission; no public release or submission was performed.

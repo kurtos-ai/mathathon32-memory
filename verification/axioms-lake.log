@@ -2178,3 +2178,650 @@ info: Cli: remote URL changed
 'MemorySemialgebraic.SymbolicQE.SymbolicPoly.chainAux_signed' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MemorySemialgebraic.SymbolicQE.SymbolicPoly.query' depends on axioms: [propext, Classical.choice, Quot.sound]
 'MemorySemialgebraic.SymbolicQE.SymbolicPoly.query_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Expr.constantValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Expr.constantValue_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SignTree.pruneConstants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SignTree.pruneConstants_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SignTree.sumRational' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SignTree.sumRational_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.power' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.product' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.powerProduct' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.denote_powerProduct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.ternaryWords' depends on axioms: [propext]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.sum_ternaryWords' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.count_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.normalize_eq_nil_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.nonzeroFactor' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.nonzeroFactor_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.familyProduct' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.familyProduct_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityCondition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.infinityCondition_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.rootCondition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.rootCondition_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.eliminateSignCondition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SymbolicPoly.eliminateSignCondition_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Formula.eliminateClause' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Formula.eliminateClause_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Formula.eliminateExists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Formula.eliminateExists_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.quantifierEliminate_toQF' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.decideSentence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.decideSentence_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.coefficientIndex' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdIndex' depends on axioms: [propext]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.lossRenaming' depends on axioms: [propext]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.memory_assignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.loss_assignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.boundFormula' depends on axioms: [propext]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.boundFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.memory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.thresholdFormula_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.packCoefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackIncrement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackStep_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.unpackIncrement_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.packCoefficients_unpack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.coefficientEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.incrementEntries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.incrementEntries_eval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodMemoryFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodMemoryFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProcedureSyntax.methodThresholdFormula_value' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.allBlock' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.allBlock_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.pair' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.pair_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.symmetricFormula' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.GramSyntax.symmetricFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.quadraticBody' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.quadraticBody_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.psdFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.GramSyntax.psdFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EndpointSelection.QEStep' does not depend on any axioms
+'MemorySemialgebraic.EndpointSelection.StepCorrect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.decideClosed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.decideClosed_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.rootConstraint' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.rootConstraint_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.rootLessFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.rootLessFormula_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.compare_roots_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.compareOutputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.valueOrdering' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.valueOrdering_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.valueOrdering_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.compareOutputs_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EndpointSelection.compareOutputs_none_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EndpointSelection.equalOutputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.equalOutputs_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.strictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.strictGain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EndpointSelection.strictGain_thresholds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.memory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.memory_saturated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.unrestrictedValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.value_eq_unrestricted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.budgetMatches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.leastBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.budgetMatches_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.leastBudget_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.leastSufficientBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.leastSufficientBudget_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodThresholds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodThresholds_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodLeastBudget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodLeastBudget_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodStrictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodStrictGain_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.thresholdOutput_ne_invalid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.methodThresholdOutput_ne_invalid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.algebraicMethodLeastBudget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.algebraicMethodLeastBudget_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.algebraicMethodStrictGain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.MemorySelection.algebraicMethodStrictGain_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.eliminateAlgebraic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.eliminateAlgebraic_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.endpoint_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicEndpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicEndpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.compareEndpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.compareEndpoints_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.compareEndpoints_none_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.methodEndpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.methodEndpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.methodEndpoint_ne_invalid' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.strictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.strictGain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.leastSufficientMemory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.leastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicMethodEndpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicMethodEndpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicStrictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicStrictGain_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicLeastSufficientMemory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.EffectiveProcedure.algebraicLeastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.allIndex' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.allIndex_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.sumIndex' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.sumIndex_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.pair' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.pair_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.valueExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.valueExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.gradientExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.gradientExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.queryExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.queryExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.difference' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.difference_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.psdFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.psdFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.scaled_nonneg_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.interpolationFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.feasibleFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothGramSyntax.feasibleFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.residual_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.lossFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.lossFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.input_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.parametricInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.QuadraticLossSyntax.parametricInput_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.witnessSize' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramSlot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueSlot' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackGram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.packWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackGram_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.unpackValues_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.liftExpr' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.liftExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramVariables' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueVariables' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.gramVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.valueVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.bodyFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.bodyFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula_model' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothLossSyntax.lossFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.specializePrefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.specializePrefix_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.twoParameterOrder' depends on axioms: [propext]
+'MemorySemialgebraic.AlgebraicParameters.twoParameterOrder_assignment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.twoCodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.specializeTwoParameters' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.AlgebraicParameters.specializeTwoParameters_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticProcedure.endpoint_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.QuadraticProcedure.strictGain_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.QuadraticProcedure.leastSufficientMemory_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.extendedIncrement' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.extendedIncrement_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.history' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.history_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.coefficientHistory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.coefficientHistory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.input_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.parametricInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.parametricInput_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.SmoothProcedureInput.threshold_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.algebraicInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.algebraicInput_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.strictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.leastSufficientMemory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.endpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.strictGain_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.QuadraticAlgebraicProcedure.leastSufficientMemory_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.strictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.leastSufficientMemory' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.endpoint_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.endpoint_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.endpoint_zero_query' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.endpoint_one_query' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.strictGain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.least_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothProcedure.leastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.input_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.strictGain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.leastSufficientMemory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.endpoint_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.endpoint_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.strictGain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SmoothAlgebraicInput.leastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Expr.substitute' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.Expr.substitute_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.Formula.substitute' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.Formula.substitute_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.FirstOrder.allList' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.FirstOrder.allList_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.Space' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lift' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lift_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.vectorSub' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.evalVector_sub' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.innerExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.innerExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domainAt' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.domainAt_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.projectionFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.projectionFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.indices' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.mem_indices' depends on axioms: [propext]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.siteExpr' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.siteExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.interpolationFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.interpolationFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.preExpr' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.preExpr_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.feasibleFormula' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.feasibleFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.witnessSize' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starSlot' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointSlot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeSlot' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueSlot' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackStar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackPoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackSlopes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackValues' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.packWitness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackStar_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackPoints_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackSlopes_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.unpackValues_pack' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starVariables' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointVariables' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeVariables' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueVariables' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.starVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.pointVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.slopeVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.valueVariables_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.bodyFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.bodyFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula_model' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedLossSyntax.lossFormula_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.extendDomain' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_extendDomain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.parameterInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.parameterInput_model' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input_model' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.input_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.endpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.strictGain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.leastSufficientMemory' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.endpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.strictGain_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.leastSufficientMemory_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.algebraicDomain' does not depend on any axioms
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_algebraicDomain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.slopeBall' depends on axioms: [propext, Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_slopeBall' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.domain_unrestricted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MemorySemialgebraic.SymbolicQE.ProjectedProcedureInput.boundedEndpoint_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

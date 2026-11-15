@@ -5,23 +5,20 @@ and Jack Mayo (kurtos.ai).
 
 - `paper/report.tex` and `paper/report.pdf`: the self-contained research report.
 - `slides/memory-slides.pdf`: 16 main slides and one OGM appendix for a 20-minute talk.
-- `lean/`: a **partial** Lean formalization with a precise declaration map.
+- `lean/`: the Lean formalization of the report’s stated results, with a precise declaration map.
 - `computations/`: exact and numerical checks, with fixed ranges and logs.
 - `verification/`: build and axiom-audit records.
 - `inputs/`: the preserved starting paper and supplied exact-arithmetic script.
 
-The report proves the realization and decision results, and cites the established
-optimization results used in the examples. The Lean library verifies the
-full operational register realization theorem in every finite dimension,
-cut/increment rank identity, the rank-form memory locus, its finite rational determinant equations, and one-register
-characterization, the extended-risk threshold/gain criterion, and supporting
-algebraic lemmas. The normalized realization theorem and quadratic matrix-model minimax result
-at every register budget are proved. The sharp smooth benchmark value and absence
-of gains beyond one extra register are also proved, as is executable rational
-root isolation. Full smooth coefficient uniqueness and general quantifier
-elimination remain unfinished. See
-`lean/DECLARATION_MAP.md`; a successful build is not a claim that the whole report
-has been formally verified.
+The Lean library verifies actual register realizations, normalized coordinates,
+rank/minor memory constraints, exact threshold and gain criteria, both benchmark
+minimax calculations, smooth coefficient uniqueness, and a complete executable
+real-algebraic decision procedure. The algorithms take finite loss formulas and
+specified algebraic coefficients; they do not take unknown minimax values or
+assumed elimination oracles. General nonlinear QE is proved but has no claimed
+practical complexity bound. Concrete rational/algebraic benchmark inputs and projected-domain inputs are
+compiled and proved exact. `lean/STATUS.md` records the completed programme;
+`lean/DECLARATION_MAP.md` gives exact theorem scope and retained input assumptions.
 
 ## Reproduce
 

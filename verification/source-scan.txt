@@ -1,1 +1,4 @@
 No sorry, admit, custom axiom declarations, or native_decide in retained Lean sources.
+All local Lean import dependencies are included in the tracked source set.
+All 39 attributed TauCeti source hashes match the pinned originals.
+All fully qualified theorem references in DECLARATION_MAP.md are present in CheckAxioms.lean.
