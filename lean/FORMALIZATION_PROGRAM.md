@@ -64,3 +64,10 @@ Projection graph/correction identities and Gram/PSD identities were exported by
 the coordinator, inspected, built locally and included in the expanded axiom audit.
 These support results do not close the projected or smooth benchmark sections.
 The remaining workstreams continue with concrete targets in the coordinator chat.
+
+The next checked batch proves quadratic residual-polynomial normalization, degree
+bounds and the T=0 product identity, plus odd-Chebyshev algebra. It also proves
+the actual OGM two-register machine for all formal inputs and all finite vector
+dimensions. These results do not establish benchmark minimax optimality.
+Stalled runs were replaced after inspecting source and transcript timestamps;
+checking only a running flag was insufficient.

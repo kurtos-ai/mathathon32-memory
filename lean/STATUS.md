@@ -11,7 +11,8 @@ the cut factorization from formal-input correctness. It also proves the exact
 cut/increment rank identity, the operational rank-form memory locus,
 the one-register/zero-increment equivalence, and the extended-risk threshold and
 strict-memory-gain theorems. The coefficient-coordinate bijection, its operational
-memory fibers, and projection/Gram support lemmas are also proved. See `DECLARATION_MAP.md` for exact scope.
+memory fibers, projection/Gram support, quadratic polynomial recurrence and
+Chebyshev algebra, and the actual two-register OGM realization are also proved. See `DECLARATION_MAP.md` for exact scope.
 
 Normalized-register equivalence, projected methods, interpolation, effective
 quantifier elimination and the optimization benchmark proofs remain unfinished

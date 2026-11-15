@@ -79,3 +79,26 @@ public import RealizationCore
 #print axioms Continuation.Projected.projQuery_mem_K
 #print axioms Continuation.Projected.direct_singleton_a
 #print axioms Continuation.Projected.proj_singleton_a
+
+#print axioms SmoothOGM.ogmW_strict
+#print axioms SmoothOGM.ogmW_last_is_d
+#print axioms SmoothOGM.stateNat_eq
+#print axioms SmoothOGM.ogmMachine_realizes
+#print axioms SmoothOGM.ogmHasRealization
+#print axioms SmoothOGM.ogmVectorRealizes
+
+#print axioms QuadraticFoundations.pIter_eval_zero
+#print axioms QuadraticFoundations.pIter_natDegree_le
+#print axioms QuadraticFoundations.pIter_T_zero_eq_product
+#print axioms QuadraticFoundations.pN_T_zero_eq_productPoly
+#print axioms QuadraticFoundations.chebM_degree
+#print axioms QuadraticFoundations.chebM_natDegree
+#print axioms QuadraticFoundations.chebM_eval_cos
+#print axioms QuadraticFoundations.chebM_eval_neg
+#print axioms QuadraticFoundations.chebM_comp_neg
+#print axioms QuadraticFoundations.chebM_eval_zero
+#print axioms QuadraticFoundations.chebM_dvd_X
+#print axioms QuadraticFoundations.chebM_s
+#print axioms QuadraticFoundations.chebM_eq_X_mul_s
+#print axioms QuadraticFoundations.neg_X_pow
+#print axioms QuadraticFoundations.comp_neg_X_coeff
