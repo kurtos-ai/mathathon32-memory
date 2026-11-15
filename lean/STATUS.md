@@ -33,7 +33,7 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,118 successful build jobs and 665 audited declarations.
+Current verification: 9,119 successful build jobs and 675 audited declarations.
 The written report remains only partially formalized.
 
 Zero-increment history methods and step schedules now have proved identical
@@ -55,3 +55,7 @@ domains with empty ambient interior. The matching construction remains open.
 Simple roots are proved to enter the actual rational sign-filtered grid output
 for every sufficiently small positive mesh. This is a refinement theorem with
 an existential mesh threshold, not complete effective root isolation.
+
+The fixed-horizon algebraic energy identity and its general-L objective bound
+are proved. Applying this certificate to the actual OGM coefficients and
+oracle trajectory remains separate from the generic certificate.

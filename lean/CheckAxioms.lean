@@ -732,3 +732,15 @@ public import RealizationCore
 #print axioms RootIsolation.SimpleRoots.partitionPoints_get_eq'
 #print axioms RootIsolation.SimpleRoots.partition_interval_length'
 #print axioms RootIsolation.SimpleRoots.simple_root_mem_filteredIntervals
+
+-- Generic energy certificate for OGM.
+#print axioms OGMEnergy.R
+#print axioms OGMEnergy.S
+#print axioms OGMEnergy.energy_step
+#print axioms OGMEnergy.energy_base
+#print axioms OGMEnergy.prefix_identity
+#print axioms OGMEnergy.terminal_identity
+#print axioms OGMEnergy.objective_bound
+#print axioms OGMEnergy.R_scale
+#print axioms OGMEnergy.S_scale
+#print axioms OGMEnergy.objective_bound_scaled

@@ -234,3 +234,10 @@ Export14 supplied the simple-root sign and actual filtered-grid refinement
 lemmas; fixed-grid examples were omitted and names now distinguish sign-changing
 cells from intervals with certified unique roots. Effective separation-based
 coverage remains the next isolation target.
+
+## OGM energy certificate
+
+Root proved the fixed-horizon prefix identity, its terminal specialization,
+and the objective inequality with general-L scaling. The OGM worker owns the
+remaining coefficient/vector recurrence, theta identities, and actual-instance
+instantiation. The performance theorem remains open until these are connected.
