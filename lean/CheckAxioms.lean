@@ -629,3 +629,19 @@ public import RealizationCore
 #print axioms SmoothGramModel.actualLossSet_eq_modelLossSet
 #print axioms SmoothGramModel.dimension_reduction
 #print axioms SmoothGramModel.uniform_bound_iff
+
+-- Smooth operational memory/schedule/performance bridge.
+#print axioms SmoothOperational.iter_cumulative
+#print axioms SmoothOperational.zero_increment_trajectory
+#print axioms SmoothOperational.zero_increment_loss
+#print axioms SmoothOperational.feasible
+#print axioms SmoothOperational.loss
+#print axioms SmoothOperational.memory
+#print axioms SmoothOperational.zeroIncrement
+#print axioms SmoothOperational.mem_memory_iff_realization
+#print axioms SmoothOperational.zeroIncrement_mem
+#print axioms SmoothOperational.mem_memory_zero_iff
+#print axioms SmoothOperational.actualLossSet_iff
+#print axioms SmoothOperational.zero_increment_risk
+#print axioms SmoothOperational.value_zero_eq_inf_risk0
+#print axioms SmoothOperational.performance_iff_gram

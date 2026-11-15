@@ -33,5 +33,8 @@ is explicitly defined and proved equal to the actual all-dimensional loss set.
 Every feasible datum is realized in dimension N+2, with all causal queries and
 the terminal loss preserved. This includes zero-query horizons.
 
-Current verification: 9,112 successful build jobs and 574 audited declarations.
+Current verification: 9,113 successful build jobs and 588 audited declarations.
 The written report remains only partially formalized.
+
+Zero-increment history methods and step schedules now have proved identical
+actual trajectories and EReal risks, including the operational minimax infimum.

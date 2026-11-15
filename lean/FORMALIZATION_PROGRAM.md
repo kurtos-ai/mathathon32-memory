@@ -200,3 +200,9 @@ N+2, including all intermediate oracle queries and the terminal loss. The finite
 model is proved equal to the actual loss set over all positive finite dimensions.
 The OGM performance/optimality and uniqueness results and one-register attainment
 are still open; exact interpolation is no longer an assumed dependency.
+
+The Q0/step-schedule bridge is now proved for actual trajectories, losses and
+all-dimensional EReal risks. The operational one-register minimax value is
+exactly the infimum over step schedules, and the actual performance condition
+is exactly the finite Gram test. This closes the semantic bridge needed by
+the independent compactness/attainment proof.
