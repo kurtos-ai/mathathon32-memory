@@ -143,3 +143,13 @@ root-isolation coordination.
 The finite maximum of dual quadratics has proved strong convexity, attained maxima, and exact value and subgradient contacts at the supplied data. Conjugate existence, differentiability, Lipschitz gradient, and the resulting interpolation equivalence remain active targets. Reconstructed exploratory NumPy coordinate probes are retained under `computations/exploratory/`; they are not proof certificates.
 
 The root-isolation support now includes a finite rational partition and a proved cover of every real root, conditional on a supplied positive root bound. This is a cover theorem, not a completed isolation algorithm; root separation and assembly remain active.
+
+## Necessary smooth interpolation and attainment support
+
+The actual gradient assumptions now imply the descent bound and tangent lower
+bound, hence the exact necessary THG interpolation inequality. The shared
+Euclidean instance type satisfies these inequalities, with zero gradient at its
+minimizer. The actual one-register recurrence is continuous in its schedule on
+every fixed instance. Product-polynomial coefficient identities are proved.
+Coercivity, unconditional risk lower semicontinuity, attainment, interpolation
+sufficiency, and the sharp smooth minimax bounds remain separate open targets.

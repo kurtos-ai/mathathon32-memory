@@ -23,3 +23,8 @@ public import Continuation.Quadratic.Lower.Minimax
 public import Continuation.Quadratic.Operational
 public import Continuation.SmoothDualCore
 public import Continuation.RootIsolation.Cover
+public import Continuation.Smooth.Attain.Instances
+public import Continuation.Smooth.Attain.Coeff
+public import Continuation.Smooth.Attain.Continuity
+public import Continuation.Smooth.Necessary
+public import Continuation.Smooth.ActualInterpolation
